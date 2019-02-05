@@ -23,7 +23,7 @@ namespace PokemmoDiscord.PokemonBot.Data
         [JsonProperty("bfs")]
         public string BackFemaleShiny { get; internal set; }
         [JsonProperty("fm")]
-        public string FronMale { get; internal set; }
+        public string FrontMale { get; internal set; }
         [JsonProperty("ff")]
         public string FrontFemale { get; internal set; }
         [JsonProperty("fms")]
@@ -37,7 +37,7 @@ namespace PokemmoDiscord.PokemonBot.Data
         [JsonProperty("effort")]
         public List<int> EffortStats { get; internal set; }
         [JsonProperty("moves")]
-        public List<int> MoveIDS { get; internal set; }
+        public List<int> AvailableMoveIDS { get; internal set; }
 
     }
 }

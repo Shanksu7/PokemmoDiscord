@@ -20,6 +20,7 @@ namespace PokemmoDiscord.PokemonBot.Data
         public static List<MoveModel> MovesModel = new List<MoveModel>();
         public static List<PokemonModel> PokemonModel = new List<PokemonModel>();
         public static bool Ready = false;
+        public static int MaxPokemonId = 802;
         public static async Task LoadData()
         {
             try
@@ -29,15 +30,18 @@ namespace PokemmoDiscord.PokemonBot.Data
                 Console.WriteLine("Start Load Data");
                 //dictionaries
                 await InitDictionaries();
+                //MOVES MODELS
                 await Program.SetGameAsync("Loading moves");
                 using (StreamReader r = new StreamReader("moves.json"))
                     MovesModel = JsonConvert.DeserializeObject<List<MoveModel>>(r.ReadToEnd());
                 Console.WriteLine("Loaded "+MovesModel.Count()+" Moves");
+                //POKEMON MODELS
                 await Program.SetGameAsync("Loading Pokemon models");
                 using (StreamReader r = new StreamReader("pokemon_model.json"))
                     PokemonModel = JsonConvert.DeserializeObject<List<PokemonModel>>(r.ReadToEnd());                
                 Console.WriteLine("Loaded "+PokemonModel.Count()+" pokemon models");
-                sp.Stop();
+                //FINISH
+                sp.Stop();                
                 Console.WriteLine("Finished after " + sp.ElapsedMilliseconds + " ms");
                 await Program.SetGameAsync("guiding " + Program.pre);
                 Ready = true;
@@ -104,7 +108,7 @@ namespace PokemmoDiscord.PokemonBot.Data
         }
         public static async Task LoadPokemonAPI()
         {
-            int max = 802;
+            int max = MaxPokemonId;
             List<PokemonModel> models = new List<PokemonModel>();
             for(int i = 1; i<=max; i++)
             {
@@ -127,12 +131,12 @@ namespace PokemmoDiscord.PokemonBot.Data
                     ID = pokemon.ID,
                     Name = pokemon.Name,
                     BaseExperience = pokemon.BaseExperience,
-                    MoveIDS = idmoves,
+                    AvailableMoveIDS = idmoves,
                     BackMale = pokemon.Sprites.BackMale,
                     BackFemale = pokemon.Sprites.BackFemale ,
                     BackMaleShiny = pokemon.Sprites.BackShinyMale,
                     BackFemaleShiny = pokemon.Sprites.BackFemale,
-                    FronMale = pokemon.Sprites.FrontMale,
+                    FrontMale = pokemon.Sprites.FrontMale,
                     FrontFemale = pokemon.Sprites.FrontFemale,
                     FrontMaleShiny = pokemon.Sprites.FrontShinyMale,
                     FrontFemaleShiny = pokemon.Sprites.FrontShinyFemale,
