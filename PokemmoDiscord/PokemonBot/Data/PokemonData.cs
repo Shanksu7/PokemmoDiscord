@@ -5,6 +5,7 @@ using PokemmoDiscord.PokemonBot.Models;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -14,22 +15,32 @@ namespace PokemmoDiscord.PokemonBot.Data
 {
     public class PokemonData
     {
-        public static List<PokeAPI.Pokemon> Pokemons = new List<PokeAPI.Pokemon>();
-
+        
         public static ConcurrentDictionary<string, PokemonTypeEnum> _pokemontypes = new ConcurrentDictionary<string, PokemonTypeEnum>();
         public static List<MoveModel> MovesModel = new List<MoveModel>();
-
+        public static List<PokemonModel> PokemonModel = new List<PokemonModel>();
+        public static bool Ready = false;
         public static async Task LoadData()
         {
             try
-            {                
+            {
+                var sp = new Stopwatch();
+                sp.Start();
                 Console.WriteLine("Start Load Data");
+                //dictionaries
                 await InitDictionaries();
-                
+                await Program.SetGameAsync("Loading moves");
                 using (StreamReader r = new StreamReader("moves.json"))
                     MovesModel = JsonConvert.DeserializeObject<List<MoveModel>>(r.ReadToEnd());
-                Console.WriteLine("Loaded Moves");
-                await LoadPokemonAPI();
+                Console.WriteLine("Loaded "+MovesModel.Count()+" Moves");
+                await Program.SetGameAsync("Loading Pokemon models");
+                using (StreamReader r = new StreamReader("pokemon_model.json"))
+                    PokemonModel = JsonConvert.DeserializeObject<List<PokemonModel>>(r.ReadToEnd());                
+                Console.WriteLine("Loaded "+PokemonModel.Count()+" pokemon models");
+                sp.Stop();
+                Console.WriteLine("Finished after " + sp.ElapsedMilliseconds + " ms");
+                await Program.SetGameAsync("guiding " + Program.pre);
+                Ready = true;
             }
             catch(Exception ex)
             {
@@ -88,13 +99,13 @@ namespace PokemmoDiscord.PokemonBot.Data
                 }
             }
             var s = JsonConvert.SerializeObject(moves, Formatting.Indented);
-            File.WriteAllText("moves.json", s);
-            Console.WriteLine("Finished moves succes");
+            File.WriteAllText("moves.json", s);            
 
         }
         public static async Task LoadPokemonAPI()
         {
             int max = 802;
+            List<PokemonModel> models = new List<PokemonModel>();
             for(int i = 1; i<=max; i++)
             {
                 var pokemon = await DataFetcher.GetApiObject<Pokemon>(i);
@@ -104,18 +115,55 @@ namespace PokemmoDiscord.PokemonBot.Data
                     var m = MovesModel.FirstOrDefault(u => u.Name == x.Move.Name);
                     if (m != null)
                     {
-                        Console.WriteLine(m.Name);
+                        //Console.WriteLine(m.Name);
                         idmoves.Add(m.ID);
                     }
                     else continue;
                 }
+                if(pokemon.Forms.Count() > 1)                
+                    Console.WriteLine(pokemon.Forms.Count() +" for " + pokemon.Name);
                 PokemonModel model = new PokemonModel()
                 {
+                    ID = pokemon.ID,
+                    Name = pokemon.Name,
                     BaseExperience = pokemon.BaseExperience,
-                    MoveIDS = idmoves
-                    
+                    MoveIDS = idmoves,
+                    BackMale = pokemon.Sprites.BackMale,
+                    BackFemale = pokemon.Sprites.BackFemale ,
+                    BackMaleShiny = pokemon.Sprites.BackShinyMale,
+                    BackFemaleShiny = pokemon.Sprites.BackFemale,
+                    FronMale = pokemon.Sprites.FrontMale,
+                    FrontFemale = pokemon.Sprites.FrontFemale,
+                    FrontMaleShiny = pokemon.Sprites.FrontShinyMale,
+                    FrontFemaleShiny = pokemon.Sprites.FrontShinyFemale,
+                    Types = pokemon.Types.Select(x => _pokemontypes[x.Type.Name]).ToList(),
+                    BaseStats = pokemon.Stats.Select(x => x.BaseValue).ToList(),
+                    EffortStats = pokemon.Stats.Select(x => x.Effort).ToList()
                 };
+                models.Add(model);
+                Console.WriteLine("["+model.ID+"] " + model.Name);
             }
+            var s = JsonConvert.SerializeObject(models, Formatting.Indented);
+            File.WriteAllText("pokemon_model.json", s);
+        }
+        public static async Task<List<int>> GetEvolutionIDs(Pokemon poke)
+        {
+            List<int> ids = new List<int>();
+            EvolutionChain evs;
+            try
+            {
+                evs = await DataFetcher.GetApiObject<EvolutionChain>(poke.ID);
+            }
+            catch(Exception ex) { return ids; }
+            
+            if(evs.Chain.Details.Count() > 0)
+            {
+                ChainLink[] l;
+              /* ids.Add(_pokemons.First(x => x.Name == evs.Chain.EvolvesTo[0].Species.Name).ID);
+                if(( l = evs.Chain.EvolvesTo[0].EvolvesTo).Count() > 0)                
+                    ids.AddRange(await GetEvolutionIDs(_pokemons.First(x => x.Name == l[0].Species.Name)));  */              
+            }
+            return ids;
         }
     }
 }

@@ -14,7 +14,9 @@ namespace PokemmoDiscord.PokemonBot.Entity
         [JsonProperty("join")]
         public DateTime Join { get; set; }
         [JsonProperty("cred")]
-        public int Credits { get; set; }        
+        public int Credits { get; set; }
+        [JsonProperty("redeem")]
+        public int Redeem { get; set; }
         [JsonProperty("medals")]
         public List<Medal> Medals { get; set; }
 

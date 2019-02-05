@@ -64,6 +64,7 @@ namespace AKDiscordBot
 
         public static async Task SetGameAsync(string activity)
         {
+            Console.WriteLine(activity);
             await Client.SetGameAsync(activity);
         }
         private async Task OnRoleCreated(SocketRole arg)
@@ -148,6 +149,7 @@ namespace AKDiscordBot
             embedBuilder.WithTitle(type.ToString());
             embedBuilder.WithDescription(msg);
             var embed = embedBuilder.Build();
+            Console.WriteLine(msg);
             await log.SendMessageAsync(embed: embed);            
         }
         public enum ReportEnum
