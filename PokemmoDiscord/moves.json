@@ -1,0 +1,3458 @@
+[
+  {
+    "id": 1,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "pound",
+    "esp": "Destructor",
+    "pw": 40,
+    "type": 0
+  },
+  {
+    "id": 2,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "karate-chop",
+    "esp": "Golpe Kárate",
+    "pw": 50,
+    "type": 1
+  },
+  {
+    "id": 3,
+    "acc": 85.0,
+    "dc": 0,
+    "name": "double-slap",
+    "esp": "Doble Bofetón",
+    "pw": 15,
+    "type": 0
+  },
+  {
+    "id": 4,
+    "acc": 85.0,
+    "dc": 0,
+    "name": "comet-punch",
+    "esp": "Puño Cometa",
+    "pw": 18,
+    "type": 0
+  },
+  {
+    "id": 5,
+    "acc": 85.0,
+    "dc": 0,
+    "name": "mega-punch",
+    "esp": "Megapuño",
+    "pw": 80,
+    "type": 0
+  },
+  {
+    "id": 6,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "pay-day",
+    "esp": "Día de Pago",
+    "pw": 40,
+    "type": 0
+  },
+  {
+    "id": 7,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "fire-punch",
+    "esp": "Puño Fuego",
+    "pw": 75,
+    "type": 2
+  },
+  {
+    "id": 8,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "ice-punch",
+    "esp": "Puño Hielo",
+    "pw": 75,
+    "type": 3
+  },
+  {
+    "id": 9,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "thunder-punch",
+    "esp": "Puño Trueno",
+    "pw": 75,
+    "type": 4
+  },
+  {
+    "id": 10,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "scratch",
+    "esp": "Arañazo",
+    "pw": 40,
+    "type": 0
+  },
+  {
+    "id": 11,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "vice-grip",
+    "esp": "Agarre",
+    "pw": 55,
+    "type": 0
+  },
+  {
+    "id": 13,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "razor-wind",
+    "esp": "Viento Cortante",
+    "pw": 80,
+    "type": 0
+  },
+  {
+    "id": 15,
+    "acc": 95.0,
+    "dc": 0,
+    "name": "cut",
+    "esp": "Corte",
+    "pw": 50,
+    "type": 0
+  },
+  {
+    "id": 16,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "gust",
+    "esp": "Tornado",
+    "pw": 40,
+    "type": 5
+  },
+  {
+    "id": 17,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "wing-attack",
+    "esp": "Ataque Ala",
+    "pw": 60,
+    "type": 5
+  },
+  {
+    "id": 19,
+    "acc": 95.0,
+    "dc": 0,
+    "name": "fly",
+    "esp": "Vuelo",
+    "pw": 90,
+    "type": 5
+  },
+  {
+    "id": 20,
+    "acc": 85.0,
+    "dc": 0,
+    "name": "bind",
+    "esp": "Atadura",
+    "pw": 15,
+    "type": 0
+  },
+  {
+    "id": 21,
+    "acc": 75.0,
+    "dc": 0,
+    "name": "slam",
+    "esp": "Atizar",
+    "pw": 80,
+    "type": 0
+  },
+  {
+    "id": 22,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "vine-whip",
+    "esp": "Látigo Cepa",
+    "pw": 45,
+    "type": 6
+  },
+  {
+    "id": 23,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "stomp",
+    "esp": "Pisotón",
+    "pw": 65,
+    "type": 0
+  },
+  {
+    "id": 24,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "double-kick",
+    "esp": "Doble Patada",
+    "pw": 30,
+    "type": 1
+  },
+  {
+    "id": 25,
+    "acc": 75.0,
+    "dc": 0,
+    "name": "mega-kick",
+    "esp": "Megapatada",
+    "pw": 120,
+    "type": 0
+  },
+  {
+    "id": 26,
+    "acc": 95.0,
+    "dc": 0,
+    "name": "jump-kick",
+    "esp": "Patada Salto",
+    "pw": 100,
+    "type": 1
+  },
+  {
+    "id": 27,
+    "acc": 85.0,
+    "dc": 0,
+    "name": "rolling-kick",
+    "esp": "Patada Giro",
+    "pw": 60,
+    "type": 1
+  },
+  {
+    "id": 29,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "headbutt",
+    "esp": "Golpe Cabeza",
+    "pw": 70,
+    "type": 0
+  },
+  {
+    "id": 30,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "horn-attack",
+    "esp": "Cornada",
+    "pw": 65,
+    "type": 0
+  },
+  {
+    "id": 31,
+    "acc": 85.0,
+    "dc": 0,
+    "name": "fury-attack",
+    "esp": "Ataque Furia",
+    "pw": 15,
+    "type": 0
+  },
+  {
+    "id": 33,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "tackle",
+    "esp": "Placaje",
+    "pw": 40,
+    "type": 0
+  },
+  {
+    "id": 34,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "body-slam",
+    "esp": "Golpe Cuerpo",
+    "pw": 85,
+    "type": 0
+  },
+  {
+    "id": 35,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "wrap",
+    "esp": "Constricción",
+    "pw": 15,
+    "type": 0
+  },
+  {
+    "id": 36,
+    "acc": 85.0,
+    "dc": 0,
+    "name": "take-down",
+    "esp": "Derribo",
+    "pw": 90,
+    "type": 0
+  },
+  {
+    "id": 37,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "thrash",
+    "esp": "Golpe",
+    "pw": 120,
+    "type": 0
+  },
+  {
+    "id": 38,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "double-edge",
+    "esp": "Doble Filo",
+    "pw": 120,
+    "type": 0
+  },
+  {
+    "id": 40,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "poison-sting",
+    "esp": "Picotazo Ven",
+    "pw": 15,
+    "type": 7
+  },
+  {
+    "id": 41,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "twineedle",
+    "esp": "Doble Ataque",
+    "pw": 25,
+    "type": 8
+  },
+  {
+    "id": 42,
+    "acc": 95.0,
+    "dc": 0,
+    "name": "pin-missile",
+    "esp": "Pin Misil",
+    "pw": 25,
+    "type": 8
+  },
+  {
+    "id": 44,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "bite",
+    "esp": "Mordisco",
+    "pw": 60,
+    "type": 9
+  },
+  {
+    "id": 51,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "acid",
+    "esp": "Ácido",
+    "pw": 40,
+    "type": 7
+  },
+  {
+    "id": 52,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "ember",
+    "esp": "Ascuas",
+    "pw": 40,
+    "type": 2
+  },
+  {
+    "id": 53,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "flamethrower",
+    "esp": "Lanzallamas",
+    "pw": 90,
+    "type": 2
+  },
+  {
+    "id": 55,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "water-gun",
+    "esp": "Pistola Agua",
+    "pw": 40,
+    "type": 10
+  },
+  {
+    "id": 56,
+    "acc": 80.0,
+    "dc": 1,
+    "name": "hydro-pump",
+    "esp": "Hidrobomba",
+    "pw": 110,
+    "type": 10
+  },
+  {
+    "id": 57,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "surf",
+    "esp": "Surf",
+    "pw": 90,
+    "type": 10
+  },
+  {
+    "id": 58,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "ice-beam",
+    "esp": "Rayo Hielo",
+    "pw": 90,
+    "type": 3
+  },
+  {
+    "id": 59,
+    "acc": 70.0,
+    "dc": 1,
+    "name": "blizzard",
+    "esp": "Ventisca",
+    "pw": 110,
+    "type": 3
+  },
+  {
+    "id": 60,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "psybeam",
+    "esp": "Psicorrayo",
+    "pw": 65,
+    "type": 11
+  },
+  {
+    "id": 61,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "bubble-beam",
+    "esp": "Rayo Burbuja",
+    "pw": 65,
+    "type": 10
+  },
+  {
+    "id": 62,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "aurora-beam",
+    "esp": "Rayo Aurora",
+    "pw": 65,
+    "type": 3
+  },
+  {
+    "id": 63,
+    "acc": 90.0,
+    "dc": 1,
+    "name": "hyper-beam",
+    "esp": "Hiperrayo",
+    "pw": 150,
+    "type": 0
+  },
+  {
+    "id": 64,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "peck",
+    "esp": "Picotazo",
+    "pw": 35,
+    "type": 5
+  },
+  {
+    "id": 65,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "drill-peck",
+    "esp": "Pico Taladro",
+    "pw": 80,
+    "type": 5
+  },
+  {
+    "id": 66,
+    "acc": 80.0,
+    "dc": 0,
+    "name": "submission",
+    "esp": "Sumisión",
+    "pw": 80,
+    "type": 1
+  },
+  {
+    "id": 70,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "strength",
+    "esp": "Fuerza",
+    "pw": 80,
+    "type": 0
+  },
+  {
+    "id": 71,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "absorb",
+    "esp": "Absorber",
+    "pw": 20,
+    "type": 6
+  },
+  {
+    "id": 72,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "mega-drain",
+    "esp": "Megaagotar",
+    "pw": 40,
+    "type": 6
+  },
+  {
+    "id": 75,
+    "acc": 95.0,
+    "dc": 0,
+    "name": "razor-leaf",
+    "esp": "Hoja Afilada",
+    "pw": 55,
+    "type": 6
+  },
+  {
+    "id": 76,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "solar-beam",
+    "esp": "Rayo Solar",
+    "pw": 120,
+    "type": 6
+  },
+  {
+    "id": 80,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "petal-dance",
+    "esp": "Danza Pétalo",
+    "pw": 120,
+    "type": 6
+  },
+  {
+    "id": 83,
+    "acc": 85.0,
+    "dc": 1,
+    "name": "fire-spin",
+    "esp": "Giro Fuego",
+    "pw": 35,
+    "type": 2
+  },
+  {
+    "id": 84,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "thunder-shock",
+    "esp": "Impactrueno",
+    "pw": 40,
+    "type": 4
+  },
+  {
+    "id": 85,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "thunderbolt",
+    "esp": "Rayo",
+    "pw": 90,
+    "type": 4
+  },
+  {
+    "id": 87,
+    "acc": 70.0,
+    "dc": 1,
+    "name": "thunder",
+    "esp": "Trueno",
+    "pw": 110,
+    "type": 4
+  },
+  {
+    "id": 88,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "rock-throw",
+    "esp": "Lanzarrocas",
+    "pw": 50,
+    "type": 13
+  },
+  {
+    "id": 89,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "earthquake",
+    "esp": "Terremoto",
+    "pw": 100,
+    "type": 14
+  },
+  {
+    "id": 91,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "dig",
+    "esp": "Excavar",
+    "pw": 80,
+    "type": 14
+  },
+  {
+    "id": 93,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "confusion",
+    "esp": "Confusión",
+    "pw": 50,
+    "type": 11
+  },
+  {
+    "id": 94,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "psychic",
+    "esp": "Psíquico",
+    "pw": 90,
+    "type": 11
+  },
+  {
+    "id": 98,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "quick-attack",
+    "esp": "Ataque Rápido",
+    "pw": 40,
+    "type": 0
+  },
+  {
+    "id": 99,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "rage",
+    "esp": "Furia",
+    "pw": 20,
+    "type": 0
+  },
+  {
+    "id": 120,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "self-destruct",
+    "esp": "Autodestrucción",
+    "pw": 200,
+    "type": 0
+  },
+  {
+    "id": 121,
+    "acc": 75.0,
+    "dc": 0,
+    "name": "egg-bomb",
+    "esp": "Bomba Huevo",
+    "pw": 100,
+    "type": 0
+  },
+  {
+    "id": 122,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "lick",
+    "esp": "Lengüetazo",
+    "pw": 30,
+    "type": 15
+  },
+  {
+    "id": 123,
+    "acc": 70.0,
+    "dc": 1,
+    "name": "smog",
+    "esp": "Polución",
+    "pw": 30,
+    "type": 7
+  },
+  {
+    "id": 124,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "sludge",
+    "esp": "Residuos",
+    "pw": 65,
+    "type": 7
+  },
+  {
+    "id": 125,
+    "acc": 85.0,
+    "dc": 0,
+    "name": "bone-club",
+    "esp": "Hueso Palo",
+    "pw": 65,
+    "type": 14
+  },
+  {
+    "id": 126,
+    "acc": 85.0,
+    "dc": 1,
+    "name": "fire-blast",
+    "esp": "Llamarada",
+    "pw": 110,
+    "type": 2
+  },
+  {
+    "id": 127,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "waterfall",
+    "esp": "Cascada",
+    "pw": 80,
+    "type": 10
+  },
+  {
+    "id": 128,
+    "acc": 85.0,
+    "dc": 0,
+    "name": "clamp",
+    "esp": "Tenaza",
+    "pw": 35,
+    "type": 10
+  },
+  {
+    "id": 130,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "skull-bash",
+    "esp": "Cabezazo",
+    "pw": 130,
+    "type": 0
+  },
+  {
+    "id": 131,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "spike-cannon",
+    "esp": "Clavo Cañón",
+    "pw": 20,
+    "type": 0
+  },
+  {
+    "id": 132,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "constrict",
+    "esp": "Restricción",
+    "pw": 10,
+    "type": 0
+  },
+  {
+    "id": 136,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "high-jump-kick",
+    "esp": "Pat. Salto Alta",
+    "pw": 130,
+    "type": 1
+  },
+  {
+    "id": 138,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "dream-eater",
+    "esp": "Come Sueños",
+    "pw": 100,
+    "type": 11
+  },
+  {
+    "id": 140,
+    "acc": 85.0,
+    "dc": 0,
+    "name": "barrage",
+    "esp": "Presa",
+    "pw": 15,
+    "type": 0
+  },
+  {
+    "id": 141,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "leech-life",
+    "esp": "Chupavidas",
+    "pw": 80,
+    "type": 8
+  },
+  {
+    "id": 143,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "sky-attack",
+    "esp": "Ataque Aéreo",
+    "pw": 140,
+    "type": 5
+  },
+  {
+    "id": 145,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "bubble",
+    "esp": "Burbuja",
+    "pw": 40,
+    "type": 10
+  },
+  {
+    "id": 146,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "dizzy-punch",
+    "esp": "Puño Mareo",
+    "pw": 70,
+    "type": 0
+  },
+  {
+    "id": 152,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "crabhammer",
+    "esp": "Martillazo",
+    "pw": 100,
+    "type": 10
+  },
+  {
+    "id": 153,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "explosion",
+    "esp": "Explosión",
+    "pw": 250,
+    "type": 0
+  },
+  {
+    "id": 154,
+    "acc": 80.0,
+    "dc": 0,
+    "name": "fury-swipes",
+    "esp": "Golpes Furia",
+    "pw": 18,
+    "type": 0
+  },
+  {
+    "id": 155,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "bonemerang",
+    "esp": "Huesomerang",
+    "pw": 50,
+    "type": 14
+  },
+  {
+    "id": 157,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "rock-slide",
+    "esp": "Avalancha",
+    "pw": 75,
+    "type": 13
+  },
+  {
+    "id": 158,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "hyper-fang",
+    "esp": "Hipercolmillo",
+    "pw": 80,
+    "type": 0
+  },
+  {
+    "id": 161,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "tri-attack",
+    "esp": "Triataque",
+    "pw": 80,
+    "type": 0
+  },
+  {
+    "id": 163,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "slash",
+    "esp": "Cuchillada",
+    "pw": 70,
+    "type": 0
+  },
+  {
+    "id": 167,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "triple-kick",
+    "esp": "Triple Patada",
+    "pw": 10,
+    "type": 1
+  },
+  {
+    "id": 168,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "thief",
+    "esp": "Ladrón",
+    "pw": 60,
+    "type": 9
+  },
+  {
+    "id": 172,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "flame-wheel",
+    "esp": "Rueda Fuego",
+    "pw": 60,
+    "type": 2
+  },
+  {
+    "id": 173,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "snore",
+    "esp": "Ronquido",
+    "pw": 50,
+    "type": 0
+  },
+  {
+    "id": 177,
+    "acc": 95.0,
+    "dc": 1,
+    "name": "aeroblast",
+    "esp": "Aerochorro",
+    "pw": 100,
+    "type": 5
+  },
+  {
+    "id": 181,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "powder-snow",
+    "esp": "Nieve Polvo",
+    "pw": 40,
+    "type": 3
+  },
+  {
+    "id": 183,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "mach-punch",
+    "esp": "Ultrapuño",
+    "pw": 40,
+    "type": 1
+  },
+  {
+    "id": 188,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "sludge-bomb",
+    "esp": "Bomba Lodo",
+    "pw": 90,
+    "type": 7
+  },
+  {
+    "id": 189,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "mud-slap",
+    "esp": "Bofetón Lodo",
+    "pw": 20,
+    "type": 14
+  },
+  {
+    "id": 190,
+    "acc": 85.0,
+    "dc": 1,
+    "name": "octazooka",
+    "esp": "Pulpocañón",
+    "pw": 65,
+    "type": 10
+  },
+  {
+    "id": 192,
+    "acc": 50.0,
+    "dc": 1,
+    "name": "zap-cannon",
+    "esp": "Electrocañón",
+    "pw": 120,
+    "type": 4
+  },
+  {
+    "id": 196,
+    "acc": 95.0,
+    "dc": 1,
+    "name": "icy-wind",
+    "esp": "Viento Hielo",
+    "pw": 55,
+    "type": 3
+  },
+  {
+    "id": 198,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "bone-rush",
+    "esp": "Ataque Óseo",
+    "pw": 25,
+    "type": 14
+  },
+  {
+    "id": 200,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "outrage",
+    "esp": "Enfado",
+    "pw": 120,
+    "type": 12
+  },
+  {
+    "id": 202,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "giga-drain",
+    "esp": "Gigadrenado",
+    "pw": 75,
+    "type": 6
+  },
+  {
+    "id": 205,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "rollout",
+    "esp": "Desenrollar",
+    "pw": 30,
+    "type": 13
+  },
+  {
+    "id": 206,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "false-swipe",
+    "esp": "Falsotortazo",
+    "pw": 40,
+    "type": 0
+  },
+  {
+    "id": 209,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "spark",
+    "esp": "Chispa",
+    "pw": 65,
+    "type": 4
+  },
+  {
+    "id": 210,
+    "acc": 95.0,
+    "dc": 0,
+    "name": "fury-cutter",
+    "esp": "Corte Furia",
+    "pw": 40,
+    "type": 8
+  },
+  {
+    "id": 211,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "steel-wing",
+    "esp": "Ala de Acero",
+    "pw": 70,
+    "type": 16
+  },
+  {
+    "id": 221,
+    "acc": 95.0,
+    "dc": 0,
+    "name": "sacred-fire",
+    "esp": "Fuego Sagrado",
+    "pw": 100,
+    "type": 2
+  },
+  {
+    "id": 223,
+    "acc": 50.0,
+    "dc": 0,
+    "name": "dynamic-punch",
+    "esp": "Puño Dinámico",
+    "pw": 100,
+    "type": 1
+  },
+  {
+    "id": 224,
+    "acc": 85.0,
+    "dc": 0,
+    "name": "megahorn",
+    "esp": "Megacuerno",
+    "pw": 120,
+    "type": 8
+  },
+  {
+    "id": 225,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "dragon-breath",
+    "esp": "Dragoaliento",
+    "pw": 60,
+    "type": 12
+  },
+  {
+    "id": 228,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "pursuit",
+    "esp": "Persecución",
+    "pw": 40,
+    "type": 9
+  },
+  {
+    "id": 229,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "rapid-spin",
+    "esp": "Giro Rápido",
+    "pw": 20,
+    "type": 0
+  },
+  {
+    "id": 231,
+    "acc": 75.0,
+    "dc": 0,
+    "name": "iron-tail",
+    "esp": "Cola Férrea",
+    "pw": 100,
+    "type": 16
+  },
+  {
+    "id": 232,
+    "acc": 95.0,
+    "dc": 0,
+    "name": "metal-claw",
+    "esp": "Garra Metal",
+    "pw": 50,
+    "type": 16
+  },
+  {
+    "id": 237,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "hidden-power",
+    "esp": "Poder Oculto",
+    "pw": 60,
+    "type": 0
+  },
+  {
+    "id": 238,
+    "acc": 80.0,
+    "dc": 0,
+    "name": "cross-chop",
+    "esp": "Tajo Cruzado",
+    "pw": 100,
+    "type": 1
+  },
+  {
+    "id": 239,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "twister",
+    "esp": "Ciclón",
+    "pw": 40,
+    "type": 12
+  },
+  {
+    "id": 242,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "crunch",
+    "esp": "Triturar",
+    "pw": 80,
+    "type": 9
+  },
+  {
+    "id": 245,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "extreme-speed",
+    "esp": "Veloc. Extrema",
+    "pw": 80,
+    "type": 0
+  },
+  {
+    "id": 246,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "ancient-power",
+    "esp": "Poder Pasado",
+    "pw": 60,
+    "type": 13
+  },
+  {
+    "id": 247,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "shadow-ball",
+    "esp": "Bola Sombra",
+    "pw": 80,
+    "type": 15
+  },
+  {
+    "id": 248,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "future-sight",
+    "esp": "Premonición",
+    "pw": 120,
+    "type": 11
+  },
+  {
+    "id": 249,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "rock-smash",
+    "esp": "Golpe Roca",
+    "pw": 40,
+    "type": 1
+  },
+  {
+    "id": 250,
+    "acc": 85.0,
+    "dc": 1,
+    "name": "whirlpool",
+    "esp": "Torbellino",
+    "pw": 35,
+    "type": 10
+  },
+  {
+    "id": 252,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "fake-out",
+    "esp": "Sorpresa",
+    "pw": 40,
+    "type": 0
+  },
+  {
+    "id": 253,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "uproar",
+    "esp": "Alboroto",
+    "pw": 90,
+    "type": 0
+  },
+  {
+    "id": 257,
+    "acc": 90.0,
+    "dc": 1,
+    "name": "heat-wave",
+    "esp": "Onda Ígnea",
+    "pw": 95,
+    "type": 2
+  },
+  {
+    "id": 263,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "facade",
+    "esp": "Imagen",
+    "pw": 70,
+    "type": 0
+  },
+  {
+    "id": 264,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "focus-punch",
+    "esp": "Puño Certero",
+    "pw": 150,
+    "type": 1
+  },
+  {
+    "id": 265,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "smelling-salts",
+    "esp": "Estímulo",
+    "pw": 70,
+    "type": 0
+  },
+  {
+    "id": 276,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "superpower",
+    "esp": "Fuerza Bruta",
+    "pw": 120,
+    "type": 1
+  },
+  {
+    "id": 279,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "revenge",
+    "esp": "Desquite",
+    "pw": 60,
+    "type": 1
+  },
+  {
+    "id": 280,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "brick-break",
+    "esp": "Demolición",
+    "pw": 75,
+    "type": 1
+  },
+  {
+    "id": 282,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "knock-off",
+    "esp": "Desarme",
+    "pw": 65,
+    "type": 9
+  },
+  {
+    "id": 284,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "eruption",
+    "esp": "Estallido",
+    "pw": 150,
+    "type": 2
+  },
+  {
+    "id": 290,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "secret-power",
+    "esp": "Daño Secreto",
+    "pw": 70,
+    "type": 0
+  },
+  {
+    "id": 291,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "dive",
+    "esp": "Buceo",
+    "pw": 80,
+    "type": 10
+  },
+  {
+    "id": 292,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "arm-thrust",
+    "esp": "Empujón",
+    "pw": 15,
+    "type": 1
+  },
+  {
+    "id": 295,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "luster-purge",
+    "esp": "Resplandor",
+    "pw": 70,
+    "type": 11
+  },
+  {
+    "id": 296,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "mist-ball",
+    "esp": "Bola Neblina",
+    "pw": 70,
+    "type": 11
+  },
+  {
+    "id": 299,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "blaze-kick",
+    "esp": "Patada Ígnea",
+    "pw": 85,
+    "type": 2
+  },
+  {
+    "id": 301,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "ice-ball",
+    "esp": "Bola Hielo",
+    "pw": 30,
+    "type": 3
+  },
+  {
+    "id": 302,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "needle-arm",
+    "esp": "Brazo Pincho",
+    "pw": 60,
+    "type": 6
+  },
+  {
+    "id": 304,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "hyper-voice",
+    "esp": "Vozarrón",
+    "pw": 90,
+    "type": 0
+  },
+  {
+    "id": 305,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "poison-fang",
+    "esp": "Colmillo Ven",
+    "pw": 50,
+    "type": 7
+  },
+  {
+    "id": 306,
+    "acc": 95.0,
+    "dc": 0,
+    "name": "crush-claw",
+    "esp": "Garra Brutal",
+    "pw": 75,
+    "type": 0
+  },
+  {
+    "id": 307,
+    "acc": 90.0,
+    "dc": 1,
+    "name": "blast-burn",
+    "esp": "Anillo Ígneo",
+    "pw": 150,
+    "type": 2
+  },
+  {
+    "id": 308,
+    "acc": 90.0,
+    "dc": 1,
+    "name": "hydro-cannon",
+    "esp": "Hidrocañón",
+    "pw": 150,
+    "type": 10
+  },
+  {
+    "id": 309,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "meteor-mash",
+    "esp": "Puño Meteoro",
+    "pw": 90,
+    "type": 16
+  },
+  {
+    "id": 310,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "astonish",
+    "esp": "Impresionar",
+    "pw": 30,
+    "type": 15
+  },
+  {
+    "id": 311,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "weather-ball",
+    "esp": "Meteorobola",
+    "pw": 50,
+    "type": 0
+  },
+  {
+    "id": 314,
+    "acc": 95.0,
+    "dc": 1,
+    "name": "air-cutter",
+    "esp": "Aire Afilado",
+    "pw": 60,
+    "type": 5
+  },
+  {
+    "id": 315,
+    "acc": 90.0,
+    "dc": 1,
+    "name": "overheat",
+    "esp": "Sofoco",
+    "pw": 130,
+    "type": 2
+  },
+  {
+    "id": 317,
+    "acc": 95.0,
+    "dc": 0,
+    "name": "rock-tomb",
+    "esp": "Tumba Rocas",
+    "pw": 60,
+    "type": 13
+  },
+  {
+    "id": 318,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "silver-wind",
+    "esp": "Viento Plata",
+    "pw": 60,
+    "type": 8
+  },
+  {
+    "id": 323,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "water-spout",
+    "esp": "Salpicar",
+    "pw": 150,
+    "type": 10
+  },
+  {
+    "id": 324,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "signal-beam",
+    "esp": "Doble Rayo",
+    "pw": 75,
+    "type": 8
+  },
+  {
+    "id": 326,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "extrasensory",
+    "esp": "Paranormal",
+    "pw": 80,
+    "type": 11
+  },
+  {
+    "id": 327,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "sky-uppercut",
+    "esp": "Gancho Alto",
+    "pw": 85,
+    "type": 1
+  },
+  {
+    "id": 328,
+    "acc": 85.0,
+    "dc": 0,
+    "name": "sand-tomb",
+    "esp": "Bucle Arena",
+    "pw": 35,
+    "type": 14
+  },
+  {
+    "id": 330,
+    "acc": 85.0,
+    "dc": 1,
+    "name": "muddy-water",
+    "esp": "Agua Lodosa",
+    "pw": 90,
+    "type": 10
+  },
+  {
+    "id": 331,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "bullet-seed",
+    "esp": "Recurrente",
+    "pw": 25,
+    "type": 6
+  },
+  {
+    "id": 333,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "icicle-spear",
+    "esp": "Carámbano",
+    "pw": 25,
+    "type": 3
+  },
+  {
+    "id": 337,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "dragon-claw",
+    "esp": "Garra Dragón",
+    "pw": 80,
+    "type": 12
+  },
+  {
+    "id": 338,
+    "acc": 90.0,
+    "dc": 1,
+    "name": "frenzy-plant",
+    "esp": "Planta Feroz",
+    "pw": 150,
+    "type": 6
+  },
+  {
+    "id": 340,
+    "acc": 85.0,
+    "dc": 0,
+    "name": "bounce",
+    "esp": "Bote",
+    "pw": 85,
+    "type": 5
+  },
+  {
+    "id": 341,
+    "acc": 95.0,
+    "dc": 1,
+    "name": "mud-shot",
+    "esp": "Disparo Lodo",
+    "pw": 55,
+    "type": 14
+  },
+  {
+    "id": 342,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "poison-tail",
+    "esp": "Cola Veneno",
+    "pw": 50,
+    "type": 7
+  },
+  {
+    "id": 343,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "covet",
+    "esp": "Antojo",
+    "pw": 60,
+    "type": 0
+  },
+  {
+    "id": 344,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "volt-tackle",
+    "esp": "Placaje Eléc",
+    "pw": 120,
+    "type": 4
+  },
+  {
+    "id": 348,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "leaf-blade",
+    "esp": "Hoja Aguda",
+    "pw": 90,
+    "type": 6
+  },
+  {
+    "id": 350,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "rock-blast",
+    "esp": "Pedrada",
+    "pw": 25,
+    "type": 13
+  },
+  {
+    "id": 352,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "water-pulse",
+    "esp": "Hidropulso",
+    "pw": 60,
+    "type": 10
+  },
+  {
+    "id": 353,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "doom-desire",
+    "esp": "Deseo Oculto",
+    "pw": 140,
+    "type": 16
+  },
+  {
+    "id": 354,
+    "acc": 90.0,
+    "dc": 1,
+    "name": "psycho-boost",
+    "esp": "Psicoataque",
+    "pw": 140,
+    "type": 11
+  },
+  {
+    "id": 358,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "wake-up-slap",
+    "esp": "Espabila",
+    "pw": 70,
+    "type": 1
+  },
+  {
+    "id": 359,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "hammer-arm",
+    "esp": "Machada",
+    "pw": 100,
+    "type": 1
+  },
+  {
+    "id": 362,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "brine",
+    "esp": "Salmuera",
+    "pw": 65,
+    "type": 10
+  },
+  {
+    "id": 364,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "feint",
+    "esp": "Amago",
+    "pw": 30,
+    "type": 0
+  },
+  {
+    "id": 365,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "pluck",
+    "esp": "Picoteo",
+    "pw": 60,
+    "type": 5
+  },
+  {
+    "id": 369,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "u-turn",
+    "esp": "Ida y Vuelta",
+    "pw": 70,
+    "type": 8
+  },
+  {
+    "id": 370,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "close-combat",
+    "esp": "A Bocajarro",
+    "pw": 120,
+    "type": 1
+  },
+  {
+    "id": 371,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "payback",
+    "esp": "Vendetta",
+    "pw": 50,
+    "type": 9
+  },
+  {
+    "id": 372,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "assurance",
+    "esp": "Buena Baza",
+    "pw": 60,
+    "type": 9
+  },
+  {
+    "id": 387,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "last-resort",
+    "esp": "Última Baza",
+    "pw": 140,
+    "type": 0
+  },
+  {
+    "id": 389,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "sucker-punch",
+    "esp": "Golpe Bajo",
+    "pw": 70,
+    "type": 9
+  },
+  {
+    "id": 394,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "flare-blitz",
+    "esp": "Envite Ígneo",
+    "pw": 120,
+    "type": 2
+  },
+  {
+    "id": 395,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "force-palm",
+    "esp": "Palmeo",
+    "pw": 60,
+    "type": 1
+  },
+  {
+    "id": 398,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "poison-jab",
+    "esp": "Puya Nociva",
+    "pw": 80,
+    "type": 7
+  },
+  {
+    "id": 399,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "dark-pulse",
+    "esp": "Pulso Umbrío",
+    "pw": 80,
+    "type": 9
+  },
+  {
+    "id": 400,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "night-slash",
+    "esp": "Tajo Umbrío",
+    "pw": 70,
+    "type": 9
+  },
+  {
+    "id": 401,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "aqua-tail",
+    "esp": "Acua Cola",
+    "pw": 90,
+    "type": 10
+  },
+  {
+    "id": 402,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "seed-bomb",
+    "esp": "Bomba Germen",
+    "pw": 80,
+    "type": 6
+  },
+  {
+    "id": 403,
+    "acc": 95.0,
+    "dc": 1,
+    "name": "air-slash",
+    "esp": "Tajo Aéreo",
+    "pw": 75,
+    "type": 5
+  },
+  {
+    "id": 404,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "x-scissor",
+    "esp": "Tijera X",
+    "pw": 80,
+    "type": 8
+  },
+  {
+    "id": 405,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "bug-buzz",
+    "esp": "Zumbido",
+    "pw": 90,
+    "type": 8
+  },
+  {
+    "id": 406,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "dragon-pulse",
+    "esp": "Pulso Dragón",
+    "pw": 85,
+    "type": 12
+  },
+  {
+    "id": 407,
+    "acc": 75.0,
+    "dc": 0,
+    "name": "dragon-rush",
+    "esp": "Carga Dragón",
+    "pw": 100,
+    "type": 12
+  },
+  {
+    "id": 408,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "power-gem",
+    "esp": "Joya de Luz",
+    "pw": 80,
+    "type": 13
+  },
+  {
+    "id": 409,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "drain-punch",
+    "esp": "Puño Drenaje",
+    "pw": 75,
+    "type": 1
+  },
+  {
+    "id": 410,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "vacuum-wave",
+    "esp": "Onda Vacío",
+    "pw": 40,
+    "type": 1
+  },
+  {
+    "id": 411,
+    "acc": 70.0,
+    "dc": 1,
+    "name": "focus-blast",
+    "esp": "Onda Certera",
+    "pw": 120,
+    "type": 1
+  },
+  {
+    "id": 412,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "energy-ball",
+    "esp": "Energibola",
+    "pw": 90,
+    "type": 6
+  },
+  {
+    "id": 413,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "brave-bird",
+    "esp": "Pájaro Osado",
+    "pw": 120,
+    "type": 5
+  },
+  {
+    "id": 414,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "earth-power",
+    "esp": "Tierra Viva",
+    "pw": 90,
+    "type": 14
+  },
+  {
+    "id": 416,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "giga-impact",
+    "esp": "Giga Impacto",
+    "pw": 150,
+    "type": 0
+  },
+  {
+    "id": 418,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "bullet-punch",
+    "esp": "Puño Bala",
+    "pw": 40,
+    "type": 16
+  },
+  {
+    "id": 419,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "avalanche",
+    "esp": "Alud",
+    "pw": 60,
+    "type": 3
+  },
+  {
+    "id": 420,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "ice-shard",
+    "esp": "Canto Helado",
+    "pw": 40,
+    "type": 3
+  },
+  {
+    "id": 421,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "shadow-claw",
+    "esp": "Garra Umbría",
+    "pw": 70,
+    "type": 15
+  },
+  {
+    "id": 422,
+    "acc": 95.0,
+    "dc": 0,
+    "name": "thunder-fang",
+    "esp": "Colmillo Rayo",
+    "pw": 65,
+    "type": 4
+  },
+  {
+    "id": 423,
+    "acc": 95.0,
+    "dc": 0,
+    "name": "ice-fang",
+    "esp": "Colmillo Hielo",
+    "pw": 65,
+    "type": 3
+  },
+  {
+    "id": 424,
+    "acc": 95.0,
+    "dc": 0,
+    "name": "fire-fang",
+    "esp": "Colmillo Ígneo",
+    "pw": 65,
+    "type": 2
+  },
+  {
+    "id": 425,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "shadow-sneak",
+    "esp": "Sombra Vil",
+    "pw": 40,
+    "type": 15
+  },
+  {
+    "id": 426,
+    "acc": 85.0,
+    "dc": 1,
+    "name": "mud-bomb",
+    "esp": "Bomba Fango",
+    "pw": 65,
+    "type": 14
+  },
+  {
+    "id": 427,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "psycho-cut",
+    "esp": "Psicocorte",
+    "pw": 70,
+    "type": 11
+  },
+  {
+    "id": 428,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "zen-headbutt",
+    "esp": "Cabezazo Zen",
+    "pw": 80,
+    "type": 11
+  },
+  {
+    "id": 429,
+    "acc": 85.0,
+    "dc": 1,
+    "name": "mirror-shot",
+    "esp": "Disparo Espejo",
+    "pw": 65,
+    "type": 16
+  },
+  {
+    "id": 430,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "flash-cannon",
+    "esp": "Foco Resplandor",
+    "pw": 80,
+    "type": 16
+  },
+  {
+    "id": 431,
+    "acc": 85.0,
+    "dc": 0,
+    "name": "rock-climb",
+    "esp": "Treparrocas",
+    "pw": 90,
+    "type": 0
+  },
+  {
+    "id": 434,
+    "acc": 90.0,
+    "dc": 1,
+    "name": "draco-meteor",
+    "esp": "Cometa Draco",
+    "pw": 130,
+    "type": 12
+  },
+  {
+    "id": 435,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "discharge",
+    "esp": "Chispazo",
+    "pw": 80,
+    "type": 4
+  },
+  {
+    "id": 436,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "lava-plume",
+    "esp": "Humareda",
+    "pw": 80,
+    "type": 2
+  },
+  {
+    "id": 437,
+    "acc": 90.0,
+    "dc": 1,
+    "name": "leaf-storm",
+    "esp": "Lluevehojas",
+    "pw": 130,
+    "type": 6
+  },
+  {
+    "id": 438,
+    "acc": 85.0,
+    "dc": 0,
+    "name": "power-whip",
+    "esp": "Latigazo",
+    "pw": 120,
+    "type": 6
+  },
+  {
+    "id": 439,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "rock-wrecker",
+    "esp": "Romperrocas",
+    "pw": 150,
+    "type": 13
+  },
+  {
+    "id": 440,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "cross-poison",
+    "esp": "Veneno X",
+    "pw": 70,
+    "type": 7
+  },
+  {
+    "id": 441,
+    "acc": 80.0,
+    "dc": 0,
+    "name": "gunk-shot",
+    "esp": "Lanza Mugre",
+    "pw": 120,
+    "type": 7
+  },
+  {
+    "id": 442,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "iron-head",
+    "esp": "Cabeza de Hierro",
+    "pw": 80,
+    "type": 16
+  },
+  {
+    "id": 444,
+    "acc": 80.0,
+    "dc": 0,
+    "name": "stone-edge",
+    "esp": "Roca Afilada",
+    "pw": 100,
+    "type": 13
+  },
+  {
+    "id": 448,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "chatter",
+    "esp": "Cháchara",
+    "pw": 65,
+    "type": 5
+  },
+  {
+    "id": 449,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "judgment",
+    "esp": "Sentencia",
+    "pw": 100,
+    "type": 0
+  },
+  {
+    "id": 450,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "bug-bite",
+    "esp": "Picadura",
+    "pw": 60,
+    "type": 8
+  },
+  {
+    "id": 451,
+    "acc": 90.0,
+    "dc": 1,
+    "name": "charge-beam",
+    "esp": "Rayo Carga",
+    "pw": 50,
+    "type": 4
+  },
+  {
+    "id": 452,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "wood-hammer",
+    "esp": "Mazazo",
+    "pw": 120,
+    "type": 6
+  },
+  {
+    "id": 453,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "aqua-jet",
+    "esp": "Acua Jet",
+    "pw": 40,
+    "type": 10
+  },
+  {
+    "id": 454,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "attack-order",
+    "esp": "Al Ataque",
+    "pw": 90,
+    "type": 8
+  },
+  {
+    "id": 457,
+    "acc": 80.0,
+    "dc": 0,
+    "name": "head-smash",
+    "esp": "Testarazo",
+    "pw": 150,
+    "type": 13
+  },
+  {
+    "id": 458,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "double-hit",
+    "esp": "Doble Golpe",
+    "pw": 35,
+    "type": 0
+  },
+  {
+    "id": 459,
+    "acc": 90.0,
+    "dc": 1,
+    "name": "roar-of-time",
+    "esp": "Distorsión",
+    "pw": 150,
+    "type": 12
+  },
+  {
+    "id": 460,
+    "acc": 95.0,
+    "dc": 1,
+    "name": "spacial-rend",
+    "esp": "Corte Vacío",
+    "pw": 100,
+    "type": 12
+  },
+  {
+    "id": 463,
+    "acc": 75.0,
+    "dc": 1,
+    "name": "magma-storm",
+    "esp": "Lluvia Ígnea",
+    "pw": 100,
+    "type": 2
+  },
+  {
+    "id": 465,
+    "acc": 85.0,
+    "dc": 1,
+    "name": "seed-flare",
+    "esp": "Fogonazo",
+    "pw": 120,
+    "type": 6
+  },
+  {
+    "id": 466,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "ominous-wind",
+    "esp": "Viento Aciago",
+    "pw": 60,
+    "type": 15
+  },
+  {
+    "id": 467,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "shadow-force",
+    "esp": "Golpe Umbrío",
+    "pw": 120,
+    "type": 15
+  },
+  {
+    "id": 473,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "psyshock",
+    "esp": "Psicocarga",
+    "pw": 80,
+    "type": 11
+  },
+  {
+    "id": 474,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "venoshock",
+    "esp": "Carga Tóxica",
+    "pw": 65,
+    "type": 7
+  },
+  {
+    "id": 479,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "smack-down",
+    "esp": "Antiaéreo",
+    "pw": 50,
+    "type": 13
+  },
+  {
+    "id": 480,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "storm-throw",
+    "esp": "Llave Corsé",
+    "pw": 60,
+    "type": 1
+  },
+  {
+    "id": 481,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "flame-burst",
+    "esp": "Pirotecnia",
+    "pw": 70,
+    "type": 2
+  },
+  {
+    "id": 482,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "sludge-wave",
+    "esp": "Onda Tóxica",
+    "pw": 95,
+    "type": 7
+  },
+  {
+    "id": 485,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "synchronoise",
+    "esp": "Sincrorruido",
+    "pw": 120,
+    "type": 11
+  },
+  {
+    "id": 488,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "flame-charge",
+    "esp": "Nitrocarga",
+    "pw": 50,
+    "type": 2
+  },
+  {
+    "id": 490,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "low-sweep",
+    "esp": "Puntapié",
+    "pw": 65,
+    "type": 1
+  },
+  {
+    "id": 491,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "acid-spray",
+    "esp": "Bomba Ácida",
+    "pw": 40,
+    "type": 7
+  },
+  {
+    "id": 492,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "foul-play",
+    "esp": "Juego Sucio",
+    "pw": 95,
+    "type": 9
+  },
+  {
+    "id": 496,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "round",
+    "esp": "Canon",
+    "pw": 60,
+    "type": 0
+  },
+  {
+    "id": 497,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "echoed-voice",
+    "esp": "Eco Voz",
+    "pw": 40,
+    "type": 0
+  },
+  {
+    "id": 498,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "chip-away",
+    "esp": "Guardia Baja",
+    "pw": 70,
+    "type": 0
+  },
+  {
+    "id": 500,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "stored-power",
+    "esp": "Poder Reserva",
+    "pw": 20,
+    "type": 11
+  },
+  {
+    "id": 503,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "scald",
+    "esp": "Escaldar",
+    "pw": 80,
+    "type": 10
+  },
+  {
+    "id": 506,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "hex",
+    "esp": "Infortunio",
+    "pw": 65,
+    "type": 15
+  },
+  {
+    "id": 507,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "sky-drop",
+    "esp": "Caída Libre",
+    "pw": 60,
+    "type": 5
+  },
+  {
+    "id": 509,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "circle-throw",
+    "esp": "Llave Giro",
+    "pw": 60,
+    "type": 1
+  },
+  {
+    "id": 510,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "incinerate",
+    "esp": "Calcinación",
+    "pw": 60,
+    "type": 2
+  },
+  {
+    "id": 512,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "acrobatics",
+    "esp": "Acróbata",
+    "pw": 55,
+    "type": 5
+  },
+  {
+    "id": 514,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "retaliate",
+    "esp": "Represalia",
+    "pw": 70,
+    "type": 0
+  },
+  {
+    "id": 517,
+    "acc": 50.0,
+    "dc": 1,
+    "name": "inferno",
+    "esp": "Infierno",
+    "pw": 100,
+    "type": 2
+  },
+  {
+    "id": 518,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "water-pledge",
+    "esp": "Voto Agua",
+    "pw": 80,
+    "type": 10
+  },
+  {
+    "id": 519,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "fire-pledge",
+    "esp": "Voto Fuego",
+    "pw": 80,
+    "type": 2
+  },
+  {
+    "id": 520,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "grass-pledge",
+    "esp": "Voto Planta",
+    "pw": 80,
+    "type": 6
+  },
+  {
+    "id": 521,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "volt-switch",
+    "esp": "Voltiocambio",
+    "pw": 70,
+    "type": 4
+  },
+  {
+    "id": 522,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "struggle-bug",
+    "esp": "Estoicismo",
+    "pw": 50,
+    "type": 8
+  },
+  {
+    "id": 523,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "bulldoze",
+    "esp": "Terratemblor",
+    "pw": 60,
+    "type": 14
+  },
+  {
+    "id": 524,
+    "acc": 90.0,
+    "dc": 1,
+    "name": "frost-breath",
+    "esp": "Vaho Gélido",
+    "pw": 60,
+    "type": 3
+  },
+  {
+    "id": 525,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "dragon-tail",
+    "esp": "Cola Dragón",
+    "pw": 60,
+    "type": 12
+  },
+  {
+    "id": 527,
+    "acc": 95.0,
+    "dc": 1,
+    "name": "electroweb",
+    "esp": "Electrotela",
+    "pw": 55,
+    "type": 4
+  },
+  {
+    "id": 528,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "wild-charge",
+    "esp": "Voltio Cruel",
+    "pw": 90,
+    "type": 4
+  },
+  {
+    "id": 529,
+    "acc": 95.0,
+    "dc": 0,
+    "name": "drill-run",
+    "esp": "Taladradora",
+    "pw": 80,
+    "type": 14
+  },
+  {
+    "id": 530,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "dual-chop",
+    "esp": "Golpe Bis",
+    "pw": 40,
+    "type": 12
+  },
+  {
+    "id": 531,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "heart-stamp",
+    "esp": "Arrumaco",
+    "pw": 60,
+    "type": 11
+  },
+  {
+    "id": 532,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "horn-leech",
+    "esp": "Asta Drenaje",
+    "pw": 75,
+    "type": 6
+  },
+  {
+    "id": 533,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "sacred-sword",
+    "esp": "Espada Santa",
+    "pw": 90,
+    "type": 1
+  },
+  {
+    "id": 534,
+    "acc": 95.0,
+    "dc": 0,
+    "name": "razor-shell",
+    "esp": "Concha Filo",
+    "pw": 75,
+    "type": 10
+  },
+  {
+    "id": 536,
+    "acc": 90.0,
+    "dc": 1,
+    "name": "leaf-tornado",
+    "esp": "Ciclón de Hojas",
+    "pw": 65,
+    "type": 6
+  },
+  {
+    "id": 537,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "steamroller",
+    "esp": "Rodillo de Púas",
+    "pw": 65,
+    "type": 8
+  },
+  {
+    "id": 539,
+    "acc": 95.0,
+    "dc": 1,
+    "name": "night-daze",
+    "esp": "Pulso Noche",
+    "pw": 85,
+    "type": 9
+  },
+  {
+    "id": 540,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "psystrike",
+    "esp": "Onda Mental",
+    "pw": 100,
+    "type": 11
+  },
+  {
+    "id": 541,
+    "acc": 85.0,
+    "dc": 0,
+    "name": "tail-slap",
+    "esp": "Plumerazo",
+    "pw": 25,
+    "type": 0
+  },
+  {
+    "id": 542,
+    "acc": 70.0,
+    "dc": 1,
+    "name": "hurricane",
+    "esp": "Vendaval",
+    "pw": 110,
+    "type": 5
+  },
+  {
+    "id": 543,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "head-charge",
+    "esp": "Ariete",
+    "pw": 120,
+    "type": 0
+  },
+  {
+    "id": 544,
+    "acc": 85.0,
+    "dc": 0,
+    "name": "gear-grind",
+    "esp": "Rueda Doble",
+    "pw": 50,
+    "type": 16
+  },
+  {
+    "id": 545,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "searing-shot",
+    "esp": "Bomba Ígnea",
+    "pw": 100,
+    "type": 2
+  },
+  {
+    "id": 546,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "techno-blast",
+    "esp": "Tecno Shock",
+    "pw": 120,
+    "type": 0
+  },
+  {
+    "id": 547,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "relic-song",
+    "esp": "Canto Arcaico",
+    "pw": 75,
+    "type": 0
+  },
+  {
+    "id": 548,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "secret-sword",
+    "esp": "Sable Místico",
+    "pw": 85,
+    "type": 1
+  },
+  {
+    "id": 549,
+    "acc": 95.0,
+    "dc": 1,
+    "name": "glaciate",
+    "esp": "Mundo Gélido",
+    "pw": 65,
+    "type": 3
+  },
+  {
+    "id": 550,
+    "acc": 85.0,
+    "dc": 0,
+    "name": "bolt-strike",
+    "esp": "Ataque Fulgor",
+    "pw": 130,
+    "type": 4
+  },
+  {
+    "id": 551,
+    "acc": 85.0,
+    "dc": 1,
+    "name": "blue-flare",
+    "esp": "Llama Azul",
+    "pw": 130,
+    "type": 2
+  },
+  {
+    "id": 552,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "fiery-dance",
+    "esp": "Danza Llama",
+    "pw": 80,
+    "type": 2
+  },
+  {
+    "id": 553,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "freeze-shock",
+    "esp": "Rayo Gélido",
+    "pw": 140,
+    "type": 3
+  },
+  {
+    "id": 554,
+    "acc": 90.0,
+    "dc": 1,
+    "name": "ice-burn",
+    "esp": "Llama Gélida",
+    "pw": 140,
+    "type": 3
+  },
+  {
+    "id": 555,
+    "acc": 95.0,
+    "dc": 1,
+    "name": "snarl",
+    "esp": "Alarido",
+    "pw": 55,
+    "type": 9
+  },
+  {
+    "id": 556,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "icicle-crash",
+    "esp": "Chuzos",
+    "pw": 85,
+    "type": 3
+  },
+  {
+    "id": 557,
+    "acc": 95.0,
+    "dc": 0,
+    "name": "v-create",
+    "esp": "V de Fuego",
+    "pw": 180,
+    "type": 2
+  },
+  {
+    "id": 558,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "fusion-flare",
+    "esp": "Llama Fusión",
+    "pw": 100,
+    "type": 2
+  },
+  {
+    "id": 559,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "fusion-bolt",
+    "esp": "Rayo Fusión",
+    "pw": 100,
+    "type": 4
+  },
+  {
+    "id": 560,
+    "acc": 95.0,
+    "dc": 0,
+    "name": "flying-press",
+    "esp": "Plancha Voladora",
+    "pw": 100,
+    "type": 1
+  },
+  {
+    "id": 562,
+    "acc": 90.0,
+    "dc": 1,
+    "name": "belch",
+    "esp": "Eructo",
+    "pw": 120,
+    "type": 7
+  },
+  {
+    "id": 565,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "fell-stinger",
+    "esp": "Aguijón Letal",
+    "pw": 50,
+    "type": 8
+  },
+  {
+    "id": 566,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "phantom-force",
+    "esp": "Golpe Fantasma",
+    "pw": 90,
+    "type": 15
+  },
+  {
+    "id": 570,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "parabolic-charge",
+    "esp": "Carga Parábola",
+    "pw": 65,
+    "type": 4
+  },
+  {
+    "id": 572,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "petal-blizzard",
+    "esp": "Tormenta Floral",
+    "pw": 90,
+    "type": 6
+  },
+  {
+    "id": 573,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "freeze-dry",
+    "esp": "Liofilización",
+    "pw": 70,
+    "type": 3
+  },
+  {
+    "id": 577,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "draining-kiss",
+    "esp": "Beso Drenaje",
+    "pw": 50,
+    "type": 17
+  },
+  {
+    "id": 583,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "play-rough",
+    "esp": "Carantoña",
+    "pw": 90,
+    "type": 17
+  },
+  {
+    "id": 584,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "fairy-wind",
+    "esp": "Viento Feérico",
+    "pw": 40,
+    "type": 17
+  },
+  {
+    "id": 585,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "moonblast",
+    "esp": "Fuerza Lunar",
+    "pw": 95,
+    "type": 17
+  },
+  {
+    "id": 586,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "boomburst",
+    "esp": "Estruendo",
+    "pw": 140,
+    "type": 0
+  },
+  {
+    "id": 591,
+    "acc": 95.0,
+    "dc": 0,
+    "name": "diamond-storm",
+    "esp": "Torm. Diamantes",
+    "pw": 100,
+    "type": 13
+  },
+  {
+    "id": 592,
+    "acc": 95.0,
+    "dc": 1,
+    "name": "steam-eruption",
+    "esp": "Chorro de Vapor",
+    "pw": 110,
+    "type": 10
+  },
+  {
+    "id": 594,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "water-shuriken",
+    "esp": "Shuriken de Agua",
+    "pw": 15,
+    "type": 10
+  },
+  {
+    "id": 595,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "mystical-fire",
+    "esp": "Llama Embrujada",
+    "pw": 75,
+    "type": 2
+  },
+  {
+    "id": 605,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "dazzling-gleam",
+    "esp": "Brillo Mágico",
+    "pw": 80,
+    "type": 17
+  },
+  {
+    "id": 609,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "nuzzle",
+    "esp": "Moflete Estático",
+    "pw": 20,
+    "type": 4
+  },
+  {
+    "id": 610,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "hold-back",
+    "esp": "Clemencia",
+    "pw": 40,
+    "type": 0
+  },
+  {
+    "id": 611,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "infestation",
+    "esp": "Acoso",
+    "pw": 20,
+    "type": 8
+  },
+  {
+    "id": 612,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "power-up-punch",
+    "esp": "Puño Incremento",
+    "pw": 40,
+    "type": 1
+  },
+  {
+    "id": 613,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "oblivion-wing",
+    "esp": "Ala Mortífera",
+    "pw": 80,
+    "type": 5
+  },
+  {
+    "id": 614,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "thousand-arrows",
+    "esp": "Mil Flechas",
+    "pw": 90,
+    "type": 14
+  },
+  {
+    "id": 615,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "thousand-waves",
+    "esp": "Mil Temblores",
+    "pw": 90,
+    "type": 14
+  },
+  {
+    "id": 616,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "lands-wrath",
+    "esp": "Fuerza Telúrica",
+    "pw": 90,
+    "type": 14
+  },
+  {
+    "id": 617,
+    "acc": 90.0,
+    "dc": 1,
+    "name": "light-of-ruin",
+    "esp": "Luz Aniquiladora",
+    "pw": 140,
+    "type": 17
+  },
+  {
+    "id": 618,
+    "acc": 85.0,
+    "dc": 1,
+    "name": "origin-pulse",
+    "esp": "Pulso Primigenio",
+    "pw": 110,
+    "type": 10
+  },
+  {
+    "id": 619,
+    "acc": 85.0,
+    "dc": 0,
+    "name": "precipice-blades",
+    "esp": "Filo del Abismo",
+    "pw": 120,
+    "type": 14
+  },
+  {
+    "id": 620,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "dragon-ascent",
+    "esp": "Ascenso Draco",
+    "pw": 120,
+    "type": 5
+  },
+  {
+    "id": 660,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "first-impression",
+    "esp": "Escaramuza",
+    "pw": 90,
+    "type": 8
+  },
+  {
+    "id": 662,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "spirit-shackle",
+    "esp": "Puntada Sombría",
+    "pw": 80,
+    "type": 15
+  },
+  {
+    "id": 663,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "darkest-lariat",
+    "esp": "Lariat Oscuro",
+    "pw": 85,
+    "type": 9
+  },
+  {
+    "id": 664,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "sparkling-aria",
+    "esp": "Aria Burbuja",
+    "pw": 90,
+    "type": 10
+  },
+  {
+    "id": 665,
+    "acc": 90.0,
+    "dc": 0,
+    "name": "ice-hammer",
+    "esp": "Martillo Hielo",
+    "pw": 100,
+    "type": 3
+  },
+  {
+    "id": 667,
+    "acc": 95.0,
+    "dc": 0,
+    "name": "high-horsepower",
+    "esp": "Fuerza Equina",
+    "pw": 95,
+    "type": 14
+  },
+  {
+    "id": 669,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "solar-blade",
+    "esp": "Cuchilla Solar",
+    "pw": 125,
+    "type": 6
+  },
+  {
+    "id": 670,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "leafage",
+    "esp": "Follaje",
+    "pw": 40,
+    "type": 6
+  },
+  {
+    "id": 675,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "throat-chop",
+    "esp": "Golpe Mordaza",
+    "pw": 80,
+    "type": 9
+  },
+  {
+    "id": 676,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "pollen-puff",
+    "esp": "Bola de Polen",
+    "pw": 90,
+    "type": 8
+  },
+  {
+    "id": 677,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "anchor-shot",
+    "esp": "Anclaje",
+    "pw": 80,
+    "type": 16
+  },
+  {
+    "id": 679,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "lunge",
+    "esp": "Plancha",
+    "pw": 80,
+    "type": 8
+  },
+  {
+    "id": 680,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "fire-lash",
+    "esp": "Látigo Ígneo",
+    "pw": 80,
+    "type": 2
+  },
+  {
+    "id": 681,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "power-trip",
+    "esp": "Chulería",
+    "pw": 20,
+    "type": 9
+  },
+  {
+    "id": 682,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "burn-up",
+    "esp": "Llama Final",
+    "pw": 130,
+    "type": 2
+  },
+  {
+    "id": 686,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "revelation-dance",
+    "esp": "Danza Despertar",
+    "pw": 90,
+    "type": 0
+  },
+  {
+    "id": 687,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "core-enforcer",
+    "esp": "Núcleo Castigo",
+    "pw": 100,
+    "type": 12
+  },
+  {
+    "id": 688,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "trop-kick",
+    "esp": "Patada Tropical",
+    "pw": 70,
+    "type": 6
+  },
+  {
+    "id": 690,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "beak-blast",
+    "esp": "Pico Cañón",
+    "pw": 100,
+    "type": 5
+  },
+  {
+    "id": 691,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "clanging-scales",
+    "esp": "Fragor Escamas",
+    "pw": 110,
+    "type": 12
+  },
+  {
+    "id": 692,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "dragon-hammer",
+    "esp": "Martillo Dragón",
+    "pw": 90,
+    "type": 12
+  },
+  {
+    "id": 693,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "brutal-swing",
+    "esp": "Giro Vil",
+    "pw": 60,
+    "type": 9
+  },
+  {
+    "id": 704,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "shell-trap",
+    "esp": "Coraza Trampa",
+    "pw": 150,
+    "type": 2
+  },
+  {
+    "id": 705,
+    "acc": 90.0,
+    "dc": 1,
+    "name": "fleur-cannon",
+    "esp": "Cañón Floral",
+    "pw": 130,
+    "type": 17
+  },
+  {
+    "id": 706,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "psychic-fangs",
+    "esp": "Psicocolmillo",
+    "pw": 85,
+    "type": 11
+  },
+  {
+    "id": 707,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "stomping-tantrum",
+    "esp": "Pataleta",
+    "pw": 75,
+    "type": 14
+  },
+  {
+    "id": 708,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "shadow-bone",
+    "esp": "Hueso Sombrío",
+    "pw": 85,
+    "type": 15
+  },
+  {
+    "id": 709,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "accelerock",
+    "esp": "Roca Veloz",
+    "pw": 40,
+    "type": 13
+  },
+  {
+    "id": 710,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "liquidation",
+    "esp": "Hidroariete",
+    "pw": 85,
+    "type": 10
+  },
+  {
+    "id": 711,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "prismatic-laser",
+    "esp": "Láser Prisma",
+    "pw": 160,
+    "type": 11
+  },
+  {
+    "id": 712,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "spectral-thief",
+    "esp": "Robasombra",
+    "pw": 90,
+    "type": 15
+  },
+  {
+    "id": 713,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "sunsteel-strike",
+    "esp": "Meteoimpacto",
+    "pw": 100,
+    "type": 16
+  },
+  {
+    "id": 714,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "moongeist-beam",
+    "esp": "Rayo Umbrío",
+    "pw": 100,
+    "type": 15
+  },
+  {
+    "id": 716,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "zing-zap",
+    "esp": "Electropunzada",
+    "pw": 80,
+    "type": 4
+  },
+  {
+    "id": 718,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "multi-attack",
+    "esp": "Multiataque",
+    "pw": 90,
+    "type": 0
+  },
+  {
+    "id": 720,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "mind-blown",
+    "esp": "Cabeza Sorpresa",
+    "pw": 150,
+    "type": 2
+  },
+  {
+    "id": 721,
+    "acc": 100.0,
+    "dc": 0,
+    "name": "plasma-fists",
+    "esp": "Puños Plasma",
+    "pw": 100,
+    "type": 4
+  },
+  {
+    "id": 722,
+    "acc": 100.0,
+    "dc": 1,
+    "name": "photon-geyser",
+    "esp": "Géiser Fotónico",
+    "pw": 100,
+    "type": 11
+  }
+]

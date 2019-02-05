@@ -55,7 +55,7 @@ namespace AKDiscordBot
 
         private async Task OnReady()
         {
-            //await PokemonData.LoadData();
+            await PokemonData.LoadData();
 
             foreach (var guild in Client.Guilds)
                 if (guild.Id != 542108567487119372)
