@@ -1,0 +1,374 @@
+[
+  {
+    "id": 6,
+    "owner": 207520984591368202,
+    "nick": "charizard",
+    "shiny": true,
+    "nature": 17,
+    "exp": 0,
+    "lvl": 7,
+    "catched": "2019-02-07T14:14:52.212285-05:00",
+    "ivs": {
+      "values": {
+        "SPEED": 26,
+        "SP_DEF": 2,
+        "SP_ATK": 1,
+        "DEF": 14,
+        "ATK": 10,
+        "HP": 9
+      }
+    },
+    "evs": {
+      "values": {
+        "SPEED": 0,
+        "SP_DEF": 0,
+        "SP_ATK": 0,
+        "DEF": 0,
+        "ATK": 0,
+        "HP": 0
+      }
+    },
+    "moves": []
+  },
+  {
+    "id": 330,
+    "owner": 207520984591368202,
+    "nick": "flygon",
+    "shiny": false,
+    "nature": 14,
+    "exp": 0,
+    "lvl": 15,
+    "catched": "2019-02-07T10:58:08.1266134-05:00",
+    "ivs": {
+      "values": {
+        "SPEED": 14,
+        "SP_DEF": 7,
+        "SP_ATK": 21,
+        "DEF": 3,
+        "ATK": 11,
+        "HP": 19
+      }
+    },
+    "evs": {
+      "values": {
+        "SPEED": 0,
+        "SP_DEF": 0,
+        "SP_ATK": 0,
+        "DEF": 0,
+        "ATK": 0,
+        "HP": 0
+      }
+    },
+    "moves": []
+  },
+  {
+    "id": 299,
+    "owner": 207520984591368202,
+    "nick": "nosepass",
+    "shiny": false,
+    "nature": 8,
+    "exp": 0,
+    "lvl": 30,
+    "catched": "2019-02-07T10:56:42.8617636-05:00",
+    "ivs": {
+      "values": {
+        "SPEED": 9,
+        "SP_DEF": 3,
+        "SP_ATK": 27,
+        "DEF": 11,
+        "ATK": 2,
+        "HP": 19
+      }
+    },
+    "evs": {
+      "values": {
+        "SPEED": 0,
+        "SP_DEF": 0,
+        "SP_ATK": 0,
+        "DEF": 0,
+        "ATK": 0,
+        "HP": 0
+      }
+    },
+    "moves": []
+  },
+  {
+    "id": 655,
+    "owner": 210132576092946432,
+    "nick": "delphox",
+    "shiny": false,
+    "nature": 24,
+    "exp": 0,
+    "lvl": 1,
+    "catched": "2019-02-07T10:53:24.6429615-05:00",
+    "ivs": {
+      "values": {
+        "SPEED": 18,
+        "SP_DEF": 29,
+        "SP_ATK": 21,
+        "DEF": 24,
+        "ATK": 20,
+        "HP": 19
+      }
+    },
+    "evs": {
+      "values": {
+        "SPEED": 0,
+        "SP_DEF": 0,
+        "SP_ATK": 0,
+        "DEF": 0,
+        "ATK": 0,
+        "HP": 0
+      }
+    },
+    "moves": []
+  },
+  {
+    "id": 239,
+    "owner": 207520984591368202,
+    "nick": "elekid",
+    "shiny": false,
+    "nature": 21,
+    "exp": 0,
+    "lvl": 26,
+    "catched": "2019-02-07T10:53:03.9066672-05:00",
+    "ivs": {
+      "values": {
+        "SPEED": 31,
+        "SP_DEF": 27,
+        "SP_ATK": 8,
+        "DEF": 28,
+        "ATK": 15,
+        "HP": 19
+      }
+    },
+    "evs": {
+      "values": {
+        "SPEED": 0,
+        "SP_DEF": 0,
+        "SP_ATK": 0,
+        "DEF": 0,
+        "ATK": 0,
+        "HP": 0
+      }
+    },
+    "moves": []
+  },
+  {
+    "id": 209,
+    "owner": 207520984591368202,
+    "nick": "snubbull",
+    "shiny": false,
+    "nature": 15,
+    "exp": 0,
+    "lvl": 7,
+    "catched": "2019-02-07T10:50:24.7655092-05:00",
+    "ivs": {
+      "values": {
+        "SPEED": 26,
+        "SP_DEF": 23,
+        "SP_ATK": 14,
+        "DEF": 4,
+        "ATK": 6,
+        "HP": 18
+      }
+    },
+    "evs": {
+      "values": {
+        "SPEED": 0,
+        "SP_DEF": 0,
+        "SP_ATK": 0,
+        "DEF": 0,
+        "ATK": 0,
+        "HP": 0
+      }
+    },
+    "moves": []
+  },
+  {
+    "id": 736,
+    "owner": 207520984591368202,
+    "nick": "grubbin",
+    "shiny": false,
+    "nature": 19,
+    "exp": 0,
+    "lvl": 21,
+    "catched": "2019-02-07T09:39:45.9468553-05:00",
+    "ivs": {
+      "values": {
+        "SPEED": 7,
+        "SP_DEF": 0,
+        "SP_ATK": 4,
+        "DEF": 23,
+        "ATK": 30,
+        "HP": 27
+      }
+    },
+    "evs": {
+      "values": {
+        "SPEED": 0,
+        "SP_DEF": 0,
+        "SP_ATK": 0,
+        "DEF": 0,
+        "ATK": 0,
+        "HP": 0
+      }
+    },
+    "moves": []
+  },
+  {
+    "id": 624,
+    "owner": 207520984591368202,
+    "nick": "pawniard",
+    "shiny": false,
+    "nature": 23,
+    "exp": 0,
+    "lvl": 5,
+    "catched": "2019-02-07T09:39:30.2857718-05:00",
+    "ivs": {
+      "values": {
+        "SPEED": 9,
+        "SP_DEF": 6,
+        "SP_ATK": 18,
+        "DEF": 10,
+        "ATK": 3,
+        "HP": 19
+      }
+    },
+    "evs": {
+      "values": {
+        "SPEED": 0,
+        "SP_DEF": 0,
+        "SP_ATK": 0,
+        "DEF": 0,
+        "ATK": 0,
+        "HP": 0
+      }
+    },
+    "moves": []
+  },
+  {
+    "id": 506,
+    "owner": 207520984591368202,
+    "nick": "lillipup",
+    "shiny": false,
+    "nature": 23,
+    "exp": 0,
+    "lvl": 15,
+    "catched": "2019-02-07T09:06:02.8213456-05:00",
+    "ivs": {
+      "values": {
+        "SPEED": 10,
+        "SP_DEF": 29,
+        "SP_ATK": 6,
+        "DEF": 26,
+        "ATK": 21,
+        "HP": 23
+      }
+    },
+    "evs": {
+      "values": {
+        "SPEED": 0,
+        "SP_DEF": 0,
+        "SP_ATK": 0,
+        "DEF": 0,
+        "ATK": 0,
+        "HP": 0
+      }
+    },
+    "moves": []
+  },
+  {
+    "id": 330,
+    "owner": 207520984591368202,
+    "nick": "flygon",
+    "shiny": false,
+    "nature": 2,
+    "exp": 0,
+    "lvl": 25,
+    "catched": "2019-02-07T09:06:49.9033099-05:00",
+    "ivs": {
+      "values": {
+        "SPEED": 26,
+        "SP_DEF": 21,
+        "SP_ATK": 18,
+        "DEF": 7,
+        "ATK": 9,
+        "HP": 0
+      }
+    },
+    "evs": {
+      "values": {
+        "SPEED": 0,
+        "SP_DEF": 0,
+        "SP_ATK": 0,
+        "DEF": 0,
+        "ATK": 0,
+        "HP": 0
+      }
+    },
+    "moves": []
+  },
+  {
+    "id": 442,
+    "owner": 207520984591368202,
+    "nick": "spiritomb",
+    "shiny": false,
+    "nature": 13,
+    "exp": 0,
+    "lvl": 13,
+    "catched": "2019-02-07T09:43:14.9494692-05:00",
+    "ivs": {
+      "values": {
+        "SPEED": 19,
+        "SP_DEF": 8,
+        "SP_ATK": 31,
+        "DEF": 1,
+        "ATK": 0,
+        "HP": 14
+      }
+    },
+    "evs": {
+      "values": {
+        "SPEED": 0,
+        "SP_DEF": 0,
+        "SP_ATK": 0,
+        "DEF": 0,
+        "ATK": 0,
+        "HP": 0
+      }
+    },
+    "moves": []
+  },
+  {
+    "id": 249,
+    "owner": 207520984591368202,
+    "nick": "lugia",
+    "shiny": false,
+    "nature": 12,
+    "exp": 0,
+    "lvl": 17,
+    "catched": "2019-02-07T10:14:30.352612-05:00",
+    "ivs": {
+      "values": {
+        "SPEED": 7,
+        "SP_DEF": 25,
+        "SP_ATK": 1,
+        "DEF": 0,
+        "ATK": 29,
+        "HP": 22
+      }
+    },
+    "evs": {
+      "values": {
+        "SPEED": 0,
+        "SP_DEF": 0,
+        "SP_ATK": 0,
+        "DEF": 0,
+        "ATK": 0,
+        "HP": 0
+      }
+    },
+    "moves": []
+  }
+]

@@ -7,13 +7,14 @@ using System.Linq;
 using PokemmoDiscord.PokemonBot.Mis;
 using Newtonsoft.Json;
 using Discord;
+using System.IO;
 
 namespace PokemmoDiscord.PokemonBot.Entity
 {
-    public class Pokemon
+    public class PokemonEntity
     {
         //Serialized
-        public Pokemon(int id, bool shiny = false, bool maxivs = false)
+        public PokemonEntity(int id, bool shiny = false, int extraivs = 0, bool maxivs = false)
         {
             Random x = new Random(Environment.TickCount.GetHashCode());
             ID = id;
@@ -23,18 +24,18 @@ namespace PokemmoDiscord.PokemonBot.Entity
             Shiny = (shiny) ? true : (x.Next(300 + 1) == 1);
             Nature = (NatureType)(x.Next((int)NatureType.END));
             Experience = 0;
-            Lvl = x.Next(35 + 1);
-            //must be 6
-            IVs = new List<int>()
-            {
-                maxivs ? 31 : x.Next(31 + 1),
-                maxivs ? 31 : x.Next(31 + 1),
-                maxivs ? 31 : x.Next(31 + 1),
-                maxivs ? 31 : x.Next(31 + 1),
-                maxivs ? 31 : x.Next(31 + 1),
-                maxivs ? 31 : x.Next(31 + 1),
-            };
-            EVs = new List<int>();
+            Lvl = x.Next(1, 35 + 1);
+            
+            IVs = new StatsCollection                
+            (
+                maxivs ? 31 : x.Next(31 + 1) + extraivs,
+                maxivs ? 31 : x.Next(31 + 1) + extraivs,
+                maxivs ? 31 : x.Next(31 + 1) + extraivs,
+                maxivs ? 31 : x.Next(31 + 1) + extraivs,
+                maxivs ? 31 : x.Next(31 + 1) + extraivs,
+                maxivs ? 31 : x.Next(31 + 1) + extraivs
+            );
+            EVs = new StatsCollection();
             Moves = new List<int>();
         }
         [JsonProperty("id")]
@@ -51,17 +52,24 @@ namespace PokemmoDiscord.PokemonBot.Entity
         public uint Experience { get; set ; }
         [JsonProperty("lvl")]
         public int Lvl { get; set; }
+        [JsonProperty("catched")]
+        public DateTime CatchedDay { get; set; }
         [JsonProperty("ivs")]
-        public List<int> IVs { get; set; }
+        StatsCollection IVs { get; set; }
         [JsonProperty("evs")]
-        public List<int> EVs { get; set; }
+        StatsCollection EVs { get; set; }
         [JsonProperty("moves")]
         public List<int> Moves { get; set; }
-        private PokemonModel GetModel()
+        public static string File => "pokemon_catched.json";
+
+        public void SetOwner(ulong id)
         {
-            return PokemonData.PokemonModel.First(x => x.ID == ID);
+            var t = PokemonData._trainers.GetOrAdd(id, new Trainer(id));
+            OwnerID = id;
+            CatchedDay = DateTime.Now;
+            PokemonData.catchedPokemon.Add(this);            
         }
-        public string GetLargeFront() => $"https://assets.pokemon.com/assets/cms2/img/pokedex/full/{ID.NumericString()}.png";
+        public PokemonModel GetModel() => PokemonData.PokemonModels.First(x => x.ID == ID);
         public string GetFront()
         {
             var model = GetModel();
@@ -83,88 +91,72 @@ namespace PokemmoDiscord.PokemonBot.Entity
             return model.BackMaleShiny != null ? model.BackMaleShiny : model.BackFemaleShiny;
         }
         internal Embed EmbedWildInformation()
-        {
-            decimal ivs = IVs.Sum();
-            decimal s = decimal.Truncate( (ivs / (31 * 6)) * 100);
+        {            
             var model = GetModel();
             EmbedBuilder eb = new EmbedBuilder()
-                .WithImageUrl(GetLargeFront())
-                .WithColor(GetColor())
-                .WithTitle($"**Un pokemon Salvaje ha aparecido**")
-                .AddField("Ivs", s+"%");
-            //int count = 0;
-            //foreach (var stat in Stats())
-              //  eb.AddField(((StatTypeEnum)(count++)).ToString(), stat, true);
+                .WithImageUrl(model.GetLargeFront())
+                .WithColor(model.GetColor())
+                .WithTitle($"**Wild pokemon appeared**")
+                .WithDescription("type .catch <name> to get, be fast!");                   
             return eb.Build();
         }
-        private Color GetColor()
+        internal Embed EmbedInformation()
         {
-            var maintype = GetModel().Types[0];
-            switch(maintype)
-            {
-                case PokemonTypeEnum.ACERO:
-                    return new Color(0xB7B7CE);
-                case PokemonTypeEnum.AGUA:
-                    return new Color(0x6390F0);
-                case PokemonTypeEnum.BICHO:
-                    return new Color(0xA6B91A);
-                case PokemonTypeEnum.DRAGON:
-                    return new Color(0x6F35FC);
-                case PokemonTypeEnum.ELECTRICO:
-                    return new Color(0xF7D02C);
-                case PokemonTypeEnum.FANTASMA:
-                    return new Color(0x6F35FC);
-                case PokemonTypeEnum.FUEGO:
-                    return new Color(0xEE8130);
-                case PokemonTypeEnum.HADA:
-                    return new Color(0xD685AD);
-                case PokemonTypeEnum.HIELO:
-                    return new Color(0x96D9D6);
-                case PokemonTypeEnum.HIERBA:
-                    return new Color(0x7AC74C);
-                case PokemonTypeEnum.LUCHA:
-                    return new Color(0xC22E28);
-                case PokemonTypeEnum.NORMAL:
-                    return new Color(0xA8A77A);
-                case PokemonTypeEnum.PSIQUICO:
-                    return new Color(0xF95587);
-                case PokemonTypeEnum.ROCA:
-                    return new Color(0xB6A136);
-                case PokemonTypeEnum.SINIESTRO:
-                    return new Color(0x705746);
-                case PokemonTypeEnum.TIERRA:
-                    return new Color(0xE2BF65);
-                case PokemonTypeEnum.VENENO:
-                    return new Color(0xA33EA1);
-                case PokemonTypeEnum.VOLADOR:
-                    return new Color(0xA98FF3);
-                default:
-                    return new Color(0xFFFFFF);
-            }
+
+            var model = GetModel();
+            EmbedBuilder eb = new EmbedBuilder()
+                .WithThumbnailUrl(model.GetLargeFront())
+                .WithColor(model.GetColor())
+                .WithTitle($"**#{ID} {Nickname}**")
+                .AddField("IVs:", GetIVPercent() + "%", true)
+                .AddField("Lvl", Lvl, true);                
+            foreach (var stat in Stats().Values)
+              eb.AddField(stat.Key.ToString(), stat.Value, true);
+            
+                
+            return eb.Build();
         }
+        internal Embed EmbedIVsInformation()
+        {
+
+            var model = GetModel();
+            EmbedBuilder eb = new EmbedBuilder()
+                .WithThumbnailUrl(model.GetLargeFront())
+                .WithColor(model.GetColor())
+                .WithTitle($"**#{ID} {Nickname} {GetIVPercent()}%**")
+                .WithDescription("**IV's values (max 31)**:");
+            foreach (var stat in IVs.Values)
+                eb.AddField(stat.Key.ToString(), stat.Value + " / 31", true);
+            return eb.Build();
+        }
+        public int GetIVPercent()
+        {
+            decimal ivs = IVs.Sum();
+            return (int)decimal.Truncate((ivs / (31 * 6)) * 100);
+        }
+        
 
         //Call only Stats()
-        public List<int> Stats()
+        public StatsCollection Stats()
         {
             var model = GetModel();
             //have to include variants of nature
             //have to include variants of EV
-            int speed = GetStatValue(StatTypeEnum.SPEED, model.BaseStats[(int)StatTypeEnum.SPEED], IVs[(int)StatTypeEnum.SPEED], 0),
-                sp_def = GetStatValue(StatTypeEnum.SP_DEF,model.BaseStats[(int)StatTypeEnum.SP_DEF], IVs[(int)StatTypeEnum.SP_DEF],0),
-                sp_atk = GetStatValue(StatTypeEnum.SP_ATK, model.BaseStats[(int)StatTypeEnum.SP_ATK], IVs[(int)StatTypeEnum.SP_ATK],0),
-                def = GetStatValue(StatTypeEnum.DEF, model.BaseStats[(int)StatTypeEnum.DEF], IVs[(int)StatTypeEnum.DEF],0),
-                atk = GetStatValue( StatTypeEnum.ATK,model.BaseStats[(int)StatTypeEnum.ATK], IVs[(int)StatTypeEnum.ATK],0),
-                hp = GetStatValue(StatTypeEnum.HP, model.BaseStats[(int)StatTypeEnum.HP], IVs[(int)StatTypeEnum.HP], 0);
+            int speed = GetStatValue(StatTypeEnum.SPEED, model.BaseStats[StatTypeEnum.SPEED], IVs[StatTypeEnum.SPEED], 0),
+                sp_def = GetStatValue(StatTypeEnum.SP_DEF,model.BaseStats[StatTypeEnum.SP_DEF], IVs[StatTypeEnum.SP_DEF],0),
+                sp_atk = GetStatValue(StatTypeEnum.SP_ATK, model.BaseStats[StatTypeEnum.SP_ATK], IVs[StatTypeEnum.SP_ATK],0),
+                def = GetStatValue(StatTypeEnum.DEF, model.BaseStats[StatTypeEnum.DEF], IVs[StatTypeEnum.DEF],0),
+                atk = GetStatValue( StatTypeEnum.ATK,model.BaseStats[StatTypeEnum.ATK], IVs[StatTypeEnum.ATK],0),
+                hp = GetStatValue(StatTypeEnum.HP, model.BaseStats[StatTypeEnum.HP], IVs[StatTypeEnum.HP], 0);
             
-            return new List<int>()
-            {
+            return new StatsCollection(            
                 speed,
                 sp_def,
                 sp_atk ,
                 def,
                 atk,
-                hp,
-            };
+                hp
+            );
         }
         
         private int GetStatValue(StatTypeEnum type, int _base, int iv, int ev)
@@ -317,8 +309,7 @@ namespace PokemmoDiscord.PokemonBot.Entity
                          (int)(value * decrease) : value;
 
                 default:
-                    return value;
-                    
+                    return value;                    
             }
         }
 

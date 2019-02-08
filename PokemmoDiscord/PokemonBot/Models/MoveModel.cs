@@ -8,6 +8,7 @@ namespace PokemmoDiscord.PokemonBot.Models
 {
     public class MoveModel
     {
+        public static string File = "moves.json";
         [JsonProperty("id")]
         public int ID { get; internal set; }
         [JsonProperty("acc")]

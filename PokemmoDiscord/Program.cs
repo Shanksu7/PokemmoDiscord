@@ -55,8 +55,9 @@ namespace AKDiscordBot
 
         private async Task OnReady()
         {
-            await PokemonData.LoadData();
-            await ChannelPokemon.Start();
+            await PokemonData.LoadData();            
+            await ChannelPokemon.StartSpawn();
+            await PokemonData.SaveData();
             foreach (var guild in Client.Guilds)
                 if (guild.Id != 542108567487119372)
                     await guild.LeaveAsync();

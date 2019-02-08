@@ -7,6 +7,6 @@ namespace PokemmoDiscord.PokemonBot.Mis
 {
     public class NpcTrainer
     {
-        public List<Pokemon> MyProperty { get; set; }
+        public List<PokemonEntity> MyProperty { get; set; }
     }
 }
