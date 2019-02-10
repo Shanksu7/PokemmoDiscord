@@ -45,8 +45,8 @@ namespace PokemmoDiscord.PokemonBot.Data
                 return new List<ChannelPokemon>()
                 {              
                     new ChannelPokemon(GenerationEnum.I, 542132177291313153, 1,   151, new List<int>(){ 151,150,146,145,144,}),
-                    new ChannelPokemon(GenerationEnum.II,542132195154984961, 152, 251, new List<int>(){ 251,250,249,245,244,243,201, }),
-                    new ChannelPokemon(GenerationEnum.III,542132185797230592, 252, 386, new List<int>(){ 202,201,200,199,198,197,196,195,194,193}),
+                    new ChannelPokemon(GenerationEnum.II,542132195154984961, 152, 251, new List<int>(){  251, 250, 249, 245, 244, 243,201}),
+                    new ChannelPokemon(GenerationEnum.III,542132185797230592, 252, 386, new List<int>(){ 386,385,384,383,382,381,380,379,378}),
                     new ChannelPokemon(GenerationEnum.IV,542132169347170304, 387, 493, new List<int>(){ 447,448,479,480,481,482,483,484,485,486,487,488,489,490,491,492,493 }),
                     new ChannelPokemon(GenerationEnum.V,542132160656703491, 494, 649, new List<int>(){ 637,638,639,640,641,642,643,644,645,646,647,648,649 }),
                     new ChannelPokemon(GenerationEnum.VI,542132105291759626, 650, 721, new List<int>(){ 716,717,718,719,720,721}),

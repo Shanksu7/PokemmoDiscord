@@ -19,7 +19,7 @@ namespace AKDiscordBot
         public static CommandService Commands { get; set; }
         //Property for Services
         private IServiceProvider Services { get; set; }
-        private static string bot_Token = "NTQxNzI3ODYxMTc4ODkyMjg4.Dzpktg.EStExITh9cx2kRV8eNJRKCwD8eE";
+        private static string bot_Token = Environment.GetEnvironmentVariable("bot_pokemon");
         private static ulong logChannel = 542133670602080258;
         //METHODS
         //Main Method
