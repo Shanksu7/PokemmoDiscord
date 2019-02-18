@@ -1,12 +1,131 @@
 [
   {
+    "id": 148,
+    "owner": 419938924241223707,
+    "nick": "dragonair",
+    "shiny": false,
+    "nature": 22,
+    "exp": 5797,
+    "lvl": 31,
+    "ps": 72,
+    "catched": "2019-02-18T08:00:21.2718035-05:00",
+    "ivs": {
+      "values": {
+        "SPEED": 8,
+        "SP_DEF": 6,
+        "SP_ATK": 28,
+        "DEF": 8,
+        "ATK": 24,
+        "HP": 4
+      }
+    },
+    "evs": {
+      "values": {
+        "SPEED": 0,
+        "SP_DEF": 0,
+        "SP_ATK": 0,
+        "DEF": 0,
+        "ATK": 0,
+        "HP": 0
+      }
+    },
+    "moves": [
+      20
+    ],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/148.png",
+      "id": 148,
+      "name": "dragonair",
+      "exp": 147,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/148.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/148.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/148.png",
+      "ffs": null,
+      "types": [
+        12
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 70,
+          "SP_DEF": 70,
+          "SP_ATK": 70,
+          "DEF": 65,
+          "ATK": 84,
+          "HP": 61
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 2,
+          "HP": 0
+        }
+      },
+      "moves": [
+        20,
+        21,
+        29,
+        34,
+        35,
+        36,
+        38,
+        53,
+        55,
+        57,
+        58,
+        59,
+        61,
+        63,
+        85,
+        87,
+        99,
+        126,
+        127,
+        130,
+        173,
+        192,
+        196,
+        200,
+        225,
+        231,
+        237,
+        239,
+        250,
+        263,
+        290,
+        352,
+        401,
+        406,
+        407,
+        434,
+        496,
+        510,
+        525,
+        693
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/148.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/148.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/148.png"
+  },
+  {
     "id": 6,
     "owner": 207520984591368202,
     "nick": "charizard",
     "shiny": true,
     "nature": 17,
-    "exp": 0,
-    "lvl": 7,
+    "exp": 357,
+    "lvl": 8,
+    "ps": 0,
     "catched": "2019-02-07T14:14:52.212285-05:00",
     "ivs": {
       "values": {
@@ -28,7 +147,125 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [
+      5,
+      7,
+      9,
+      10
+    ],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
+      "id": 6,
+      "name": "charizard",
+      "exp": 240,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/6.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/6.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/6.png",
+      "ffs": null,
+      "types": [
+        5,
+        2
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 100,
+          "SP_DEF": 85,
+          "SP_ATK": 109,
+          "DEF": 78,
+          "ATK": 84,
+          "HP": 78
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 3,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        5,
+        7,
+        9,
+        10,
+        15,
+        17,
+        19,
+        25,
+        29,
+        34,
+        36,
+        38,
+        52,
+        53,
+        63,
+        66,
+        70,
+        76,
+        83,
+        89,
+        91,
+        99,
+        126,
+        130,
+        157,
+        163,
+        173,
+        189,
+        200,
+        210,
+        211,
+        223,
+        225,
+        231,
+        232,
+        237,
+        239,
+        249,
+        257,
+        263,
+        264,
+        280,
+        290,
+        307,
+        314,
+        315,
+        317,
+        337,
+        394,
+        403,
+        406,
+        411,
+        416,
+        421,
+        424,
+        466,
+        481,
+        488,
+        496,
+        497,
+        507,
+        510,
+        517,
+        519,
+        523,
+        525,
+        612,
+        693
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/6.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/6.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/6.png"
   },
   {
     "id": 330,
@@ -38,6 +275,7 @@
     "nature": 14,
     "exp": 0,
     "lvl": 15,
+    "ps": 0,
     "catched": "2019-02-07T10:58:08.1266134-05:00",
     "ivs": {
       "values": {
@@ -59,7 +297,106 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/330.png",
+      "id": 330,
+      "name": "flygon",
+      "exp": 234,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/330.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/330.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/330.png",
+      "ffs": null,
+      "types": [
+        12,
+        14
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 100,
+          "SP_DEF": 80,
+          "SP_ATK": 80,
+          "DEF": 80,
+          "ATK": 100,
+          "HP": 80
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 2,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 1,
+          "HP": 0
+        }
+      },
+      "moves": [
+        7,
+        9,
+        19,
+        29,
+        34,
+        38,
+        44,
+        53,
+        63,
+        70,
+        76,
+        89,
+        91,
+        126,
+        157,
+        173,
+        189,
+        200,
+        202,
+        210,
+        211,
+        225,
+        231,
+        237,
+        239,
+        242,
+        249,
+        253,
+        257,
+        263,
+        276,
+        290,
+        314,
+        317,
+        318,
+        324,
+        328,
+        337,
+        369,
+        406,
+        407,
+        414,
+        416,
+        434,
+        444,
+        450,
+        466,
+        496,
+        510,
+        522,
+        523,
+        525,
+        612,
+        693
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/330.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/330.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/330.png"
   },
   {
     "id": 299,
@@ -69,6 +406,7 @@
     "nature": 8,
     "exp": 0,
     "lvl": 30,
+    "ps": 0,
     "catched": "2019-02-07T10:56:42.8617636-05:00",
     "ivs": {
       "values": {
@@ -90,7 +428,89 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/299.png",
+      "id": 299,
+      "name": "nosepass",
+      "exp": 75,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/299.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/299.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/299.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/299.png",
+      "ffs": null,
+      "types": [
+        13
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 30,
+          "SP_DEF": 90,
+          "SP_ATK": 45,
+          "DEF": 135,
+          "ATK": 45,
+          "HP": 30
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 1,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        7,
+        8,
+        9,
+        29,
+        33,
+        34,
+        38,
+        70,
+        85,
+        87,
+        88,
+        89,
+        120,
+        153,
+        157,
+        173,
+        189,
+        192,
+        205,
+        209,
+        223,
+        237,
+        246,
+        249,
+        263,
+        290,
+        317,
+        350,
+        408,
+        414,
+        435,
+        444,
+        457,
+        479,
+        496,
+        521,
+        523,
+        605
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/299.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/299.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/299.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/299.png"
   },
   {
     "id": 655,
@@ -100,6 +520,7 @@
     "nature": 24,
     "exp": 0,
     "lvl": 1,
+    "ps": 0,
     "catched": "2019-02-07T10:53:24.6429615-05:00",
     "ivs": {
       "values": {
@@ -121,7 +542,92 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [
+      595
+    ],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/655.png",
+      "id": 655,
+      "name": "delphox",
+      "exp": 240,
+      "bm": null,
+      "bf": null,
+      "bms": null,
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/655.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/655.png",
+      "ffs": null,
+      "types": [
+        11,
+        2
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 104,
+          "SP_DEF": 100,
+          "SP_ATK": 114,
+          "DEF": 72,
+          "ATK": 69,
+          "HP": 75
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 3,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        7,
+        9,
+        10,
+        15,
+        52,
+        53,
+        60,
+        63,
+        76,
+        83,
+        94,
+        126,
+        138,
+        168,
+        173,
+        231,
+        237,
+        247,
+        248,
+        257,
+        263,
+        290,
+        307,
+        315,
+        324,
+        343,
+        416,
+        428,
+        473,
+        488,
+        492,
+        496,
+        497,
+        510,
+        519,
+        595,
+        605,
+        612
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/655.png",
+    "Back": null,
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/655.png",
+    "ShinyBack": null
   },
   {
     "id": 239,
@@ -131,6 +637,7 @@
     "nature": 21,
     "exp": 0,
     "lvl": 26,
+    "ps": 0,
     "catched": "2019-02-07T10:53:03.9066672-05:00",
     "ivs": {
       "values": {
@@ -152,7 +659,91 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/239.png",
+      "id": 239,
+      "name": "elekid",
+      "exp": 72,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/239.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/239.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/239.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/239.png",
+      "ffs": null,
+      "types": [
+        4
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 95,
+          "SP_DEF": 55,
+          "SP_ATK": 65,
+          "DEF": 37,
+          "ATK": 63,
+          "HP": 45
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 1,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        2,
+        5,
+        7,
+        8,
+        9,
+        25,
+        27,
+        29,
+        34,
+        38,
+        84,
+        85,
+        87,
+        94,
+        98,
+        168,
+        173,
+        189,
+        192,
+        223,
+        237,
+        238,
+        249,
+        253,
+        263,
+        264,
+        280,
+        290,
+        324,
+        343,
+        359,
+        364,
+        435,
+        451,
+        496,
+        521,
+        527,
+        528,
+        530,
+        612
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/239.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/239.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/239.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/239.png"
   },
   {
     "id": 209,
@@ -162,6 +753,7 @@
     "nature": 15,
     "exp": 0,
     "lvl": 7,
+    "ps": 0,
     "catched": "2019-02-07T10:50:24.7655092-05:00",
     "ivs": {
       "values": {
@@ -183,7 +775,107 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/209.png",
+      "id": 209,
+      "name": "snubbull",
+      "exp": 60,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/209.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/209.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/209.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/209.png",
+      "ffs": null,
+      "types": [
+        17
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 30,
+          "SP_DEF": 40,
+          "SP_ATK": 40,
+          "DEF": 50,
+          "ATK": 80,
+          "HP": 60
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 1,
+          "HP": 0
+        }
+      },
+      "moves": [
+        5,
+        7,
+        8,
+        9,
+        25,
+        29,
+        33,
+        34,
+        36,
+        38,
+        44,
+        53,
+        70,
+        76,
+        85,
+        87,
+        89,
+        91,
+        99,
+        122,
+        126,
+        168,
+        173,
+        188,
+        189,
+        192,
+        223,
+        237,
+        242,
+        247,
+        249,
+        263,
+        264,
+        265,
+        276,
+        280,
+        290,
+        304,
+        315,
+        343,
+        352,
+        370,
+        371,
+        387,
+        422,
+        423,
+        424,
+        496,
+        510,
+        514,
+        523,
+        528,
+        555,
+        583,
+        605,
+        612
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/209.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/209.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/209.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/209.png"
   },
   {
     "id": 736,
@@ -193,6 +885,7 @@
     "nature": 19,
     "exp": 0,
     "lvl": 21,
+    "ps": 0,
     "catched": "2019-02-07T09:39:45.9468553-05:00",
     "ivs": {
       "values": {
@@ -214,7 +907,70 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/736.png",
+      "id": 736,
+      "name": "grubbin",
+      "exp": 60,
+      "bm": null,
+      "bf": null,
+      "bms": null,
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/736.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/736.png",
+      "ffs": null,
+      "types": [
+        8
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 46,
+          "SP_DEF": 45,
+          "SP_ATK": 55,
+          "DEF": 45,
+          "ATK": 62,
+          "HP": 47
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 1,
+          "HP": 0
+        }
+      },
+      "moves": [
+        11,
+        44,
+        85,
+        91,
+        189,
+        209,
+        237,
+        242,
+        263,
+        341,
+        398,
+        404,
+        450,
+        451,
+        496,
+        512,
+        521,
+        527,
+        528
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/736.png",
+    "Back": null,
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/736.png",
+    "ShinyBack": null
   },
   {
     "id": 624,
@@ -224,6 +980,7 @@
     "nature": 23,
     "exp": 0,
     "lvl": 5,
+    "ps": 0,
     "catched": "2019-02-07T09:39:30.2857718-05:00",
     "ivs": {
       "values": {
@@ -245,7 +1002,88 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/624.png",
+      "id": 624,
+      "name": "pawniard",
+      "exp": 68,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/624.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/624.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/624.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/624.png",
+      "ffs": null,
+      "types": [
+        16,
+        9
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 60,
+          "SP_DEF": 40,
+          "SP_ATK": 40,
+          "DEF": 70,
+          "ATK": 85,
+          "HP": 45
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 1,
+          "HP": 0
+        }
+      },
+      "moves": [
+        10,
+        15,
+        29,
+        91,
+        163,
+        168,
+        173,
+        206,
+        210,
+        228,
+        232,
+        237,
+        249,
+        263,
+        279,
+        280,
+        282,
+        290,
+        317,
+        371,
+        372,
+        389,
+        398,
+        399,
+        400,
+        404,
+        421,
+        427,
+        442,
+        490,
+        492,
+        496,
+        514,
+        530,
+        555,
+        612
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/624.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/624.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/624.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/624.png"
   },
   {
     "id": 506,
@@ -255,6 +1093,7 @@
     "nature": 23,
     "exp": 0,
     "lvl": 15,
+    "ps": 0,
     "catched": "2019-02-07T09:06:02.8213456-05:00",
     "ivs": {
       "values": {
@@ -276,7 +1115,81 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/506.png",
+      "id": 506,
+      "name": "lillipup",
+      "exp": 55,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/506.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/506.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/506.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/506.png",
+      "ffs": null,
+      "types": [
+        0
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 55,
+          "SP_DEF": 45,
+          "SP_ATK": 25,
+          "DEF": 45,
+          "ATK": 60,
+          "HP": 45
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 1,
+          "HP": 0
+        }
+      },
+      "moves": [
+        33,
+        36,
+        44,
+        85,
+        91,
+        122,
+        173,
+        189,
+        228,
+        237,
+        242,
+        247,
+        249,
+        253,
+        263,
+        290,
+        304,
+        317,
+        343,
+        387,
+        416,
+        422,
+        423,
+        424,
+        496,
+        514,
+        528,
+        555,
+        583,
+        706
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/506.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/506.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/506.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/506.png"
   },
   {
     "id": 330,
@@ -286,6 +1199,7 @@
     "nature": 2,
     "exp": 0,
     "lvl": 25,
+    "ps": 0,
     "catched": "2019-02-07T09:06:49.9033099-05:00",
     "ivs": {
       "values": {
@@ -307,7 +1221,106 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/330.png",
+      "id": 330,
+      "name": "flygon",
+      "exp": 234,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/330.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/330.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/330.png",
+      "ffs": null,
+      "types": [
+        12,
+        14
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 100,
+          "SP_DEF": 80,
+          "SP_ATK": 80,
+          "DEF": 80,
+          "ATK": 100,
+          "HP": 80
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 2,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 1,
+          "HP": 0
+        }
+      },
+      "moves": [
+        7,
+        9,
+        19,
+        29,
+        34,
+        38,
+        44,
+        53,
+        63,
+        70,
+        76,
+        89,
+        91,
+        126,
+        157,
+        173,
+        189,
+        200,
+        202,
+        210,
+        211,
+        225,
+        231,
+        237,
+        239,
+        242,
+        249,
+        253,
+        257,
+        263,
+        276,
+        290,
+        314,
+        317,
+        318,
+        324,
+        328,
+        337,
+        369,
+        406,
+        407,
+        414,
+        416,
+        434,
+        444,
+        450,
+        466,
+        496,
+        510,
+        522,
+        523,
+        525,
+        612,
+        693
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/330.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/330.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/330.png"
   },
   {
     "id": 442,
@@ -317,6 +1330,7 @@
     "nature": 13,
     "exp": 0,
     "lvl": 13,
+    "ps": 0,
     "catched": "2019-02-07T09:43:14.9494692-05:00",
     "ivs": {
       "values": {
@@ -338,7 +1352,77 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/442.png",
+      "id": 442,
+      "name": "spiritomb",
+      "exp": 170,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/442.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/442.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/442.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/442.png",
+      "ffs": null,
+      "types": [
+        9,
+        15
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 35,
+          "SP_DEF": 108,
+          "SP_ATK": 92,
+          "DEF": 108,
+          "ATK": 92,
+          "HP": 50
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 1,
+          "SP_ATK": 0,
+          "DEF": 1,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        63,
+        94,
+        138,
+        168,
+        173,
+        196,
+        228,
+        237,
+        247,
+        253,
+        263,
+        290,
+        317,
+        318,
+        352,
+        389,
+        399,
+        416,
+        425,
+        466,
+        492,
+        496,
+        514,
+        555,
+        611
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/442.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/442.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/442.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/442.png"
   },
   {
     "id": 249,
@@ -348,6 +1432,7 @@
     "nature": 12,
     "exp": 0,
     "lvl": 17,
+    "ps": 66,
     "catched": "2019-02-07T10:14:30.352612-05:00",
     "ivs": {
       "values": {
@@ -369,7 +1454,112 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/249.png",
+      "id": 249,
+      "name": "lugia",
+      "exp": 306,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/249.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/249.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/249.png",
+      "ffs": null,
+      "types": [
+        5,
+        11
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 110,
+          "SP_DEF": 154,
+          "SP_ATK": 90,
+          "DEF": 130,
+          "ATK": 90,
+          "HP": 106
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 3,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        16,
+        19,
+        29,
+        34,
+        38,
+        56,
+        57,
+        58,
+        59,
+        63,
+        70,
+        85,
+        87,
+        89,
+        94,
+        127,
+        138,
+        143,
+        173,
+        177,
+        189,
+        192,
+        196,
+        202,
+        211,
+        225,
+        231,
+        237,
+        239,
+        246,
+        247,
+        248,
+        249,
+        250,
+        263,
+        290,
+        291,
+        304,
+        311,
+        314,
+        324,
+        326,
+        352,
+        362,
+        401,
+        406,
+        407,
+        414,
+        416,
+        419,
+        428,
+        442,
+        451,
+        466,
+        473,
+        496,
+        497,
+        507,
+        523,
+        525
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/249.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/249.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/249.png"
   },
   {
     "id": 104,
@@ -379,6 +1569,7 @@
     "nature": 5,
     "exp": 0,
     "lvl": 21,
+    "ps": 0,
     "catched": "2019-02-09T09:03:34.1229597-05:00",
     "ivs": {
       "values": {
@@ -400,7 +1591,108 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/104.png",
+      "id": 104,
+      "name": "cubone",
+      "exp": 64,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/104.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/104.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/104.png",
+      "ffs": null,
+      "types": [
+        14
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 35,
+          "SP_DEF": 50,
+          "SP_ATK": 40,
+          "DEF": 95,
+          "ATK": 50,
+          "HP": 50
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 1,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        5,
+        7,
+        9,
+        24,
+        25,
+        29,
+        34,
+        36,
+        37,
+        38,
+        53,
+        55,
+        58,
+        59,
+        61,
+        66,
+        70,
+        89,
+        91,
+        99,
+        125,
+        126,
+        130,
+        155,
+        157,
+        168,
+        173,
+        189,
+        196,
+        198,
+        206,
+        210,
+        223,
+        231,
+        237,
+        246,
+        249,
+        253,
+        263,
+        264,
+        280,
+        282,
+        290,
+        317,
+        414,
+        431,
+        442,
+        479,
+        496,
+        497,
+        498,
+        510,
+        514,
+        523,
+        612,
+        693,
+        707
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/104.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/104.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/104.png"
   },
   {
     "id": 185,
@@ -410,6 +1702,7 @@
     "nature": 22,
     "exp": 0,
     "lvl": 30,
+    "ps": 0,
     "catched": "2019-02-09T09:11:23.7415357-05:00",
     "ivs": {
       "values": {
@@ -431,7 +1724,92 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/185.png",
+      "id": 185,
+      "name": "sudowoodo",
+      "exp": 144,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/185.png",
+      "bf": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/female/185.png",
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/185.png",
+      "bfs": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/female/185.png",
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/185.png",
+      "ff": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/female/185.png",
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/185.png",
+      "ffs": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/female/185.png",
+      "types": [
+        13
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 30,
+          "SP_DEF": 65,
+          "SP_ATK": 30,
+          "DEF": 115,
+          "ATK": 100,
+          "HP": 70
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 2,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        5,
+        7,
+        8,
+        9,
+        21,
+        25,
+        29,
+        34,
+        38,
+        70,
+        88,
+        89,
+        91,
+        120,
+        153,
+        157,
+        168,
+        173,
+        189,
+        205,
+        223,
+        237,
+        249,
+        263,
+        264,
+        280,
+        290,
+        317,
+        328,
+        343,
+        359,
+        389,
+        414,
+        444,
+        452,
+        457,
+        479,
+        492,
+        496,
+        523,
+        612
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/185.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/185.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/185.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/185.png"
   },
   {
     "id": 156,
@@ -441,6 +1819,7 @@
     "nature": 16,
     "exp": 0,
     "lvl": 34,
+    "ps": 0,
     "catched": "2019-02-09T09:19:00.8891721-05:00",
     "ivs": {
       "values": {
@@ -462,7 +1841,86 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/156.png",
+      "id": 156,
+      "name": "quilava",
+      "exp": 142,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/156.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/156.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/156.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/156.png",
+      "ffs": null,
+      "types": [
+        2
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 80,
+          "SP_DEF": 65,
+          "SP_ATK": 80,
+          "DEF": 58,
+          "ATK": 64,
+          "HP": 58
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 1,
+          "SP_DEF": 0,
+          "SP_ATK": 1,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        15,
+        29,
+        33,
+        34,
+        38,
+        52,
+        53,
+        70,
+        91,
+        98,
+        126,
+        172,
+        173,
+        189,
+        205,
+        210,
+        231,
+        237,
+        249,
+        257,
+        263,
+        264,
+        280,
+        284,
+        290,
+        315,
+        343,
+        436,
+        488,
+        496,
+        510,
+        517,
+        519,
+        528,
+        682
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/156.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/156.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/156.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/156.png"
   },
   {
     "id": 9,
@@ -472,6 +1930,7 @@
     "nature": 9,
     "exp": 0,
     "lvl": 22,
+    "ps": 0,
     "catched": "2019-02-09T08:55:58.5327202-05:00",
     "ivs": {
       "values": {
@@ -493,7 +1952,113 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png",
+      "id": 9,
+      "name": "blastoise",
+      "exp": 239,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/9.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/9.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/9.png",
+      "ffs": null,
+      "types": [
+        10
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 78,
+          "SP_DEF": 105,
+          "SP_ATK": 85,
+          "DEF": 100,
+          "ATK": 83,
+          "HP": 79
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 3,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        5,
+        8,
+        25,
+        29,
+        33,
+        34,
+        36,
+        38,
+        44,
+        55,
+        56,
+        57,
+        58,
+        59,
+        61,
+        63,
+        66,
+        70,
+        89,
+        91,
+        99,
+        127,
+        130,
+        145,
+        157,
+        173,
+        189,
+        196,
+        200,
+        205,
+        223,
+        229,
+        231,
+        237,
+        249,
+        250,
+        263,
+        264,
+        280,
+        290,
+        291,
+        308,
+        317,
+        324,
+        352,
+        362,
+        399,
+        401,
+        406,
+        411,
+        416,
+        419,
+        428,
+        430,
+        431,
+        479,
+        496,
+        503,
+        518,
+        523,
+        525,
+        612
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/9.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/9.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/9.png"
   },
   {
     "id": 255,
@@ -501,8 +2066,9 @@
     "nick": "torchic",
     "shiny": false,
     "nature": 21,
-    "exp": 0,
+    "exp": 411,
     "lvl": 25,
+    "ps": 63,
     "catched": "2019-02-09T09:21:31.1574847-05:00",
     "ivs": {
       "values": {
@@ -524,7 +2090,90 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/255.png",
+      "id": 255,
+      "name": "torchic",
+      "exp": 62,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/255.png",
+      "bf": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/female/255.png",
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/255.png",
+      "bfs": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/female/255.png",
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/255.png",
+      "ff": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/female/255.png",
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/255.png",
+      "ffs": null,
+      "types": [
+        2
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 45,
+          "SP_DEF": 50,
+          "SP_ATK": 70,
+          "DEF": 40,
+          "ATK": 60,
+          "HP": 45
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 1,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        5,
+        10,
+        15,
+        25,
+        29,
+        34,
+        38,
+        52,
+        53,
+        64,
+        70,
+        83,
+        91,
+        98,
+        126,
+        157,
+        163,
+        173,
+        189,
+        237,
+        249,
+        257,
+        263,
+        265,
+        290,
+        306,
+        315,
+        317,
+        340,
+        364,
+        387,
+        400,
+        421,
+        481,
+        488,
+        496,
+        497,
+        510,
+        519
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/255.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/255.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/255.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/255.png"
   },
   {
     "id": 33,
@@ -534,6 +2183,7 @@
     "nature": 20,
     "exp": 0,
     "lvl": 26,
+    "ps": 0,
     "catched": "2019-02-09T08:56:51.5426653-05:00",
     "ivs": {
       "values": {
@@ -555,7 +2205,89 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/033.png",
+      "id": 33,
+      "name": "nidorino",
+      "exp": 128,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/33.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/33.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/33.png",
+      "ffs": null,
+      "types": [
+        7
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 65,
+          "SP_DEF": 55,
+          "SP_ATK": 55,
+          "DEF": 57,
+          "ATK": 72,
+          "HP": 61
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 2,
+          "HP": 0
+        }
+      },
+      "moves": [
+        15,
+        24,
+        29,
+        30,
+        31,
+        33,
+        34,
+        36,
+        38,
+        40,
+        55,
+        58,
+        59,
+        61,
+        64,
+        70,
+        85,
+        87,
+        91,
+        99,
+        130,
+        168,
+        173,
+        188,
+        189,
+        231,
+        237,
+        249,
+        263,
+        290,
+        352,
+        389,
+        398,
+        421,
+        474,
+        496,
+        497,
+        529
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/33.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/33.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/33.png"
   },
   {
     "id": 15,
@@ -565,6 +2297,7 @@
     "nature": 15,
     "exp": 0,
     "lvl": 7,
+    "ps": 0,
     "catched": "2019-02-09T08:58:14.7090838-05:00",
     "ivs": {
       "values": {
@@ -586,7 +2319,95 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/015.png",
+      "id": 15,
+      "name": "beedrill",
+      "exp": 178,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/15.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/15.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/15.png",
+      "ffs": null,
+      "types": [
+        7,
+        8
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 75,
+          "SP_DEF": 80,
+          "SP_ATK": 45,
+          "DEF": 40,
+          "ATK": 90,
+          "HP": 65
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 1,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 2,
+          "HP": 0
+        }
+      },
+      "moves": [
+        15,
+        31,
+        36,
+        38,
+        41,
+        42,
+        63,
+        72,
+        76,
+        99,
+        130,
+        168,
+        173,
+        188,
+        202,
+        206,
+        210,
+        228,
+        237,
+        249,
+        263,
+        280,
+        282,
+        290,
+        314,
+        318,
+        369,
+        371,
+        372,
+        398,
+        404,
+        416,
+        450,
+        466,
+        474,
+        496,
+        512,
+        522,
+        527,
+        529,
+        565,
+        611,
+        693
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/15.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/15.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/15.png"
   },
   {
     "id": 20,
@@ -596,6 +2417,7 @@
     "nature": 21,
     "exp": 0,
     "lvl": 26,
+    "ps": 0,
     "catched": "2019-02-09T09:00:13.2838712-05:00",
     "ivs": {
       "values": {
@@ -617,7 +2439,96 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/020.png",
+      "id": 20,
+      "name": "raticate",
+      "exp": 145,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/20.png",
+      "bf": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/female/20.png",
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/20.png",
+      "bfs": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/female/20.png",
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
+      "ff": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/female/20.png",
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/20.png",
+      "ffs": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/female/20.png",
+      "types": [
+        0
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 97,
+          "SP_DEF": 70,
+          "SP_ATK": 50,
+          "DEF": 60,
+          "ATK": 81,
+          "HP": 55
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 2,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        15,
+        29,
+        33,
+        34,
+        36,
+        38,
+        44,
+        55,
+        58,
+        59,
+        61,
+        63,
+        70,
+        85,
+        87,
+        91,
+        98,
+        99,
+        130,
+        158,
+        168,
+        173,
+        189,
+        196,
+        228,
+        231,
+        237,
+        242,
+        247,
+        249,
+        253,
+        263,
+        290,
+        343,
+        365,
+        369,
+        372,
+        387,
+        389,
+        416,
+        428,
+        451,
+        496,
+        514,
+        528
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/20.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/20.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/20.png"
   },
   {
     "id": 93,
@@ -627,6 +2538,7 @@
     "nature": 18,
     "exp": 0,
     "lvl": 17,
+    "ps": 0,
     "catched": "2019-02-09T08:59:12.4147266-05:00",
     "ivs": {
       "values": {
@@ -648,7 +2560,89 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/093.png",
+      "id": 93,
+      "name": "haunter",
+      "exp": 142,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/93.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/93.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/93.png",
+      "ffs": null,
+      "types": [
+        7,
+        15
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 95,
+          "SP_DEF": 55,
+          "SP_ATK": 115,
+          "DEF": 45,
+          "ATK": 50,
+          "HP": 45
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 2,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        7,
+        8,
+        9,
+        72,
+        85,
+        87,
+        94,
+        99,
+        120,
+        122,
+        138,
+        153,
+        168,
+        173,
+        188,
+        192,
+        196,
+        202,
+        237,
+        247,
+        253,
+        263,
+        282,
+        290,
+        371,
+        389,
+        398,
+        399,
+        412,
+        421,
+        466,
+        474,
+        492,
+        496,
+        506,
+        605,
+        611
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/93.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/93.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/93.png"
   },
   {
     "id": 383,
@@ -658,6 +2652,7 @@
     "nature": 0,
     "exp": 0,
     "lvl": 11,
+    "ps": 0,
     "catched": "2019-02-09T09:19:55.7468291-05:00",
     "ivs": {
       "values": {
@@ -679,7 +2674,106 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/383.png",
+      "id": 383,
+      "name": "groudon",
+      "exp": 302,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/383.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/383.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/383.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/383.png",
+      "ffs": null,
+      "types": [
+        14
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 90,
+          "SP_DEF": 90,
+          "SP_ATK": 100,
+          "DEF": 140,
+          "ATK": 150,
+          "HP": 100
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 3,
+          "HP": 0
+        }
+      },
+      "moves": [
+        5,
+        7,
+        9,
+        15,
+        25,
+        29,
+        34,
+        38,
+        53,
+        63,
+        70,
+        76,
+        85,
+        87,
+        89,
+        91,
+        126,
+        157,
+        163,
+        173,
+        189,
+        205,
+        210,
+        223,
+        231,
+        237,
+        246,
+        249,
+        253,
+        263,
+        280,
+        284,
+        290,
+        315,
+        317,
+        337,
+        341,
+        359,
+        406,
+        411,
+        414,
+        416,
+        421,
+        431,
+        436,
+        442,
+        444,
+        479,
+        496,
+        510,
+        523,
+        525,
+        612,
+        619,
+        693
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/383.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/383.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/383.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/383.png"
   },
   {
     "id": 99,
@@ -689,6 +2783,7 @@
     "nature": 24,
     "exp": 0,
     "lvl": 1,
+    "ps": 0,
     "catched": "2019-02-09T09:01:08.5457354-05:00",
     "ivs": {
       "values": {
@@ -710,7 +2805,95 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/099.png",
+      "id": 99,
+      "name": "kingler",
+      "exp": 166,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/99.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/99.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/99.png",
+      "ffs": null,
+      "types": [
+        10
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 75,
+          "SP_DEF": 50,
+          "SP_ATK": 50,
+          "DEF": 115,
+          "ATK": 130,
+          "HP": 55
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 2,
+          "HP": 0
+        }
+      },
+      "moves": [
+        11,
+        15,
+        21,
+        23,
+        34,
+        36,
+        38,
+        55,
+        57,
+        58,
+        59,
+        61,
+        63,
+        70,
+        91,
+        99,
+        145,
+        152,
+        157,
+        168,
+        173,
+        189,
+        196,
+        206,
+        210,
+        232,
+        237,
+        246,
+        249,
+        250,
+        263,
+        276,
+        280,
+        282,
+        290,
+        291,
+        317,
+        341,
+        352,
+        362,
+        404,
+        416,
+        496,
+        503
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/99.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/99.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/99.png"
   },
   {
     "id": 158,
@@ -720,6 +2903,7 @@
     "nature": 1,
     "exp": 0,
     "lvl": 20,
+    "ps": 0,
     "catched": "2019-02-09T09:02:55.4980688-05:00",
     "ivs": {
       "values": {
@@ -741,7 +2925,101 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/158.png",
+      "id": 158,
+      "name": "totodile",
+      "exp": 63,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/158.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/158.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/158.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/158.png",
+      "ffs": null,
+      "types": [
+        10
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 43,
+          "SP_DEF": 48,
+          "SP_ATK": 44,
+          "DEF": 64,
+          "ATK": 65,
+          "HP": 50
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 1,
+          "HP": 0
+        }
+      },
+      "moves": [
+        5,
+        8,
+        10,
+        13,
+        15,
+        25,
+        29,
+        34,
+        37,
+        38,
+        44,
+        55,
+        56,
+        57,
+        58,
+        59,
+        91,
+        99,
+        127,
+        157,
+        163,
+        173,
+        189,
+        196,
+        223,
+        231,
+        232,
+        237,
+        242,
+        246,
+        250,
+        253,
+        263,
+        264,
+        276,
+        280,
+        290,
+        291,
+        317,
+        337,
+        352,
+        401,
+        421,
+        423,
+        453,
+        496,
+        498,
+        503,
+        518,
+        612
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/158.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/158.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/158.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/158.png"
   },
   {
     "id": 160,
@@ -751,6 +3029,7 @@
     "nature": 17,
     "exp": 0,
     "lvl": 15,
+    "ps": 0,
     "catched": "2019-02-09T09:04:51.2400705-05:00",
     "ivs": {
       "values": {
@@ -772,7 +3051,112 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/160.png",
+      "id": 160,
+      "name": "feraligatr",
+      "exp": 239,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/160.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/160.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/160.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/160.png",
+      "ffs": null,
+      "types": [
+        10
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 78,
+          "SP_DEF": 83,
+          "SP_ATK": 79,
+          "DEF": 100,
+          "ATK": 105,
+          "HP": 85
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 1,
+          "ATK": 2,
+          "HP": 0
+        }
+      },
+      "moves": [
+        5,
+        8,
+        10,
+        15,
+        25,
+        29,
+        34,
+        37,
+        38,
+        44,
+        55,
+        56,
+        57,
+        58,
+        59,
+        63,
+        70,
+        89,
+        91,
+        99,
+        127,
+        157,
+        163,
+        173,
+        189,
+        196,
+        200,
+        210,
+        223,
+        231,
+        237,
+        242,
+        246,
+        249,
+        250,
+        253,
+        263,
+        264,
+        276,
+        280,
+        290,
+        291,
+        308,
+        317,
+        337,
+        352,
+        401,
+        406,
+        411,
+        416,
+        419,
+        421,
+        423,
+        431,
+        496,
+        498,
+        503,
+        518,
+        523,
+        525,
+        612
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/160.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/160.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/160.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/160.png"
   },
   {
     "id": 37,
@@ -782,6 +3166,7 @@
     "nature": 13,
     "exp": 0,
     "lvl": 15,
+    "ps": 0,
     "catched": "2019-02-09T09:05:54.1450668-05:00",
     "ivs": {
       "values": {
@@ -803,7 +3188,86 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/037.png",
+      "id": 37,
+      "name": "vulpix",
+      "exp": 60,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/37.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/37.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/37.png",
+      "ffs": null,
+      "types": [
+        2
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 65,
+          "SP_DEF": 65,
+          "SP_ATK": 50,
+          "DEF": 40,
+          "ATK": 41,
+          "HP": 38
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 1,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        29,
+        34,
+        36,
+        38,
+        52,
+        53,
+        83,
+        91,
+        98,
+        99,
+        126,
+        130,
+        173,
+        231,
+        237,
+        257,
+        263,
+        290,
+        315,
+        326,
+        343,
+        371,
+        394,
+        399,
+        412,
+        428,
+        466,
+        481,
+        488,
+        492,
+        496,
+        506,
+        510,
+        517,
+        541
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/37.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/37.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/37.png"
   },
   {
     "id": 158,
@@ -813,6 +3277,7 @@
     "nature": 19,
     "exp": 0,
     "lvl": 3,
+    "ps": 0,
     "catched": "2019-02-09T09:04:35.4246867-05:00",
     "ivs": {
       "values": {
@@ -834,7 +3299,101 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/158.png",
+      "id": 158,
+      "name": "totodile",
+      "exp": 63,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/158.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/158.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/158.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/158.png",
+      "ffs": null,
+      "types": [
+        10
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 43,
+          "SP_DEF": 48,
+          "SP_ATK": 44,
+          "DEF": 64,
+          "ATK": 65,
+          "HP": 50
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 1,
+          "HP": 0
+        }
+      },
+      "moves": [
+        5,
+        8,
+        10,
+        13,
+        15,
+        25,
+        29,
+        34,
+        37,
+        38,
+        44,
+        55,
+        56,
+        57,
+        58,
+        59,
+        91,
+        99,
+        127,
+        157,
+        163,
+        173,
+        189,
+        196,
+        223,
+        231,
+        232,
+        237,
+        242,
+        246,
+        250,
+        253,
+        263,
+        264,
+        276,
+        280,
+        290,
+        291,
+        317,
+        337,
+        352,
+        401,
+        421,
+        423,
+        453,
+        496,
+        498,
+        503,
+        518,
+        612
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/158.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/158.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/158.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/158.png"
   },
   {
     "id": 56,
@@ -844,6 +3403,7 @@
     "nature": 18,
     "exp": 0,
     "lvl": 34,
+    "ps": 0,
     "catched": "2019-02-09T09:05:38.4504484-05:00",
     "ivs": {
       "values": {
@@ -865,7 +3425,115 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/056.png",
+      "id": 56,
+      "name": "mankey",
+      "exp": 61,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/56.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/56.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/56.png",
+      "ffs": null,
+      "types": [
+        1
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 70,
+          "SP_DEF": 45,
+          "SP_ATK": 35,
+          "DEF": 35,
+          "ATK": 80,
+          "HP": 40
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 1,
+          "HP": 0
+        }
+      },
+      "moves": [
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        25,
+        29,
+        34,
+        36,
+        37,
+        38,
+        66,
+        70,
+        85,
+        87,
+        89,
+        91,
+        99,
+        130,
+        154,
+        157,
+        168,
+        173,
+        189,
+        200,
+        223,
+        228,
+        231,
+        237,
+        238,
+        249,
+        253,
+        263,
+        264,
+        265,
+        279,
+        280,
+        290,
+        315,
+        317,
+        343,
+        369,
+        370,
+        371,
+        372,
+        398,
+        400,
+        402,
+        410,
+        411,
+        431,
+        441,
+        479,
+        490,
+        496,
+        512,
+        514,
+        523,
+        530,
+        612,
+        681,
+        707
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/56.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/56.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/56.png"
   },
   {
     "id": 49,
@@ -875,6 +3543,7 @@
     "nature": 0,
     "exp": 0,
     "lvl": 19,
+    "ps": 0,
     "catched": "2019-02-09T09:10:16.4672396-05:00",
     "ivs": {
       "values": {
@@ -896,7 +3565,89 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/049.png",
+      "id": 49,
+      "name": "venomoth",
+      "exp": 158,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/49.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/49.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/49.png",
+      "ffs": null,
+      "types": [
+        7,
+        8
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 90,
+          "SP_DEF": 75,
+          "SP_ATK": 90,
+          "DEF": 60,
+          "ATK": 65,
+          "HP": 70
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 1,
+          "SP_DEF": 0,
+          "SP_ATK": 1,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        13,
+        16,
+        33,
+        36,
+        38,
+        60,
+        63,
+        72,
+        76,
+        93,
+        94,
+        99,
+        141,
+        168,
+        173,
+        188,
+        202,
+        237,
+        239,
+        263,
+        290,
+        305,
+        314,
+        318,
+        324,
+        369,
+        405,
+        412,
+        416,
+        428,
+        450,
+        466,
+        474,
+        496,
+        512,
+        522,
+        611
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/49.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/49.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/49.png"
   },
   {
     "id": 197,
@@ -906,6 +3657,7 @@
     "nature": 2,
     "exp": 0,
     "lvl": 14,
+    "ps": 0,
     "catched": "2019-02-09T09:10:31.6054835-05:00",
     "ivs": {
       "values": {
@@ -927,7 +3679,83 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/197.png",
+      "id": 197,
+      "name": "umbreon",
+      "exp": 184,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/197.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/197.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/197.png",
+      "ffs": null,
+      "types": [
+        9
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 65,
+          "SP_DEF": 130,
+          "SP_ATK": 60,
+          "DEF": 110,
+          "ATK": 65,
+          "HP": 95
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 2,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        15,
+        29,
+        33,
+        34,
+        38,
+        63,
+        91,
+        94,
+        98,
+        138,
+        173,
+        189,
+        192,
+        228,
+        231,
+        237,
+        247,
+        263,
+        290,
+        304,
+        343,
+        371,
+        372,
+        387,
+        389,
+        399,
+        416,
+        492,
+        496,
+        497,
+        514,
+        555
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/197.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/197.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/197.png"
   },
   {
     "id": 116,
@@ -937,6 +3765,7 @@
     "nature": 16,
     "exp": 0,
     "lvl": 25,
+    "ps": 0,
     "catched": "2019-02-09T09:07:11.0286337-05:00",
     "ivs": {
       "values": {
@@ -958,7 +3787,86 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/116.png",
+      "id": 116,
+      "name": "horsea",
+      "exp": 59,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/116.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/116.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/116.png",
+      "ffs": null,
+      "types": [
+        10
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 60,
+          "SP_DEF": 25,
+          "SP_ATK": 70,
+          "DEF": 70,
+          "ATK": 40,
+          "HP": 30
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 1,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        13,
+        29,
+        36,
+        38,
+        55,
+        56,
+        57,
+        58,
+        59,
+        61,
+        62,
+        99,
+        127,
+        130,
+        145,
+        173,
+        190,
+        196,
+        200,
+        225,
+        237,
+        239,
+        250,
+        263,
+        290,
+        291,
+        324,
+        330,
+        340,
+        352,
+        362,
+        406,
+        430,
+        496,
+        503
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/116.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/116.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/116.png"
   },
   {
     "id": 43,
@@ -968,6 +3876,7 @@
     "nature": 19,
     "exp": 0,
     "lvl": 35,
+    "ps": 0,
     "catched": "2019-02-09T09:08:02.1461357-05:00",
     "ivs": {
       "values": {
@@ -989,7 +3898,76 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/043.png",
+      "id": 43,
+      "name": "oddish",
+      "exp": 64,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/43.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/43.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/43.png",
+      "ffs": null,
+      "types": [
+        7,
+        6
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 30,
+          "SP_DEF": 65,
+          "SP_ATK": 75,
+          "DEF": 55,
+          "ATK": 50,
+          "HP": 45
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 1,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        15,
+        36,
+        38,
+        51,
+        71,
+        72,
+        75,
+        76,
+        80,
+        99,
+        173,
+        188,
+        202,
+        237,
+        263,
+        290,
+        331,
+        402,
+        412,
+        474,
+        496,
+        585,
+        605,
+        611
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/43.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/43.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/43.png"
   },
   {
     "id": 178,
@@ -999,6 +3977,7 @@
     "nature": 11,
     "exp": 0,
     "lvl": 26,
+    "ps": 0,
     "catched": "2019-02-09T09:07:23.0680286-05:00",
     "ivs": {
       "values": {
@@ -1020,7 +3999,86 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/178.png",
+      "id": 178,
+      "name": "xatu",
+      "exp": 165,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/178.png",
+      "bf": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/female/178.png",
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/178.png",
+      "bfs": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/female/178.png",
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/178.png",
+      "ff": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/female/178.png",
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/178.png",
+      "ffs": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/female/178.png",
+      "types": [
+        5,
+        11
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 95,
+          "SP_DEF": 70,
+          "SP_ATK": 95,
+          "DEF": 70,
+          "ATK": 75,
+          "HP": 65
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 1,
+          "SP_DEF": 0,
+          "SP_ATK": 1,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        19,
+        38,
+        63,
+        64,
+        76,
+        94,
+        138,
+        143,
+        168,
+        173,
+        202,
+        211,
+        237,
+        239,
+        247,
+        248,
+        257,
+        263,
+        290,
+        314,
+        318,
+        324,
+        365,
+        369,
+        389,
+        403,
+        416,
+        428,
+        466,
+        473,
+        492,
+        496,
+        500,
+        605
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/178.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/178.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/178.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/178.png"
   },
   {
     "id": 127,
@@ -1030,6 +4088,7 @@
     "nature": 3,
     "exp": 0,
     "lvl": 29,
+    "ps": 0,
     "catched": "2019-02-09T09:11:01.2197811-05:00",
     "ivs": {
       "values": {
@@ -1051,7 +4110,98 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/127.png",
+      "id": 127,
+      "name": "pinsir",
+      "exp": 175,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/127.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/127.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/127.png",
+      "ffs": null,
+      "types": [
+        8
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 85,
+          "SP_DEF": 70,
+          "SP_ATK": 55,
+          "DEF": 100,
+          "ATK": 125,
+          "HP": 65
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 2,
+          "HP": 0
+        }
+      },
+      "moves": [
+        11,
+        15,
+        20,
+        29,
+        31,
+        34,
+        36,
+        37,
+        38,
+        63,
+        66,
+        70,
+        89,
+        91,
+        98,
+        99,
+        157,
+        163,
+        168,
+        173,
+        206,
+        210,
+        237,
+        249,
+        263,
+        264,
+        276,
+        279,
+        280,
+        282,
+        290,
+        317,
+        364,
+        370,
+        404,
+        411,
+        416,
+        431,
+        444,
+        450,
+        458,
+        479,
+        480,
+        496,
+        522,
+        523,
+        693
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/127.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/127.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/127.png"
   },
   {
     "id": 72,
@@ -1061,6 +4211,7 @@
     "nature": 24,
     "exp": 0,
     "lvl": 27,
+    "ps": 0,
     "catched": "2019-02-09T09:18:27.6767153-05:00",
     "ivs": {
       "values": {
@@ -1082,7 +4233,97 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/072.png",
+      "id": 72,
+      "name": "tentacool",
+      "exp": 67,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/72.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/72.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/72.png",
+      "ffs": null,
+      "types": [
+        7,
+        10
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 70,
+          "SP_DEF": 100,
+          "SP_ATK": 50,
+          "DEF": 35,
+          "ATK": 40,
+          "HP": 40
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 1,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        15,
+        20,
+        35,
+        36,
+        38,
+        40,
+        51,
+        55,
+        56,
+        57,
+        58,
+        59,
+        61,
+        62,
+        72,
+        99,
+        127,
+        130,
+        132,
+        145,
+        168,
+        173,
+        188,
+        196,
+        202,
+        229,
+        237,
+        250,
+        263,
+        282,
+        290,
+        291,
+        330,
+        352,
+        362,
+        371,
+        398,
+        474,
+        482,
+        491,
+        496,
+        503,
+        506,
+        605,
+        611
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/72.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/72.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/72.png"
   },
   {
     "id": 13,
@@ -1092,6 +4333,7 @@
     "nature": 2,
     "exp": 0,
     "lvl": 2,
+    "ps": 0,
     "catched": "2019-02-09T09:19:35.7109243-05:00",
     "ivs": {
       "values": {
@@ -1113,7 +4355,55 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/013.png",
+      "id": 13,
+      "name": "weedle",
+      "exp": 39,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/13.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/13.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/13.png",
+      "ffs": null,
+      "types": [
+        7,
+        8
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 50,
+          "SP_DEF": 20,
+          "SP_ATK": 20,
+          "DEF": 30,
+          "ATK": 35,
+          "HP": 40
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 1,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        40,
+        450,
+        527
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/13.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/13.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/13.png"
   },
   {
     "id": 237,
@@ -1123,6 +4413,7 @@
     "nature": 11,
     "exp": 0,
     "lvl": 6,
+    "ps": 0,
     "catched": "2019-02-09T09:09:02.4425685-05:00",
     "ivs": {
       "values": {
@@ -1144,7 +4435,86 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/237.png",
+      "id": 237,
+      "name": "hitmontop",
+      "exp": 159,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/237.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/237.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/237.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/237.png",
+      "ffs": null,
+      "types": [
+        1
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 70,
+          "SP_DEF": 110,
+          "SP_ATK": 35,
+          "DEF": 95,
+          "ATK": 95,
+          "HP": 50
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 2,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        25,
+        27,
+        29,
+        34,
+        38,
+        70,
+        89,
+        91,
+        98,
+        157,
+        167,
+        168,
+        173,
+        189,
+        205,
+        228,
+        229,
+        237,
+        239,
+        249,
+        263,
+        279,
+        280,
+        290,
+        343,
+        364,
+        370,
+        389,
+        410,
+        444,
+        490,
+        496,
+        514,
+        523,
+        529
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/237.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/237.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/237.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/237.png"
   },
   {
     "id": 86,
@@ -1154,6 +4524,7 @@
     "nature": 14,
     "exp": 0,
     "lvl": 32,
+    "ps": 0,
     "catched": "2019-02-09T09:12:14.152882-05:00",
     "ivs": {
       "values": {
@@ -1175,7 +4546,90 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/086.png",
+      "id": 86,
+      "name": "seel",
+      "exp": 65,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/86.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/86.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/86.png",
+      "ffs": null,
+      "types": [
+        10
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 45,
+          "SP_DEF": 70,
+          "SP_ATK": 45,
+          "DEF": 55,
+          "ATK": 45,
+          "HP": 65
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 1,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        6,
+        21,
+        29,
+        34,
+        36,
+        38,
+        55,
+        57,
+        58,
+        59,
+        61,
+        62,
+        64,
+        70,
+        99,
+        122,
+        127,
+        130,
+        168,
+        173,
+        196,
+        231,
+        237,
+        250,
+        252,
+        263,
+        290,
+        291,
+        324,
+        333,
+        352,
+        362,
+        401,
+        420,
+        453,
+        496,
+        497,
+        529,
+        562
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/86.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/86.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/86.png"
   },
   {
     "id": 133,
@@ -1185,6 +4639,7 @@
     "nature": 9,
     "exp": 0,
     "lvl": 14,
+    "ps": 0,
     "catched": "2019-02-09T09:13:22.9949537-05:00",
     "ivs": {
       "values": {
@@ -1206,7 +4661,76 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png",
+      "id": 133,
+      "name": "eevee",
+      "exp": 65,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/133.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/133.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/133.png",
+      "ffs": null,
+      "types": [
+        0
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 55,
+          "SP_DEF": 65,
+          "SP_ATK": 45,
+          "DEF": 50,
+          "ATK": 55,
+          "HP": 55
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 1,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        29,
+        33,
+        34,
+        36,
+        38,
+        44,
+        91,
+        98,
+        99,
+        130,
+        173,
+        189,
+        231,
+        237,
+        247,
+        263,
+        290,
+        304,
+        343,
+        387,
+        485,
+        496,
+        497,
+        500,
+        514
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/133.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/133.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/133.png"
   },
   {
     "id": 60,
@@ -1216,6 +4740,7 @@
     "nature": 12,
     "exp": 0,
     "lvl": 23,
+    "ps": 0,
     "catched": "2019-02-09T09:14:12.3227188-05:00",
     "ivs": {
       "values": {
@@ -1237,7 +4762,83 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/060.png",
+      "id": 60,
+      "name": "poliwag",
+      "exp": 60,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/60.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/60.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/60.png",
+      "ffs": null,
+      "types": [
+        10
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 90,
+          "SP_DEF": 40,
+          "SP_ATK": 40,
+          "DEF": 40,
+          "ATK": 50,
+          "HP": 40
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 1,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        3,
+        29,
+        34,
+        36,
+        38,
+        55,
+        56,
+        57,
+        58,
+        59,
+        61,
+        91,
+        94,
+        99,
+        127,
+        130,
+        145,
+        168,
+        173,
+        196,
+        237,
+        250,
+        263,
+        290,
+        291,
+        301,
+        341,
+        352,
+        358,
+        426,
+        496,
+        503
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/60.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/60.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/60.png"
   },
   {
     "id": 66,
@@ -1247,6 +4848,7 @@
     "nature": 18,
     "exp": 0,
     "lvl": 8,
+    "ps": 0,
     "catched": "2019-02-09T09:16:11.7286576-05:00",
     "ivs": {
       "values": {
@@ -1268,7 +4870,103 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/066.png",
+      "id": 66,
+      "name": "machop",
+      "exp": 61,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/66.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/66.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/66.png",
+      "ffs": null,
+      "types": [
+        1
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 35,
+          "SP_DEF": 35,
+          "SP_ATK": 35,
+          "DEF": 50,
+          "ATK": 80,
+          "HP": 70
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 1,
+          "HP": 0
+        }
+      },
+      "moves": [
+        2,
+        5,
+        7,
+        8,
+        9,
+        25,
+        27,
+        29,
+        34,
+        36,
+        38,
+        53,
+        66,
+        70,
+        89,
+        91,
+        99,
+        126,
+        130,
+        157,
+        168,
+        173,
+        189,
+        223,
+        237,
+        238,
+        249,
+        263,
+        264,
+        265,
+        276,
+        279,
+        280,
+        282,
+        290,
+        317,
+        358,
+        370,
+        371,
+        398,
+        410,
+        411,
+        418,
+        431,
+        479,
+        490,
+        496,
+        510,
+        514,
+        523,
+        530,
+        612
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/66.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/66.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/66.png"
   },
   {
     "id": 120,
@@ -1278,6 +4976,7 @@
     "nature": 6,
     "exp": 0,
     "lvl": 35,
+    "ps": 0,
     "catched": "2019-02-09T09:17:19.2758367-05:00",
     "ivs": {
       "values": {
@@ -1299,7 +4998,87 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/120.png",
+      "id": 120,
+      "name": "staryu",
+      "exp": 68,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/120.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/120.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/120.png",
+      "ffs": null,
+      "types": [
+        10
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 85,
+          "SP_DEF": 55,
+          "SP_ATK": 70,
+          "DEF": 55,
+          "ATK": 45,
+          "HP": 30
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 1,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        33,
+        36,
+        38,
+        55,
+        56,
+        57,
+        58,
+        59,
+        61,
+        62,
+        85,
+        87,
+        94,
+        99,
+        127,
+        130,
+        161,
+        173,
+        192,
+        196,
+        205,
+        229,
+        237,
+        239,
+        250,
+        263,
+        290,
+        291,
+        324,
+        352,
+        362,
+        408,
+        430,
+        496,
+        503,
+        605
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/120.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/120.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/120.png"
   },
   {
     "id": 152,
@@ -1309,6 +5088,7 @@
     "nature": 10,
     "exp": 0,
     "lvl": 14,
+    "ps": 0,
     "catched": "2019-02-09T09:16:49.743838-05:00",
     "ivs": {
       "values": {
@@ -1330,7 +5110,75 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/152.png",
+      "id": 152,
+      "name": "chikorita",
+      "exp": 64,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/152.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/152.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/152.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/152.png",
+      "ffs": null,
+      "types": [
+        6
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 45,
+          "SP_DEF": 65,
+          "SP_ATK": 49,
+          "DEF": 65,
+          "ATK": 49,
+          "HP": 45
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 1,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        15,
+        22,
+        29,
+        33,
+        34,
+        38,
+        75,
+        76,
+        173,
+        189,
+        202,
+        210,
+        231,
+        237,
+        246,
+        263,
+        290,
+        331,
+        402,
+        412,
+        437,
+        496,
+        497,
+        520
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/152.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/152.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/152.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/152.png"
   },
   {
     "id": 153,
@@ -1340,6 +5188,7 @@
     "nature": 0,
     "exp": 0,
     "lvl": 14,
+    "ps": 0,
     "catched": "2019-02-09T09:22:53.1317242-05:00",
     "ivs": {
       "values": {
@@ -1361,7 +5210,75 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/153.png",
+      "id": 153,
+      "name": "bayleef",
+      "exp": 142,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/153.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/153.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/153.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/153.png",
+      "ffs": null,
+      "types": [
+        6
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 60,
+          "SP_DEF": 80,
+          "SP_ATK": 63,
+          "DEF": 80,
+          "ATK": 62,
+          "HP": 60
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 1,
+          "SP_ATK": 0,
+          "DEF": 1,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        15,
+        29,
+        33,
+        34,
+        38,
+        70,
+        75,
+        76,
+        173,
+        189,
+        202,
+        210,
+        231,
+        237,
+        246,
+        249,
+        263,
+        290,
+        331,
+        402,
+        412,
+        496,
+        497,
+        520
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/153.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/153.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/153.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/153.png"
   },
   {
     "id": 10,
@@ -1371,6 +5288,7 @@
     "nature": 13,
     "exp": 0,
     "lvl": 6,
+    "ps": 0,
     "catched": "2019-02-09T09:23:02.9120382-05:00",
     "ivs": {
       "values": {
@@ -1392,6 +5310,310 @@
         "HP": 0
       }
     },
-    "moves": []
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png",
+      "id": 10,
+      "name": "caterpie",
+      "exp": 39,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/10.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/10.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/10.png",
+      "ffs": null,
+      "types": [
+        8
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 45,
+          "SP_DEF": 20,
+          "SP_ATK": 20,
+          "DEF": 35,
+          "ATK": 30,
+          "HP": 45
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 1
+        }
+      },
+      "moves": [
+        33,
+        173,
+        450,
+        527
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/10.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/10.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/10.png"
+  },
+  {
+    "id": 62,
+    "owner": 207520984591368202,
+    "nick": "poliwrath",
+    "shiny": false,
+    "nature": 13,
+    "exp": 0,
+    "lvl": 4,
+    "ps": 21,
+    "catched": "2019-02-18T07:58:07.8429088-05:00",
+    "ivs": {
+      "values": {
+        "SPEED": 28,
+        "SP_DEF": 6,
+        "SP_ATK": 8,
+        "DEF": 25,
+        "ATK": 17,
+        "HP": 13
+      }
+    },
+    "evs": {
+      "values": {
+        "SPEED": 0,
+        "SP_DEF": 0,
+        "SP_ATK": 0,
+        "DEF": 0,
+        "ATK": 0,
+        "HP": 0
+      }
+    },
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/062.png",
+      "id": 62,
+      "name": "poliwrath",
+      "exp": 230,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/62.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/62.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/62.png",
+      "ffs": null,
+      "types": [
+        1,
+        10
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 70,
+          "SP_DEF": 90,
+          "SP_ATK": 70,
+          "DEF": 95,
+          "ATK": 95,
+          "HP": 90
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 3,
+          "ATK": 0,
+          "HP": 0
+        }
+      },
+      "moves": [
+        3,
+        5,
+        8,
+        25,
+        29,
+        34,
+        36,
+        38,
+        55,
+        57,
+        58,
+        59,
+        61,
+        63,
+        66,
+        70,
+        89,
+        91,
+        94,
+        99,
+        127,
+        130,
+        157,
+        168,
+        173,
+        189,
+        196,
+        223,
+        237,
+        249,
+        250,
+        263,
+        264,
+        280,
+        290,
+        291,
+        317,
+        352,
+        371,
+        398,
+        410,
+        411,
+        416,
+        431,
+        490,
+        496,
+        503,
+        509,
+        523,
+        612
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/62.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/62.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/62.png"
+  },
+  {
+    "id": 131,
+    "owner": 419938924241223707,
+    "nick": "lapras",
+    "shiny": false,
+    "nature": 3,
+    "exp": 0,
+    "lvl": 28,
+    "ps": 116,
+    "catched": "2019-02-18T08:28:50.5027032-05:00",
+    "ivs": {
+      "values": {
+        "SPEED": 6,
+        "SP_DEF": 15,
+        "SP_ATK": 1,
+        "DEF": 8,
+        "ATK": 10,
+        "HP": 22
+      }
+    },
+    "evs": {
+      "values": {
+        "SPEED": 0,
+        "SP_DEF": 0,
+        "SP_ATK": 0,
+        "DEF": 0,
+        "ATK": 0,
+        "HP": 0
+      }
+    },
+    "moves": [],
+    "Model": {
+      "LargeFront": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/131.png",
+      "id": 131,
+      "name": "lapras",
+      "exp": 187,
+      "bm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/131.png",
+      "bf": null,
+      "bms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/131.png",
+      "bfs": null,
+      "fm": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+      "ff": null,
+      "fms": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/131.png",
+      "ffs": null,
+      "types": [
+        3,
+        10
+      ],
+      "stats": {
+        "values": {
+          "SPEED": 60,
+          "SP_DEF": 95,
+          "SP_ATK": 85,
+          "DEF": 80,
+          "ATK": 85,
+          "HP": 130
+        }
+      },
+      "effort": {
+        "values": {
+          "SPEED": 0,
+          "SP_DEF": 0,
+          "SP_ATK": 0,
+          "DEF": 0,
+          "ATK": 0,
+          "HP": 2
+        }
+      },
+      "moves": [
+        29,
+        34,
+        36,
+        38,
+        55,
+        56,
+        57,
+        58,
+        59,
+        61,
+        62,
+        63,
+        70,
+        76,
+        85,
+        87,
+        94,
+        99,
+        127,
+        130,
+        138,
+        173,
+        192,
+        196,
+        200,
+        225,
+        231,
+        237,
+        246,
+        248,
+        249,
+        250,
+        263,
+        290,
+        291,
+        304,
+        324,
+        352,
+        362,
+        401,
+        406,
+        416,
+        419,
+        420,
+        428,
+        442,
+        496,
+        497,
+        523,
+        524,
+        529,
+        573
+      ]
+    },
+    "HasOwner": true,
+    "Front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+    "Back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/131.png",
+    "ShinyFront": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/131.png",
+    "ShinyBack": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/131.png"
   }
 ]

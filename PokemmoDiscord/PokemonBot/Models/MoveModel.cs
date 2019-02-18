@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using PokemmoDiscord.PokemonBot.Data;
+using PokemmoDiscord.PokemonBot.Entity;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -26,6 +27,15 @@ namespace PokemmoDiscord.PokemonBot.Models
         public override string ToString()
         {
             return $"{Name} [{Accuracy},{Power}] {DamageClass.ToString()} {MovementType.ToString()} ";
+        }
+        public int CalculateDamage(PokemonEntity caster, PokemonEntity target)
+        {
+            return ((
+                (((2 * caster.Level) / 5) + 2)
+                * (int)Power
+                * (caster.Stats[(DamageClass == DamageType.PHYSICAL ? Mis.StatTypeEnum.ATK : Mis.StatTypeEnum.SP_ATK)]
+                / target.Stats[(DamageClass == DamageType.PHYSICAL ? Mis.StatTypeEnum.ATK : Mis.StatTypeEnum.SP_ATK)])
+                ) / 50) + 2;
         }
     }
 }

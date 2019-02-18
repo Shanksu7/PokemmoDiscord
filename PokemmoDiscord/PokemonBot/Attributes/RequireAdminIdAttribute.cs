@@ -24,12 +24,12 @@ namespace AKDiscordBot.Extensions
                 return Task.FromResult(PreconditionResult.FromError("No administrator permission"));
             }
             else
-            {                
+            {
                 //Console.WriteLine("Sucess");
                 return Task.FromResult(PreconditionResult.FromSuccess());
             }
-        }  
-            
-        
+        }
+
+
     }
 }

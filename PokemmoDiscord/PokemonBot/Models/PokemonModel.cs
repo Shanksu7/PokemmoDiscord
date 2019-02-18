@@ -1,19 +1,17 @@
-﻿using Newtonsoft.Json;
+﻿using Discord;
+using Newtonsoft.Json;
 using PokeAPI;
 using PokemmoDiscord.PokemonBot.Characteristics;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Linq;
 using PokemmoDiscord.PokemonBot.Mis;
-using Discord;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace PokemmoDiscord.PokemonBot.Data
 {
     public class PokemonModel
     {
         public static string File = "pokemon_model.json";
-        public string GetLargeFront() =>  $"https://assets.pokemon.com/assets/cms2/img/pokedex/full/{ID.NumericString()}.png";
+        public string LargeFront => $"https://assets.pokemon.com/assets/cms2/img/pokedex/full/{ID.NumericString()}.png";
         public PokemonModel(Pokemon pokemon, List<int> idmoves)
         {
             ID = pokemon.ID;
@@ -37,61 +35,62 @@ namespace PokemmoDiscord.PokemonBot.Data
 
         }
         [JsonProperty("id")]
-        public int ID { get;  set; }
+        public int ID { get; set; }
         [JsonProperty("name")]
-        public string Name { get;  set; }
+        public string Name { get; set; }
         [JsonProperty("exp")]
-        public int BaseExperience { get;  set; }        
+        public int BaseExperience { get; set; }
         [JsonProperty("bm")]
-        public string BackMale { get;  set; }
+        public string BackMale { get; set; }
         [JsonProperty("bf")]
-        public string BackFemale { get;  set; }
+        public string BackFemale { get; set; }
         [JsonProperty("bms")]
-        public string BackMaleShiny { get;  set; }
+        public string BackMaleShiny { get; set; }
         [JsonProperty("bfs")]
-        public string BackFemaleShiny { get;  set; }
+        public string BackFemaleShiny { get; set; }
         [JsonProperty("fm")]
-        public string FrontMale { get;  set; }
+        public string FrontMale { get; set; }
         [JsonProperty("ff")]
-        public string FrontFemale { get;  set; }
+        public string FrontFemale { get; set; }
         [JsonProperty("fms")]
-        public string FrontMaleShiny { get;  set; }
+        public string FrontMaleShiny { get; set; }
         [JsonProperty("ffs")]
-        public string FrontFemaleShiny { get;  set; }
+        public string FrontFemaleShiny { get; set; }
         [JsonProperty("types")]
-        public List<PokemonTypeEnum> Types { get;  set; }
+        public List<PokemonTypeEnum> Types { get; set; }
         [JsonProperty("stats")]
-        public StatsCollection BaseStats { get;  set; }
+        public StatsCollection BaseStats { get; set; }
         [JsonProperty("effort")]
-        public StatsCollection EffortStats { get;  set; }
+        public StatsCollection EffortStats { get; set; }
         [JsonProperty("moves")]
-        public List<int> AvailableMoveIDS { get;  set; }
+        public List<int> AvailableMoveIDS { get; set; }
         internal Embed EmbedBaseInformation()
         {
             EmbedBuilder eb = new EmbedBuilder()
-                .WithThumbnailUrl(GetLargeFront())
+                .WithThumbnailUrl(LargeFront)
                 .WithColor(GetColor())
                 .WithTitle($"**#{ID} {Name}**")
                 .WithDescription("**Base stats**:");
             foreach (var stat in BaseStats.Values)
-                eb.AddField(stat.Key.ToString(), stat.Value , true);
+                eb.AddField(stat.Key.ToString(), stat.Value, true);
             eb.AddField("Base Experience", BaseExperience, true);
             var moves = "";
             foreach (var idm in AvailableMoveIDS)
             {
                 var move = PokemonData.MovesModel.First(x => x.ID == idm);
                 moves += move.Name + ", ";
-            }            
+            }
             eb.AddField("Available Moves", moves, true);
             return eb.Build();
         }
+        
 
         public void BuildIvsEvs(PokemonStats[] stats)
         {
-            foreach(var stat in stats)
+            foreach (var stat in stats)
             {
                 StatTypeEnum type = StatTypeEnum.ATK;
-                switch(stat.Stat.Name)
+                switch (stat.Stat.Name)
                 {
                     case "speed":
                         type = StatTypeEnum.SPEED;

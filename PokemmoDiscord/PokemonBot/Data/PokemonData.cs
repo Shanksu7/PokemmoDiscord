@@ -1,7 +1,6 @@
 ﻿using AKDiscordBot;
 using Newtonsoft.Json;
 using PokeAPI;
-using PokemmoDiscord.PokemonBot.Characteristics;
 using PokemmoDiscord.PokemonBot.Entity;
 using PokemmoDiscord.PokemonBot.Models;
 using System;
@@ -10,7 +9,6 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -18,7 +16,7 @@ namespace PokemmoDiscord.PokemonBot.Data
 {
     public class PokemonData
     {
-        
+
         public static ConcurrentDictionary<string, PokemonTypeEnum> _pokemontypes = new ConcurrentDictionary<string, PokemonTypeEnum>();
         public static ConcurrentDictionary<ulong, Trainer> _trainers = new ConcurrentDictionary<ulong, Trainer>();
         public static ConcurrentBag<Entity.PokemonEntity> catchedPokemon = new ConcurrentBag<Entity.PokemonEntity>();
@@ -40,15 +38,29 @@ namespace PokemmoDiscord.PokemonBot.Data
                 await Program.SetGameAsync("Loading moves");
                 using (StreamReader r = new StreamReader(MoveModel.File))
                     MovesModel = JsonConvert.DeserializeObject<ConcurrentBag<MoveModel>>(r.ReadToEnd());
-                Console.WriteLine("Loaded "+MovesModel.Count()+" Moves");
+                Console.WriteLine("Loaded " + MovesModel.Count() + " Moves\n");
                 //POKEMON MODELS
                 await Program.SetGameAsync("Loading Pokemon models");
                 using (StreamReader r = new StreamReader(PokemonModel.File))
                     PokemonModels = JsonConvert.DeserializeObject<ConcurrentBag<PokemonModel>>(r.ReadToEnd());
-                Console.WriteLine("Loaded " + PokemonModels.Count() + " pokemon models");
+                Console.WriteLine("Loaded " + PokemonModels.Count() + " pokemon models\n");
                 //POKEMONS CATCHED
+                await Program.SetGameAsync("Loading Catched Pokemons");
                 using (StreamReader r = new StreamReader(PokemonEntity.File))
                     catchedPokemon = JsonConvert.DeserializeObject<ConcurrentBag<PokemonEntity>>(r.ReadToEnd());
+                Console.WriteLine("Loaded " + catchedPokemon.Count() + " catched pokemons\n");
+                var count = 0;
+                //FIX
+                foreach (var poke in catchedPokemon)
+                {
+                    if (poke.Moves.Count > 4)
+                    {
+                        poke.Moves = poke.Moves.Take(4).ToList();
+                        count++;
+                    }
+
+                }
+                Console.WriteLine($"Fixed {count} pokemons");
                 //TRAINERS
                 /*
                 ConcurrentBag<Trainer> trainers = new ConcurrentBag<Trainer>();
@@ -59,12 +71,12 @@ namespace PokemmoDiscord.PokemonBot.Data
                 using (StreamReader r = new StreamReader(Trainer.File))
                     _trainers = JsonConvert.DeserializeObject<ConcurrentDictionary<ulong, Trainer>>(r.ReadToEnd());
                 //FINISH
-                sp.Stop();                
+                sp.Stop();
                 Console.WriteLine("Finished after " + sp.ElapsedMilliseconds + " ms");
                 await Program.SetGameAsync("guiding " + Program.pre);
                 Ready = true;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 await Program.SendReport(ex.Message, Program.ReportEnum.ERROR);
             }
@@ -80,7 +92,7 @@ namespace PokemmoDiscord.PokemonBot.Data
         }
 
         private static void Save()
-        {            
+        {
 
             var trainers = JsonConvert.SerializeObject(_trainers, Formatting.Indented);
             File.WriteAllText(Trainer.File, trainers);
@@ -107,14 +119,14 @@ namespace PokemmoDiscord.PokemonBot.Data
         public static async Task LoadAPIMoves()
         {
             int max = 728;
-            
+
             List<MoveModel> moves = new List<MoveModel>();
             for (int i = 1; i <= max; i++)
             {
                 var move = await DataFetcher.GetApiObject<Move>(i);
                 if (move.Power == null || move.Accuracy == null)
                     continue;
-                if (move.DamageClass.Name != "special" && move.DamageClass.Name != "physical" )
+                if (move.DamageClass.Name != "special" && move.DamageClass.Name != "physical")
                     continue;
                 _pokemontypes.TryGetValue(move.Type.Name, out var type);
                 MoveModel model = new MoveModel()
@@ -126,7 +138,7 @@ namespace PokemmoDiscord.PokemonBot.Data
                     ESPName = move.Names[4].Name,
                     Power = move.Power,
                     MovementType = type
-                    
+
                 };
                 moves.Add(model);
                 if (!_pokemontypes.TryGetValue(move.Type.Name, out var t) && move.Type.Name != "grass")
@@ -136,14 +148,14 @@ namespace PokemmoDiscord.PokemonBot.Data
                 }
             }
             var s = JsonConvert.SerializeObject(moves, Formatting.Indented);
-            File.WriteAllText("moves.json", s);            
+            File.WriteAllText("moves.json", s);
 
         }
         public static async Task LoadPokemonAPI()
         {
             int max = MaxPokemonId;
             List<PokemonModel> models = new List<PokemonModel>();
-            for(int i = 800; i<=max; i++)
+            for (int i = 800; i <= max; i++)
             {
                 var pokemon = await DataFetcher.GetApiObject<PokeAPI.Pokemon>(i);
                 List<int> idmoves = new List<int>();
@@ -157,12 +169,12 @@ namespace PokemmoDiscord.PokemonBot.Data
                     }
                     else continue;
                 }
-                if(pokemon.Forms.Count() > 1)                
-                    Console.WriteLine(pokemon.Forms.Count() +" for " + pokemon.Name);
+                if (pokemon.Forms.Count() > 1)
+                    Console.WriteLine(pokemon.Forms.Count() + " for " + pokemon.Name);
                 PokemonModel model = new PokemonModel(pokemon, idmoves);
                 model.BuildIvsEvs(pokemon.Stats);
                 models.Add(model);
-                Console.WriteLine("["+model.ID+"] " + model.Name);
+                Console.WriteLine("[" + model.ID + "] " + model.Name);
             }
             var s = JsonConvert.SerializeObject(models, Formatting.Indented);
             File.WriteAllText("pokemon_model.json", s);
@@ -175,14 +187,13 @@ namespace PokemmoDiscord.PokemonBot.Data
             {
                 evs = await DataFetcher.GetApiObject<EvolutionChain>(poke.ID);
             }
-            catch(Exception ex) { return ids; }
-            
-            if(evs.Chain.Details.Count() > 0)
+            catch (Exception) { return ids; }
+
+            if (evs.Chain.Details.Count() > 0)
             {
-                ChainLink[] l;
-              /* ids.Add(_pokemons.First(x => x.Name == evs.Chain.EvolvesTo[0].Species.Name).ID);
-                if(( l = evs.Chain.EvolvesTo[0].EvolvesTo).Count() > 0)                
-                    ids.AddRange(await GetEvolutionIDs(_pokemons.First(x => x.Name == l[0].Species.Name)));  */              
+                /* ids.Add(_pokemons.First(x => x.Name == evs.Chain.EvolvesTo[0].Species.Name).ID);
+                  if(( l = evs.Chain.EvolvesTo[0].EvolvesTo).Count() > 0)                
+                      ids.AddRange(await GetEvolutionIDs(_pokemons.First(x => x.Name == l[0].Species.Name)));  */
             }
             return ids;
         }
