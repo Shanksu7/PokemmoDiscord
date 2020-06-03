@@ -1,10 +1,7 @@
 ﻿using Newtonsoft.Json;
-using System.Linq;
 using PokemmoDiscord.PokemonBot.Mis;
-using System;
 using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace PokemmoDiscord.PokemonBot.Characteristics
 {
@@ -20,14 +17,14 @@ namespace PokemmoDiscord.PokemonBot.Characteristics
             Values.TryAdd(StatTypeEnum.SP_DEF, spdef);
             Values.TryAdd(StatTypeEnum.HP, hp);
         }
-        public int this[StatTypeEnum type] => Values[type];
+
         [JsonProperty("values")]
-        public ConcurrentDictionary<StatTypeEnum, int> Values  { get; internal set; }
-        public decimal Sum()
-        {
-            return Values.Values.Sum();
-        }
-        public void Add(StatTypeEnum type, int value ) => Values.AddOrUpdate(type, value, (key, v) => v = value);
-        
+        public ConcurrentDictionary<StatTypeEnum, int> Values { get; internal set; }
+        public int this[StatTypeEnum type] => Values[type];
+
+        public decimal Sum() => Values.Values.Sum();
+
+        public void Add(StatTypeEnum type, int value) => Values.AddOrUpdate(type, value, (key, v) => v = value);
+
     }
 }

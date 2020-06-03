@@ -2,8 +2,6 @@
 using Discord;
 using Discord.Commands;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace PokemmoDiscord.PokemonBot.Commands
@@ -20,6 +18,7 @@ namespace PokemmoDiscord.PokemonBot.Commands
             await ReplyAsync(result);
 
         }
+
         [Command("test", true)]
         public async Task Test()
         {
@@ -34,14 +33,14 @@ namespace PokemmoDiscord.PokemonBot.Commands
                 eb.WithThumbnailUrl("https://sites.google.com/site/aurakingdomguia/_/rsrc/1479963432606/trabajos/recoleccion/ingredientes/ingpolvoamarillo.jpg");
                 eb.WithColor(Color.Red);
                 var embed = eb.Build();
-                await ReplyAsync(embed: embed);
+                await ReplyAsync(embed: embed).ConfigureAwait(false);
             }
             catch (Exception ex)
             {
-                eb.WithTitle($"Congratz! You catched a bug");
+                eb.WithTitle($"Congratz! You catched a bug in your code :)");
                 eb.WithDescription(ex.Message);
                 var embed = eb.Build();
-                await ReplyAsync(embed: embed);
+                await ReplyAsync(embed: embed).ConfigureAwait(false);
             }
         }
     }

@@ -1,11 +1,11 @@
 ﻿using Discord;
-using System.Linq;
 using Discord.Commands;
 using Discord.WebSocket;
 using Microsoft.Extensions.DependencyInjection;
-using PokemmoDiscord.PokemonBot.Attributes;
 using PokemmoDiscord.PokemonBot.Data;
+using PokemmoDiscord.PokemonBot.Manager;
 using System;
+using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 
@@ -15,16 +15,12 @@ namespace AKDiscordBot
     {
         public static string pre = ".";
 
-        //Property to access Bot's information client
         public static DiscordSocketClient Client { get; set; }
-        //Property for commands
-        public static CommandService Commands { get; set; }
-        //Property for Services
-        private IServiceProvider Services { get; set; }
+        public static CommandService Commands { get; set; }        
         private static string bot_Token = Environment.GetEnvironmentVariable("bot_pokemon");
         private static ulong logChannel = 542133670602080258;
-        //METHODS
-        //Main Method
+        private IServiceProvider Services { get; set; }
+
         static void Main(string[] args) => new Program().RuntBotAsync().GetAwaiter().GetResult();
 
         public async Task RuntBotAsync()
@@ -39,38 +35,38 @@ namespace AKDiscordBot
             Client.RoleCreated += OnRoleCreated;
             Client.Ready += OnReady;
             //Client.UserJoined += OnUserJoined;
-            await RegisterCommandsAsync();
-            await Client.LoginAsync(TokenType.Bot, bot_Token);
-            await Client.StartAsync();
-            await Task.Delay(-1);
-            
-        }
+            await RegisterCommandsAsync().ConfigureAwait(false);
+            await Client.LoginAsync(TokenType.Bot, bot_Token).ConfigureAwait(false);
+            await Client.StartAsync().ConfigureAwait(false);
+            await Task.Delay(-1).ConfigureAwait(false);
 
+        }
 
         private async Task OnReady()
         {
-            await PokemonData.LoadData();
-            await ChannelPokemon.StartSpawn();
-            await PokemonData.SaveData();
+            await PokemonData.LoadData().ConfigureAwait(false);
+            await ChannelPokemonManager.StartSpawn().ConfigureAwait(false);
+            await PokemonData.SaveData().ConfigureAwait(false);
             foreach (var guild in Client.Guilds)
             {
                 if (guild.Id != 542108567487119372)
                 {
-                    await guild.LeaveAsync();
+                    await guild.LeaveAsync().ConfigureAwait(false);
                 }
             }
         }
 
-        public static async Task SetGameAsync(string activity)
+        public static async Task SetGameAsync(string game)
         {
-            Console.WriteLine(activity);
-            await Client.SetGameAsync(activity);
+            Console.WriteLine(game);
+            await Client.SetGameAsync(game).ConfigureAwait(false);
         }
+
         private async Task OnRoleCreated(SocketRole arg)
         {
             if (arg.Name == Client.CurrentUser.Username)
             {
-                await SendReport("Role created **" + arg.Name + "**\nAdmin?: **" + arg.Permissions.Administrator + "**\nGuild: **" + arg.Guild.Name + "** (" + arg.Id + ")", ReportEnum.LOG);
+                await SendReport("Role created **" + arg.Name + "**\nAdmin?: **" + arg.Permissions.Administrator + "**\nGuild: **" + arg.Guild.Name + "** (" + arg.Id + ")", ReportEnum.LOG).ConfigureAwait(false);
             }
         }
 
@@ -78,27 +74,26 @@ namespace AKDiscordBot
         {
             if (arg2.Id != 264445053596991498)
             {
-                await SendReport("**" + arg1.Username + "#" + arg1.Discriminator + "** (" + arg1.Id + ") \n **" + arg2.Name + "** (" + arg2.Id + ")", ReportEnum.USER_BANNED_FROM_GUILD);
+                await SendReport("**" + arg1.Username + "#" + arg1.Discriminator + "** (" + arg1.Id + ") \n **" + arg2.Name + "** (" + arg2.Id + ")", ReportEnum.USER_BANNED_FROM_GUILD).ConfigureAwait(false);
             }
         }
 
         private async Task OnLeftGuild(SocketGuild arg)
         {
-            await SendReport($"I've LEFT from guild **{arg.Name}** ({arg.Id})", ReportEnum.GUILD_LEFT);
+            await SendReport($"I've LEFT from guild **{arg.Name}** ({arg.Id})", ReportEnum.GUILD_LEFT).ConfigureAwait(false);
         }
 
         private async Task OnJoinedGuild(SocketGuild arg)
         {
-            await SendReport($"I've JOINED to guild **{arg.Name}** ({arg.Id})", ReportEnum.GUILD_JOIN);
+            await SendReport($"I've JOINED to guild **{arg.Name}** ({arg.Id})", ReportEnum.GUILD_JOIN).ConfigureAwait(false);
         }
 
         private async Task Log(LogMessage arg)
         {
             Console.WriteLine(arg);
-            await Task.CompletedTask;
+            await Task.CompletedTask.ConfigureAwait(false);
         }
 
-        //MessageReceived is the function that runs when Bot receive a Message on a channel or DM
         public async Task RegisterCommandsAsync()
         {
             Client.MessageReceived += HandleCommandAsync;
@@ -108,11 +103,11 @@ namespace AKDiscordBot
         private async Task HandleCommandAsync(SocketMessage arg)
         {
             var message = arg as SocketUserMessage;
-            if (message is null || message.Author.IsBot)            
-                return;            
+            if (message is null || message.Author.IsBot)
+                return;
             var trainer = PokemonData._trainers.GetOrAdd(message.Author.Id, new PokemmoDiscord.PokemonBot.Entity.Trainer(message.Author.Id));
             if (trainer.InFight && message.Content.Length == 1)
-            {                
+            {
                 await trainer.Fight.SetMovement(trainer.ID, int.Parse(message.Content) - 1);
                 await message.DeleteAsync();
                 return;
@@ -124,17 +119,19 @@ namespace AKDiscordBot
                 var context = new SocketCommandContext(Client, message);
                 var result = await Commands.ExecuteAsync(context, argPos, Services);
                 cmdexecuted = true;
-                if (result.Error.HasValue && ChannelPokemon.ChannelsToSpawn.Any(x => x.ChId == message.Channel.Id))
+                if (result.Error.HasValue && ChannelPokemonManager.ChannelsToSpawn.Any(x => (ulong) x.ChId == message.Channel.Id))
                     await message.DeleteAsync();
             }
-            if(!cmdexecuted && ChannelPokemon.ChannelsToSpawn.Any(x => x.ChId == message.Channel.Id))
+            if (!cmdexecuted && ChannelPokemonManager.ChannelsToSpawn.Any(x => (ulong) x.ChId == message.Channel.Id))
                 await message.DeleteAsync();
-            
+
         }
 
         public static async Task SendReport(string msg, ReportEnum type)
         {
-            EmbedBuilder embedBuilder = new EmbedBuilder();
+            var embedBuilder = new EmbedBuilder()
+            .WithTitle(type.ToString())
+            .WithDescription(msg);
             var log = Client.GetChannel(logChannel) as SocketTextChannel;
 
             switch (type)
@@ -158,12 +155,12 @@ namespace AKDiscordBot
                     embedBuilder.WithColor(Color.DarkGreen);
                     break;
             }
-            embedBuilder.WithTitle(type.ToString());
-            embedBuilder.WithDescription(msg);
+            
             var embed = embedBuilder.Build();
             Console.WriteLine(msg);
-            await log.SendMessageAsync(embed: embed);
+            await log.SendMessageAsync(embed: embed).ConfigureAwait(false);
         }
+
         public enum ReportEnum
         {
             GUILD_JOIN,

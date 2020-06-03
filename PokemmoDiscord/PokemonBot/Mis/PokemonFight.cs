@@ -1,20 +1,16 @@
 ﻿using Discord;
 using Discord.Rest;
-using Discord.WebSocket;
 using PokemmoDiscord.PokemonBot.Data;
 using PokemmoDiscord.PokemonBot.Entity;
 using PokemmoDiscord.PokemonBot.Models;
 using System;
 using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace PokemmoDiscord.PokemonBot.Mis
 {
-    public class PokemonFight 
+    public class PokemonFight
     {
         public PokemonFight(PokemonEntity atkpkm, PokemonEntity defpkm, RestUserMessage chmsg, IUserMessage atk1, IUserMessage def2)
         {
@@ -34,20 +30,25 @@ namespace PokemmoDiscord.PokemonBot.Mis
         public RestUserMessage ChannelMessage { get; set; }
         private Timer Clock { get; set; }
         public FightState State { get; set; }
+
+        public Embed EmbedChannelPerspective => BuildBattlePerspective(Attacker, Defender, false);
+        public Embed EmbedAttackerPerspective => BuildBattlePerspective(Attacker, Defender);
+        public Embed EmbedDefenderPerspective => BuildBattlePerspective(Defender, Attacker);
+
         public async Task StartFight()
         {
             Attacker.Trainer.Fight.State = FightState.RUNNING;
             Defender.Trainer.Fight.State = FightState.RUNNING;
-            Clock = new Timer(e => EndFight().GetAwaiter(), null, TimeSpan.FromSeconds(30), TimeSpan.FromSeconds(3));            
-            await Update(EmbedAttackerPerspective, EmbedDefenderPerspective, EmbedChannelPerspective);
+            Clock = new Timer(e => EndFight().GetAwaiter(), null, TimeSpan.FromSeconds(30), TimeSpan.FromSeconds(3));
+            await Update(EmbedAttackerPerspective, EmbedDefenderPerspective, EmbedChannelPerspective).ConfigureAwait(false);
         }
         public async Task RequestingDuel()
         {
-            Clock = new Timer(e => CancelRequest().GetAwaiter(), null, TimeSpan.FromSeconds(30), TimeSpan.FromSeconds(3));
+            Clock = new Timer(async e => await CancelRequest().ConfigureAwait(false), null, TimeSpan.FromSeconds(30), TimeSpan.FromMilliseconds(-1));
             await Task.CompletedTask;
         }
 
-        private async Task CancelRequest()
+        public async Task CancelRequest()
         {
             if (State != FightState.RUNNING)
             {
@@ -57,77 +58,72 @@ namespace PokemmoDiscord.PokemonBot.Mis
                     .WithTitle("Cancelado!")
                     .WithDescription("Se ha terminado el tiempo de espera")
                     .Build();
-                await Update(embed, embed, embed);
-                await Task.CompletedTask;
+                await Update(embed, embed, embed).ConfigureAwait(false);
             }
         }
 
         public async Task SetMovement(ulong id, int moveid)
         {
             try
-            {   
+            {
                 if (Attacker.OwnerID == id && AttackerMove == null)
-                    AttackerMove = Attacker.MovesModels[moveid];                
-                else if(Defender.OwnerID == id && DefenderMove == null)
+                    AttackerMove = Attacker.MovesModels[moveid];
+                else if (Defender.OwnerID == id && DefenderMove == null)
                     DefenderMove = Defender.MovesModels[moveid];
-                if(AttackerMove != null && DefenderMove != null)
+                if (AttackerMove != null && DefenderMove != null)
                 {
-                    await DoDamage();
+                    await DoDamage().ConfigureAwait(false);
                     AttackerMove = null;
                     DefenderMove = null;
-                    Clock = new Timer(e => EndFight().GetAwaiter(), null, TimeSpan.FromSeconds(30), TimeSpan.FromSeconds(3));
+                    Clock = new Timer(async e => await EndFight().ConfigureAwait(false), null, TimeSpan.FromSeconds(30), TimeSpan.FromMilliseconds(-1));
                 }
             }
             catch
             {
-                
+
             }
-            await Task.CompletedTask;
         }
 
         private async Task DoDamage()
         {
             var dmg1 = AttackerMove.CalculateDamage(Attacker, Defender);
             var dmg2 = DefenderMove.CalculateDamage(Defender, Attacker);
-            await Attacker.Trainer.DiscordUser.SendMessageAsync($"Tu {Attacker.Nickname} uso el movimiento {AttackerMove.Name} e hizo {dmg1} de daño.");
-            await Defender.Trainer.DiscordUser.SendMessageAsync($"Tu {Defender.Nickname} uso el movimiento {DefenderMove.Name} e hizo {dmg2} de daño.");
+            await Attacker.Trainer.DiscordUser.SendMessageAsync($"Tu {Attacker.Nickname} uso el movimiento {AttackerMove.Name} e hizo {dmg1} de daño.").ConfigureAwait(false);
+            await Defender.Trainer.DiscordUser.SendMessageAsync($"Tu {Defender.Nickname} uso el movimiento {DefenderMove.Name} e hizo {dmg2} de daño.").ConfigureAwait(false);
             if (Attacker.DealDamage(dmg2) || Defender.DealDamage(dmg1))
             {
-                await EndFight();
+                await EndFight().ConfigureAwait(false);
                 return;
-            }            
-            await Update(EmbedAttackerPerspective, EmbedDefenderPerspective, EmbedChannelPerspective);
+            }
+            await Update(EmbedAttackerPerspective, EmbedDefenderPerspective, EmbedChannelPerspective).ConfigureAwait(false);
         }
 
         private async Task EndFight()
         {
-            var result = new ConcurrentDictionary<Perspective, Embed>();// BuildResultPerspective(true);            
-            result = BuildResultPerspective(Attacker.RemainingPS > Defender.RemainingPS);
-            await Update(result);
+            var result = BuildResultPerspective(Attacker.RemainingPS > Defender.RemainingPS);
+            await Update(result).ConfigureAwait(false);
             Clock.Dispose();
             State = FightState.FINISHED;
         }
 
         public async Task Update(Embed atkmodel, Embed defmodel, Embed chmodel)
         {
-            await AttackerMessage.ModifyAsync(e => e.Embed = atkmodel);
-            await DefenderMessage.ModifyAsync(e => e.Embed = defmodel);
-            await ChannelMessage.ModifyAsync(e => e.Embed = chmodel);
+            await AttackerMessage.ModifyAsync(e => e.Embed = atkmodel).ConfigureAwait(false);
+            await DefenderMessage.ModifyAsync(e => e.Embed = defmodel).ConfigureAwait(false);
+            await ChannelMessage.ModifyAsync(e => e.Embed = chmodel).ConfigureAwait(false);
         }
+
         public async Task Update(ConcurrentDictionary<Perspective, Embed> results)
         {
-            await AttackerMessage.ModifyAsync(e => e.Embed = results[Perspective.ATTACKER]);
-            await DefenderMessage.ModifyAsync(e => e.Embed = results[Perspective.DEFENDER]);
-            await ChannelMessage.ModifyAsync(e => e.Embed = results[Perspective.CHANNEL]);
+            await AttackerMessage.ModifyAsync(e => e.Embed = results[Perspective.ATTACKER]).ConfigureAwait(false);
+            await DefenderMessage.ModifyAsync(e => e.Embed = results[Perspective.DEFENDER]).ConfigureAwait(false);
+            await ChannelMessage.ModifyAsync(e => e.Embed = results[Perspective.CHANNEL]).ConfigureAwait(false);
         }
-        public Embed EmbedChannelPerspective => BuildBattlePerspective(Attacker, Defender, false);
-        public Embed EmbedAttackerPerspective => BuildBattlePerspective(Attacker, Defender);
-        public Embed EmbedDefenderPerspective => BuildBattlePerspective(Defender, Attacker);
         public Embed BuildBattlePerspective(PokemonEntity main, PokemonEntity second, bool to_user = true)
         {
-            EmbedBuilder eb = new EmbedBuilder();
-            var atkmodel = main.Model;
-            var defmodel = second.Model;            
+            var eb = new EmbedBuilder();
+            var atkmodel = main.GetModel();
+            //var defmodel = second.GetModel();            
             eb.WithThumbnailUrl(second.Front);
             eb.WithImageUrl(main.Front);
             eb.WithTitle(second.Nickname + $" PS: ({second.RemainingPS}/{second.Stats[StatTypeEnum.HP]})");
@@ -138,87 +134,87 @@ namespace PokemmoDiscord.PokemonBot.Mis
                 string mr = "";
                 var count = 1;
                 foreach (var move in main.MovesModels)
-                    mr += count++ + $") {move.Name}";                
+                    mr += count++ + $") {move.Name}";
                 eb.WithDescription(mr);
             }
-            Embed embed = eb.Build();
-            return embed;
+            return eb.Build();
         }
+
         public ConcurrentDictionary<Perspective, Embed> BuildResultPerspective(bool attackerWins)
         {
-            ConcurrentDictionary<Perspective, Embed> result = new ConcurrentDictionary<Perspective, Embed>();
-            Embed deb = null, aeb = null, cheb = null;
-            Random r = new Random(DateTime.Now.GetHashCode());
-            var basemoney = r.Next(10, 25) + (r.Next(1, 9) /10);
+            var result = new ConcurrentDictionary<Perspective, Embed>();
+            Embed def_eb = null, atk_eb = null, ch_eb = null;
+            var r = new Random(DateTime.Now.GetHashCode());
+            var basemoney = r.Next(10, 25) + (r.Next(1, 9) / 10);
+
             if (attackerWins)
             {
                 Attacker.GiveExperience(Defender);
                 Attacker.Trainer.GiveCredits(basemoney * Defender.Level);
-                deb = LoserEmbed(Defender);
-                aeb = WinnerEmbed(Attacker);
-                cheb = ChannelEmbed(Attacker, Defender);                
+                def_eb = LoserEmbed(Defender);
+                atk_eb = WinnerEmbed(Attacker);
+                ch_eb = ChannelEmbed(Attacker, Defender);
             }
             else
             {
                 Defender.GiveExperience(Attacker);
                 Defender.Trainer.GiveCredits(basemoney * Attacker.Level);
-                deb = WinnerEmbed(Defender);
-                aeb = LoserEmbed(Attacker);
-                cheb = ChannelEmbed(Defender, Attacker);                
+                def_eb = WinnerEmbed(Defender);
+                atk_eb = LoserEmbed(Attacker);
+                ch_eb = ChannelEmbed(Defender, Attacker);
             }
-            result.TryAdd(Perspective.ATTACKER, aeb);
-            result.TryAdd(Perspective.DEFENDER, deb);
-            result.TryAdd(Perspective.CHANNEL, cheb);
+            result.TryAdd(Perspective.ATTACKER, atk_eb);
+            result.TryAdd(Perspective.DEFENDER, def_eb);
+            result.TryAdd(Perspective.CHANNEL, ch_eb);
             return result;
-        }        
+        }
+
         public Embed WinnerEmbed(PokemonEntity pkmn)
         {
-            EmbedBuilder eb = new EmbedBuilder();
+            var eb = new EmbedBuilder();
             eb.WithTitle("¡Ganaste!");
-            eb.WithImageUrl(pkmn.Model.LargeFront);
+            eb.WithImageUrl(pkmn.GetModel().LargeFront);
             eb.AddField($"{pkmn.Nickname} Lvl. {pkmn.Level}", $"EXP: {pkmn.CurrentExperience} / {pkmn.NeededExperience}");
-            eb.AddField($"Dinero Actual", "$"+pkmn.Trainer.Credits);
+            eb.AddField($"Dinero Actual", "$" + pkmn.Trainer.Credits);
             eb.WithColor(Color.Green);
-            Embed embed = eb.Build();
-            
-            return embed;                
+            return eb.Build();
         }
+
         public Embed LoserEmbed(PokemonEntity pkmn)
         {
-            EmbedBuilder eb = new EmbedBuilder();
+            var eb = new EmbedBuilder();
             eb.WithTitle("¡Perdiste!");
-            eb.WithImageUrl(pkmn.Model.LargeFront);
+            eb.WithImageUrl(pkmn.GetModel().LargeFront);
             eb.AddField($"{pkmn.Nickname} Lvl. {pkmn.Level}", $"EXP: {pkmn.CurrentExperience} / {pkmn.NeededExperience}");
             eb.WithColor(Color.Red);
-            Embed embed = eb.Build();
-
-            return embed;
+            return eb.Build();
         }
+
         public Embed ChannelEmbed(PokemonEntity winner, PokemonEntity loser)
         {
-            EmbedBuilder eb = new EmbedBuilder();
+            var eb = new EmbedBuilder();
             PokemonData._trainers.TryGetValue(winner.OwnerID, out var trainer);
             PokemonData._trainers.TryGetValue(loser.OwnerID, out var trainer2);
             eb.WithTitle($"¡Ganador {winner.Nickname} Lvl. {winner.Level}!");
-            eb.WithImageUrl(winner.Model.LargeFront);
+            eb.WithImageUrl(winner.GetModel().LargeFront);
             eb.AddField($"Entrenador Victorioso", trainer.DiscordUser.Username + "#" + trainer.DiscordUser.Discriminator);
             eb.AddField($"Entrenador Perdedor", trainer2.DiscordUser.Username + "#" + trainer2.DiscordUser.Discriminator);
             eb.WithColor(Color.Green);
-            Embed embed = eb.Build();
-
-            return embed;
+            return eb.Build();
         }
     }
+
     public enum Perspective
     {
         ATTACKER,
         DEFENDER,
         CHANNEL
     }
+
     public enum FightState
     {
         REQUESTING,
         RUNNING,
-        FINISHED        
+        FINISHED
     }
 }

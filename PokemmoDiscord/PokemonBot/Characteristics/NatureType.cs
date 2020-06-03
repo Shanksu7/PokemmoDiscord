@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace PokemmoDiscord.PokemonBot.Characteristics
+﻿namespace PokemmoDiscord.PokemonBot.Characteristics
 {
     public enum NatureType
     {
@@ -32,6 +28,6 @@ namespace PokemmoDiscord.PokemonBot.Characteristics
         CAREFUL,
         QUIRKY,
         END
-            
+
     }
 }

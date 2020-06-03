@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace PokemmoDiscord.PokemonBot
+﻿namespace PokemmoDiscord.PokemonBot
 {
-    public enum Medal
+    public enum MedalEnum
     {
     }
 }

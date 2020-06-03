@@ -25,6 +25,7 @@ namespace PokemmoDiscord.PokemonBot.Data
         public static bool Ready = false;
         public static Timer saveData;
         public static int MaxPokemonId = 802;
+
         public static async Task LoadData()
         {
             try
@@ -33,7 +34,7 @@ namespace PokemmoDiscord.PokemonBot.Data
                 sp.Start();
                 Console.WriteLine("Start Load Data");
                 //dictionaries
-                await InitDictionaries();
+                InitTypes();
                 //MOVES MODELS
                 await Program.SetGameAsync("Loading moves");
                 using (StreamReader r = new StreamReader(MoveModel.File))
@@ -73,18 +74,15 @@ namespace PokemmoDiscord.PokemonBot.Data
                 //FINISH
                 sp.Stop();
                 Console.WriteLine("Finished after " + sp.ElapsedMilliseconds + " ms");
-                await Program.SetGameAsync("guiding " + Program.pre);
+                await Program.SetGameAsync("guiding " + Program.pre).ConfigureAwait(false);
                 Ready = true;
             }
             catch (Exception ex)
             {
                 await Program.SendReport(ex.Message, Program.ReportEnum.ERROR);
             }
-            finally
-            {
-
-            }
         }
+
         public static async Task SaveData()
         {
             saveData = new Timer(e => Save(), null, TimeSpan.Zero, TimeSpan.FromSeconds(60));
@@ -102,20 +100,28 @@ namespace PokemmoDiscord.PokemonBot.Data
             Console.WriteLine($"Saved {catchedPokemon.Count} pokemons");
         }
 
-        public static async Task InitDictionaries()
+        public static void InitTypes()
         {
-            _pokemontypes.TryAdd("normal", PokemonTypeEnum.NORMAL); _pokemontypes.TryAdd("steel", PokemonTypeEnum.ACERO);
-            _pokemontypes.TryAdd("water", PokemonTypeEnum.AGUA); _pokemontypes.TryAdd("bug", PokemonTypeEnum.BICHO);
-            _pokemontypes.TryAdd("dragon", PokemonTypeEnum.DRAGON); _pokemontypes.TryAdd("electric", PokemonTypeEnum.ELECTRICO);
-            _pokemontypes.TryAdd("ghost", PokemonTypeEnum.FANTASMA); _pokemontypes.TryAdd("fire", PokemonTypeEnum.FUEGO);
-            _pokemontypes.TryAdd("ice", PokemonTypeEnum.HIELO); _pokemontypes.TryAdd("fighting", PokemonTypeEnum.LUCHA);
-            _pokemontypes.TryAdd("grass", PokemonTypeEnum.HIERBA); _pokemontypes.TryAdd("psychic", PokemonTypeEnum.PSIQUICO);
-            _pokemontypes.TryAdd("rock", PokemonTypeEnum.ROCA); _pokemontypes.TryAdd("dark", PokemonTypeEnum.SINIESTRO);
-            _pokemontypes.TryAdd("ground", PokemonTypeEnum.TIERRA); _pokemontypes.TryAdd("poison", PokemonTypeEnum.VENENO);
-            _pokemontypes.TryAdd("flying", PokemonTypeEnum.VOLADOR); _pokemontypes.TryAdd("fairy", PokemonTypeEnum.HADA);
-
-            await Task.CompletedTask;
+            _pokemontypes.TryAdd("normal", PokemonTypeEnum.NORMAL);
+            _pokemontypes.TryAdd("steel", PokemonTypeEnum.ACERO);
+            _pokemontypes.TryAdd("water", PokemonTypeEnum.AGUA);
+            _pokemontypes.TryAdd("bug", PokemonTypeEnum.BICHO);
+            _pokemontypes.TryAdd("dragon", PokemonTypeEnum.DRAGON);
+            _pokemontypes.TryAdd("electric", PokemonTypeEnum.ELECTRICO);
+            _pokemontypes.TryAdd("ghost", PokemonTypeEnum.FANTASMA);
+            _pokemontypes.TryAdd("fire", PokemonTypeEnum.FUEGO);
+            _pokemontypes.TryAdd("ice", PokemonTypeEnum.HIELO);
+            _pokemontypes.TryAdd("fighting", PokemonTypeEnum.LUCHA);
+            _pokemontypes.TryAdd("grass", PokemonTypeEnum.HIERBA);
+            _pokemontypes.TryAdd("psychic", PokemonTypeEnum.PSIQUICO);
+            _pokemontypes.TryAdd("rock", PokemonTypeEnum.ROCA);
+            _pokemontypes.TryAdd("dark", PokemonTypeEnum.SINIESTRO);
+            _pokemontypes.TryAdd("ground", PokemonTypeEnum.TIERRA);
+            _pokemontypes.TryAdd("poison", PokemonTypeEnum.VENENO);
+            _pokemontypes.TryAdd("flying", PokemonTypeEnum.VOLADOR);
+            _pokemontypes.TryAdd("fairy", PokemonTypeEnum.HADA);
         }
+
         public static async Task LoadAPIMoves()
         {
             int max = 728;
@@ -123,12 +129,13 @@ namespace PokemmoDiscord.PokemonBot.Data
             List<MoveModel> moves = new List<MoveModel>();
             for (int i = 1; i <= max; i++)
             {
-                var move = await DataFetcher.GetApiObject<Move>(i);
+                var move = await DataFetcher.GetApiObject<Move>(i).ConfigureAwait(false);
                 if (move.Power == null || move.Accuracy == null)
                     continue;
                 if (move.DamageClass.Name != "special" && move.DamageClass.Name != "physical")
                     continue;
                 _pokemontypes.TryGetValue(move.Type.Name, out var type);
+
                 MoveModel model = new MoveModel()
                 {
                     Accuracy = move.Accuracy,
@@ -140,13 +147,15 @@ namespace PokemmoDiscord.PokemonBot.Data
                     MovementType = type
 
                 };
+
                 moves.Add(model);
                 if (!_pokemontypes.TryGetValue(move.Type.Name, out var t) && move.Type.Name != "grass")
                 {
                     Console.WriteLine(move.Type.Name);
-                    var k = Console.ReadKey();
+                    Console.ReadKey();
                 }
             }
+
             var s = JsonConvert.SerializeObject(moves, Formatting.Indented);
             File.WriteAllText("moves.json", s);
 
@@ -171,6 +180,7 @@ namespace PokemmoDiscord.PokemonBot.Data
                 }
                 if (pokemon.Forms.Count() > 1)
                     Console.WriteLine(pokemon.Forms.Count() + " for " + pokemon.Name);
+
                 PokemonModel model = new PokemonModel(pokemon, idmoves);
                 model.BuildIvsEvs(pokemon.Stats);
                 models.Add(model);
@@ -179,6 +189,7 @@ namespace PokemmoDiscord.PokemonBot.Data
             var s = JsonConvert.SerializeObject(models, Formatting.Indented);
             File.WriteAllText("pokemon_model.json", s);
         }
+
         public static async Task<List<int>> GetEvolutionIDs(PokeAPI.Pokemon poke)
         {
             List<int> ids = new List<int>();

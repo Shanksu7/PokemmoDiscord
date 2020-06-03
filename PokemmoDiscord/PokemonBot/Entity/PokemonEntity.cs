@@ -1,33 +1,31 @@
-﻿using PokemmoDiscord.PokemonBot.Characteristics;
+﻿using Discord;
+using Newtonsoft.Json;
+using PokemmoDiscord.PokemonBot.Characteristics;
 using PokemmoDiscord.PokemonBot.Data;
+using PokemmoDiscord.PokemonBot.Mis;
+using PokemmoDiscord.PokemonBot.Models;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Linq;
-using PokemmoDiscord.PokemonBot.Mis;
-using Newtonsoft.Json;
-using Discord;
-using System.IO;
-using PokemmoDiscord.PokemonBot.Models;
-using AKDiscordBot;
 
 namespace PokemmoDiscord.PokemonBot.Entity
 {
     public class PokemonEntity
     {
+        public static string File => "pokemon_catched.json";
         //Serialized
         public PokemonEntity(int id, bool shiny = false, int extraivs = 0, bool maxivs = false)
         {
             Random x = new Random(Environment.TickCount.GetHashCode());
             ID = id;
-            var model = Model;
+            var model = GetModel();
             OwnerID = 0;
             Nickname = model.Name;
             Shiny = (shiny) ? true : (x.Next(300 + 1) == 1);
             Nature = (NatureType)(x.Next((int)NatureType.END));
             CurrentExperience = 0;
-            Level = x.Next(1, 35 + 1);            
-            IVs = new StatsCollection                
+            Level = x.Next(1, 35 + 1);
+            IVs = new StatsCollection
             (
                 maxivs ? 31 : x.Next(31 + 1) + extraivs,
                 maxivs ? 31 : x.Next(31 + 1) + extraivs,
@@ -40,30 +38,43 @@ namespace PokemmoDiscord.PokemonBot.Entity
             Moves = new List<int>();
             RemainingPS = Stats[StatTypeEnum.HP];
         }
+
         [JsonProperty("id")]
         public int ID { get; set; }
+
         [JsonProperty("owner")]
         public ulong OwnerID { get; set; }
+
         [JsonProperty("nick")]
         public string Nickname { get; set; }
+
         [JsonProperty("shiny")]
         public bool Shiny { get; set; }
-        [JsonProperty("nature")]        
+
+        [JsonProperty("nature")]
         public NatureType Nature { get; set; }
+
         [JsonProperty("exp")]
-        public uint CurrentExperience { get; set ; }
+        public uint CurrentExperience { get; set; }
+
         [JsonProperty("lvl")]
         public int Level { get; set; }
+
         [JsonProperty("ps")]
         public int RemainingPS { get; set; }
+
         [JsonProperty("catched")]
         public DateTime CatchedDay { get; set; }
+
         [JsonProperty("ivs")]
         StatsCollection IVs { get; set; }
+
         [JsonProperty("evs")]
         StatsCollection EVs { get; set; }
+
         [JsonProperty("moves")]
         public List<int> Moves { get; set; }
+
         [JsonIgnore]
         public List<MoveModel> MovesModels
         {
@@ -72,6 +83,7 @@ namespace PokemmoDiscord.PokemonBot.Entity
                 return Moves.Select(x => PokemonData.MovesModel.First(y => y.ID == x)).ToList();
             }
         }
+
         [JsonIgnore]
         public Trainer Trainer
         {
@@ -82,88 +94,116 @@ namespace PokemmoDiscord.PokemonBot.Entity
             }
         }
 
-        public static string File => "pokemon_catched.json";
+        [JsonIgnore]
+        public int IVPercent
+        {
+            get
+            {
+                decimal ivs = IVs.Sum();
+                return (int)decimal.Truncate((ivs / (31 * 6)) * 100);
+            }
+        }
+
+        [JsonIgnore]
+        public string Front
+        {
+            get
+            {
+                var model = GetModel();
+                return model.FrontMale != null ? model.FrontMale : model.FrontFemale;
+            }
+        }
+
+        [JsonIgnore]
+        public string Back
+        {
+            get
+            {
+                var model = GetModel();
+                return model.BackMale != null ? model.BackMale : model.BackFemale;
+            }
+        }
+
+        [JsonIgnore]
+
+        public string ShinyFront
+        {
+            get
+            {
+                var model = GetModel();
+                return model.FrontMaleShiny != null ? model.FrontMaleShiny : model.FrontFemaleShiny;
+            }
+        }
+
+        [JsonIgnore]
+        public string ShinyBack
+        {
+            get
+            {
+                var model = GetModel();
+                return model.BackMaleShiny != null ? model.BackMaleShiny : model.BackFemaleShiny;
+            }
+        }
+
+        [JsonIgnore]
+        public uint NeededExperience
+        {
+            get
+            {
+                return (uint)((4 * Math.Pow(Level, 3)) / 5);
+            }
+        }
+        public bool IsFainted => RemainingPS == 0;
+
+        public PokemonModel GetModel() => PokemonData.PokemonModels.First(x => x.ID == ID);
+
+        public bool HasOwner => OwnerID != 0;
 
         public void SetOwner(ulong id)
         {
             var t = PokemonData._trainers.GetOrAdd(id, new Trainer(id));
             OwnerID = id;
             CatchedDay = DateTime.Now;
-            PokemonData.catchedPokemon.Add(this);            
-        }
-        public PokemonModel Model => PokemonData.PokemonModels.First(x => x.ID == ID);
-        public bool HasOwner => OwnerID != 0;
-        public string Front
-        {
-            get
-            {
-                var model = Model;
-                return model.FrontMale != null ? model.FrontMale : model.FrontFemale;
-            }
+            PokemonData.catchedPokemon.Add(this);
         }
 
-        public string Back
+        public Embed EmbedWildInformation()
         {
-            get
-            {
-                var model = Model;
-                return model.BackMale != null ? model.BackMale : model.BackFemale;
-            }
-        }
-
-        public string ShinyFront
-        {
-            get
-            {
-                var model = Model;
-                return model.FrontMaleShiny != null ? model.FrontMaleShiny : model.FrontFemaleShiny;
-            }
-        }
-
-        public string ShinyBack
-        {
-            get
-            {
-                var model = Model;
-                return model.BackMaleShiny != null ? model.BackMaleShiny : model.BackFemaleShiny;
-            }
-        }
-
-        internal Embed EmbedWildInformation()
-        {            
-            var model = Model;
+            var model = GetModel();
             EmbedBuilder eb = new EmbedBuilder()
                 .WithImageUrl(model.LargeFront)
                 .WithColor(model.GetColor())
                 .WithTitle($"**Wild pokemon appeared**")
-                .WithDescription("type .catch <name> to get, be fast!");                   
+                .WithDescription("type .catch <name> to get, be fast!");
             return eb.Build();
         }
-        internal Embed EmbedInformation()
+
+        public Embed EmbedInformation()
         {
 
-            var model = Model;
+            var model = GetModel();
             EmbedBuilder eb = new EmbedBuilder()
                 .WithThumbnailUrl((Shiny) ? ShinyFront : Front)
                 .WithColor(model.GetColor())
                 .WithTitle($"**#{ID} {Nickname}** ({RemainingPS}/{Stats[StatTypeEnum.HP]})")
-                .AddField("IVs:", IVPercent+ "%", true)
-                .AddField("Lvl"+ Level, $" Exp: {CurrentExperience} / {NeededExperience}", true);                
+                .AddField("IVs:", IVPercent + "%", true)
+                .AddField("Lvl" + Level, $" Exp: {CurrentExperience} / {NeededExperience}", true);
             foreach (var stat in Stats.Values)
-              eb.AddField(stat.Key.ToString(), stat.Value, true);
-            
-                
+                eb.AddField(stat.Key.ToString(), stat.Value, true);
+
+
             return eb.Build();
         }
+
         public Embed EmbedMovesInformation()
         {
-            
+            var model = GetModel();
             EmbedBuilder eb = new EmbedBuilder()
-                .WithThumbnailUrl(Model.LargeFront)
-                .WithColor(Model.GetColor())
+                .WithThumbnailUrl(GetModel().LargeFront)
+                .WithColor(model.GetColor())
                 .WithTitle($"**#{ID} {Nickname}**");
             var moves = "";
-            foreach (var idm in Model.AvailableMoveIDS)
+            foreach (var idm in model.AvailableMoveIDS)
             {
                 var move = PokemonData.MovesModel.First(x => x.ID == idm);
                 moves += $"[{move.ID}]" + move.ESPName + ", ";
@@ -181,10 +221,11 @@ namespace PokemmoDiscord.PokemonBot.Entity
                 eb.AddField("No tienes movimientos aprendidos", "puedes aprender hasta 4");
             return eb.Build();
         }
-        internal Embed EmbedIVsInformation()
+
+        public Embed EmbedIVsInformation()
         {
 
-            var model = Model;
+            var model = GetModel();
             EmbedBuilder eb = new EmbedBuilder()
                 .WithThumbnailUrl(model.LargeFront)
                 .WithColor(model.GetColor())
@@ -194,46 +235,30 @@ namespace PokemmoDiscord.PokemonBot.Entity
                 eb.AddField(stat.Key.ToString(), stat.Value + " / 31", true);
             return eb.Build();
         }
-        [JsonIgnore]
-        public int IVPercent
-        {
-            get
-            {
-                decimal ivs = IVs.Sum();
-                return (int)decimal.Truncate((ivs / (31 * 6)) * 100);
-            }
-        }
+
         public bool GiveExperience(PokemonEntity pkmnFainted)
         {
             if (Level < 100)
             {
-                uint Total = (uint)((pkmnFainted.HasOwner ? 1.5 : 1) * pkmnFainted.Model.BaseExperience * pkmnFainted.Level) / 7;
+                uint Total = (uint)((pkmnFainted.HasOwner ? 1.5 : 1) * pkmnFainted.GetModel().BaseExperience * pkmnFainted.Level) / 7;
                 CurrentExperience += Total;
                 while (CurrentExperience > NeededExperience)
                 {
                     CurrentExperience -= NeededExperience;
-                    Level++;                     
+                    Level++;
                 }
                 return true;
             }
             else return false;
         }
+
         public bool DealDamage(int amount)
         {
             RemainingPS -= amount;
             RemainingPS = (RemainingPS < 0) ? 0 : RemainingPS;
             return IsFainted;
         }
-        [JsonIgnore]
-        public uint NeededExperience
-        {
-            get
-            {
-                return (uint)((4*Math.Pow(Level, 3)) / 5);
-            }
-        }
-        [JsonIgnore]
-        public bool IsFainted => RemainingPS == 0;
+
         public bool Heal(int amount)
         {
             var ps = 0;
@@ -242,7 +267,8 @@ namespace PokemmoDiscord.PokemonBot.Entity
                 RemainingPS += (ps - RemainingPS);
                 return true;
             }
-            else return false;
+            else
+                return false;
         }
 
         //Call only Stats()
@@ -251,179 +277,138 @@ namespace PokemmoDiscord.PokemonBot.Entity
         {
             get
             {
-                var model = Model;
-                //have to include variants of nature
-                //have to include variants of EV
-                int speed = GetStatValue(StatTypeEnum.SPEED, model.BaseStats[StatTypeEnum.SPEED], IVs[StatTypeEnum.SPEED], 0),
-                    sp_def = GetStatValue(StatTypeEnum.SP_DEF, model.BaseStats[StatTypeEnum.SP_DEF], IVs[StatTypeEnum.SP_DEF], 0),
-                    sp_atk = GetStatValue(StatTypeEnum.SP_ATK, model.BaseStats[StatTypeEnum.SP_ATK], IVs[StatTypeEnum.SP_ATK], 0),
-                    def = GetStatValue(StatTypeEnum.DEF, model.BaseStats[StatTypeEnum.DEF], IVs[StatTypeEnum.DEF], 0),
-                    atk = GetStatValue(StatTypeEnum.ATK, model.BaseStats[StatTypeEnum.ATK], IVs[StatTypeEnum.ATK], 0),
-                    hp = GetStatValue(StatTypeEnum.HP, model.BaseStats[StatTypeEnum.HP], IVs[StatTypeEnum.HP], 0);
-
+                var model = GetModel();
                 return new StatsCollection(
-                    speed,
-                    sp_def,
-                    sp_atk,
-                    def,
-                    atk,
-                    hp
+                    GetStatValue(StatTypeEnum.SPEED, model.BaseStats[StatTypeEnum.SPEED], IVs[StatTypeEnum.SPEED], 0),
+                    GetStatValue(StatTypeEnum.SP_DEF, model.BaseStats[StatTypeEnum.SP_DEF], IVs[StatTypeEnum.SP_DEF], 0),
+                    GetStatValue(StatTypeEnum.SP_ATK, model.BaseStats[StatTypeEnum.SP_ATK], IVs[StatTypeEnum.SP_ATK], 0),
+                    GetStatValue(StatTypeEnum.DEF, model.BaseStats[StatTypeEnum.DEF], IVs[StatTypeEnum.DEF], 0),
+                    GetStatValue(StatTypeEnum.ATK, model.BaseStats[StatTypeEnum.ATK], IVs[StatTypeEnum.ATK], 0),
+                    GetStatValue(StatTypeEnum.HP, model.BaseStats[StatTypeEnum.HP], IVs[StatTypeEnum.HP], 0)
                 );
             }
         }
 
         private int GetStatValue(StatTypeEnum type, int _base, int iv, int ev)
-        {         
-            
-            int result = 0;
-            switch(type)
+        {
+            return type switch
             {
-                case StatTypeEnum.HP:
-                    result = (((2 * _base + iv + (ev / 4)) * Level) / 100) + Level + 10;
-                    return result;
-                case StatTypeEnum.SPEED:
-                    result = (((2 * _base + iv + (ev / 4)) * Level) / 100) + 5;
-                    return result;
-                default:
-                    result = (((2 * _base + iv + (ev / 4)) * Level) / 100) + 5;
-                    break;
-            }
-            switch(Nature)
-            {
-                default:
-                    break;
-            }
-            return result;
+                StatTypeEnum.HP => (((2 * _base + iv + (ev / 4)) * Level) / 100) + Level + 10,
+                StatTypeEnum.SPEED => (((2 * _base + iv + (ev / 4)) * Level) / 100) + 5,
+                _ => (((2 * _base + iv + (ev / 4)) * Level) / 100) + 5
+            };
         }
+
         private int NatureModifier(int value, StatTypeEnum type)
         {
             var increase = 1.1; var decrease = 0.9;
-            switch(Nature)
+            return Nature switch
             {
-                case NatureType.LONELY:
-                    return
-                        (type == StatTypeEnum.ATK) ?
-                        (int)(value * increase) :
-                        (type == StatTypeEnum.DEF) ?
-                        (int)(value * decrease) : value;
-                case NatureType.BRAVE:
-                    return
-                        (type == StatTypeEnum.ATK) ?
-                        (int)(value * increase) :
-                        (type == StatTypeEnum.SPEED) ?
-                        (int)(value * decrease) : value;
-                case NatureType.ADAMANT:
-                    return
-                        (type == StatTypeEnum.ATK) ?
-                        (int)(value * increase) :
-                        (type == StatTypeEnum.SP_ATK) ?
-                        (int)(value * decrease) : value;
-                case NatureType.NAUGHTY:
-                    return
-                        (type == StatTypeEnum.ATK) ?
-                        (int)(value * increase) :
-                        (type == StatTypeEnum.SP_DEF) ?
-                        (int)(value * decrease) : value;
-                case NatureType.BOLD:
-                    return
-                        (type == StatTypeEnum.DEF) ?
-                        (int)(value * increase) :
-                        (type == StatTypeEnum.ATK) ?
-                        (int)(value * decrease) : value;
-                case NatureType.RELAXED:
-                    return
-                        (type == StatTypeEnum.DEF) ?
-                        (int)(value * increase) :
-                        (type == StatTypeEnum.SPEED) ?
-                        (int)(value * decrease) : value;
-                case NatureType.IMPISH:
-                    return
-                        (type == StatTypeEnum.DEF) ?
-                        (int)(value * increase) :
-                        (type == StatTypeEnum.SP_ATK) ?
-                        (int)(value * decrease) : value;
-                case NatureType.LAX:
-                    return
-                        (type == StatTypeEnum.DEF) ?
-                        (int)(value * increase) :
-                        (type == StatTypeEnum.SP_DEF) ?
-                        (int)(value * decrease) : value;
-                case NatureType.TIMID:
-                    return
-                        (type == StatTypeEnum.SPEED) ?
-                        (int)(value * increase) :
-                        (type == StatTypeEnum.ATK) ?
-                        (int)(value * decrease) : value;
-                case NatureType.HASTY:
-                    return
-                        (type == StatTypeEnum.SPEED) ?
-                        (int)(value * increase) :
-                        (type == StatTypeEnum.DEF) ?
-                        (int)(value * decrease) : value;
-                case NatureType.JOLLY:
-                    return
-                        (type == StatTypeEnum.SPEED) ?
-                        (int)(value * increase) :
-                        (type == StatTypeEnum.SP_ATK) ?
-                        (int)(value * decrease) : value;
-                case NatureType.NAIVE:
-                    return
-                        (type == StatTypeEnum.SPEED) ?
-                        (int)(value * increase) :
-                        (type == StatTypeEnum.SP_DEF) ?
-                        (int)(value * decrease) : value;
-                case NatureType.MODEST:
-                    return
-                         (type == StatTypeEnum.SP_ATK) ?
-                         (int)(value * increase) :
-                         (type == StatTypeEnum.ATK) ?
-                         (int)(value * decrease) : value;
-                case NatureType.MILD:
-                    return
-                         (type == StatTypeEnum.SP_ATK) ?
-                         (int)(value * increase) :
-                         (type == StatTypeEnum.DEF) ?
-                         (int)(value * decrease) : value;
-                case NatureType.QUIET:
-                    return
-                         (type == StatTypeEnum.SP_ATK) ?
-                         (int)(value * increase) :
-                         (type == StatTypeEnum.SPEED) ?
-                         (int)(value * decrease) : value;
-                case NatureType.RASH:
-                    return
-                         (type == StatTypeEnum.SP_ATK) ?
-                         (int)(value * increase) :
-                         (type == StatTypeEnum.SP_DEF) ?
-                         (int)(value * decrease) : value;
-                case NatureType.CALM:
-                    return
-                         (type == StatTypeEnum.SP_DEF) ?
-                         (int)(value * increase) :
-                         (type == StatTypeEnum.ATK) ?
-                         (int)(value * decrease) : value;
-                case NatureType.GENTLE:
-                    return
-                         (type == StatTypeEnum.SP_DEF) ?
-                         (int)(value * increase) :
-                         (type == StatTypeEnum.DEF) ?
-                         (int)(value * decrease) : value;
-                case NatureType.SASSY:
-                    return
-                         (type == StatTypeEnum.SP_DEF) ?
-                         (int)(value * increase) :
-                         (type == StatTypeEnum.SPEED) ?
-                         (int)(value * decrease) : value;
-                case NatureType.CAREFUL:
-                    return
-                         (type == StatTypeEnum.SP_DEF) ?
-                         (int)(value * increase) :
-                         (type == StatTypeEnum.SP_ATK) ?
-                         (int)(value * decrease) : value;
+                NatureType.LONELY =>
+                (type == StatTypeEnum.ATK) ?
+                (int)(value * increase) :
+                (type == StatTypeEnum.DEF) ?
+                (int)(value * decrease) : value,
 
-                default:
-                    return value;                    
-            }
+                NatureType.BRAVE =>
+                (type == StatTypeEnum.ATK) ?
+                (int)(value * increase) :
+                (type == StatTypeEnum.SPEED) ?
+                (int)(value * decrease) : value,
+
+                NatureType.ADAMANT =>
+                (type == StatTypeEnum.ATK) ?
+                (int)(value * increase) :
+                (type == StatTypeEnum.SP_ATK) ?
+                (int)(value * decrease) : value,
+
+                NatureType.NAUGHTY => (type == StatTypeEnum.ATK) ?
+                (int)(value * increase) :
+                (type == StatTypeEnum.SP_DEF) ?
+                (int)(value * decrease) : value,
+
+                NatureType.BOLD => (type == StatTypeEnum.DEF) ?
+                (int)(value * increase) :
+                (type == StatTypeEnum.ATK) ?
+                (int)(value * decrease) : value,
+
+                NatureType.RELAXED => (type == StatTypeEnum.DEF) ?
+                (int)(value * increase) :
+                (type == StatTypeEnum.SPEED) ?
+                (int)(value * decrease) : value,
+
+                NatureType.IMPISH => (type == StatTypeEnum.DEF) ?
+                (int)(value * increase) :
+                (type == StatTypeEnum.SP_ATK) ?
+                (int)(value * decrease) : value,
+
+                NatureType.LAX => (type == StatTypeEnum.DEF) ?
+                (int)(value * increase) :
+                (type == StatTypeEnum.SP_DEF) ?
+                (int)(value * decrease) : value,
+
+                NatureType.TIMID => (type == StatTypeEnum.SPEED) ?
+                (int)(value * increase) :
+                (type == StatTypeEnum.ATK) ?
+                (int)(value * decrease) : value,
+
+                NatureType.HASTY => (type == StatTypeEnum.SPEED) ?
+                (int)(value * increase) :
+                (type == StatTypeEnum.DEF) ?
+                (int)(value * decrease) : value,
+
+                NatureType.JOLLY => (type == StatTypeEnum.SPEED) ?
+                (int)(value * increase) :
+                (type == StatTypeEnum.SP_ATK) ?
+                (int)(value * decrease) : value,
+
+                NatureType.NAIVE => (type == StatTypeEnum.SPEED) ?
+                (int)(value * increase) :
+                (type == StatTypeEnum.SP_DEF) ?
+                (int)(value * decrease) : value,
+
+                NatureType.MODEST => (type == StatTypeEnum.SP_ATK) ?
+                (int)(value * increase) :
+                (type == StatTypeEnum.ATK) ?
+                (int)(value * decrease) : value,
+
+                NatureType.MILD => (type == StatTypeEnum.SP_ATK) ?
+                (int)(value * increase) :
+                (type == StatTypeEnum.DEF) ?
+                (int)(value * decrease) : value,
+
+                NatureType.QUIET => (type == StatTypeEnum.SP_ATK) ?
+                (int)(value * increase) :
+                (type == StatTypeEnum.SPEED) ?
+                (int)(value * decrease) : value,
+
+                NatureType.RASH => (type == StatTypeEnum.SP_ATK) ?
+                (int)(value * increase) :
+                (type == StatTypeEnum.SP_DEF) ?
+                (int)(value * decrease) : value,
+
+                NatureType.CALM => (type == StatTypeEnum.SP_DEF) ?
+                (int)(value * increase) :
+                (type == StatTypeEnum.ATK) ?
+                (int)(value * decrease) : value,
+
+                NatureType.GENTLE => (type == StatTypeEnum.SP_DEF) ?
+                (int)(value * increase) :
+                (type == StatTypeEnum.DEF) ?
+                (int)(value * decrease) : value,
+
+                NatureType.SASSY => (type == StatTypeEnum.SP_DEF) ?
+                (int)(value * increase) :
+                (type == StatTypeEnum.SPEED) ?
+                (int)(value * decrease) : value,
+
+                NatureType.CAREFUL => (type == StatTypeEnum.SP_DEF) ?
+                (int)(value * increase) :
+                (type == StatTypeEnum.SP_ATK) ?
+                (int)(value * decrease) : value,
+
+                _ => value,
+            };
         }
 
     }

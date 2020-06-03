@@ -12,6 +12,7 @@ namespace PokemmoDiscord.PokemonBot.Data
     {
         public static string File = "pokemon_model.json";
         public string LargeFront => $"https://assets.pokemon.com/assets/cms2/img/pokedex/full/{ID.NumericString()}.png";
+
         public PokemonModel(Pokemon pokemon, List<int> idmoves)
         {
             ID = pokemon.ID;
@@ -30,43 +31,60 @@ namespace PokemmoDiscord.PokemonBot.Data
             BaseStats = new StatsCollection();
             EffortStats = new StatsCollection();
         }
+
         public PokemonModel()
         {
 
         }
+
         [JsonProperty("id")]
         public int ID { get; set; }
+
         [JsonProperty("name")]
         public string Name { get; set; }
+
         [JsonProperty("exp")]
         public int BaseExperience { get; set; }
+
         [JsonProperty("bm")]
         public string BackMale { get; set; }
+
         [JsonProperty("bf")]
         public string BackFemale { get; set; }
+
         [JsonProperty("bms")]
         public string BackMaleShiny { get; set; }
+
         [JsonProperty("bfs")]
         public string BackFemaleShiny { get; set; }
+
         [JsonProperty("fm")]
         public string FrontMale { get; set; }
+
         [JsonProperty("ff")]
         public string FrontFemale { get; set; }
+
         [JsonProperty("fms")]
         public string FrontMaleShiny { get; set; }
+
         [JsonProperty("ffs")]
         public string FrontFemaleShiny { get; set; }
+
         [JsonProperty("types")]
         public List<PokemonTypeEnum> Types { get; set; }
+
         [JsonProperty("stats")]
         public StatsCollection BaseStats { get; set; }
+
         [JsonProperty("effort")]
         public StatsCollection EffortStats { get; set; }
+
         [JsonProperty("moves")]
         public List<int> AvailableMoveIDS { get; set; }
+
         internal Embed EmbedBaseInformation()
         {
-            EmbedBuilder eb = new EmbedBuilder()
+            var eb = new EmbedBuilder()
                 .WithThumbnailUrl(LargeFront)
                 .WithColor(GetColor())
                 .WithTitle($"**#{ID} {Name}**")
@@ -83,7 +101,6 @@ namespace PokemmoDiscord.PokemonBot.Data
             eb.AddField("Available Moves", moves, true);
             return eb.Build();
         }
-        
 
         public void BuildIvsEvs(PokemonStats[] stats)
         {
@@ -118,48 +135,28 @@ namespace PokemmoDiscord.PokemonBot.Data
 
         internal Color GetColor()
         {
-            var maintype = Types[0];
-            switch (maintype)
+            return Types[0] switch
             {
-                case PokemonTypeEnum.ACERO:
-                    return new Color(0xB7B7CE);
-                case PokemonTypeEnum.AGUA:
-                    return new Color(0x6390F0);
-                case PokemonTypeEnum.BICHO:
-                    return new Color(0xA6B91A);
-                case PokemonTypeEnum.DRAGON:
-                    return new Color(0x6F35FC);
-                case PokemonTypeEnum.ELECTRICO:
-                    return new Color(0xF7D02C);
-                case PokemonTypeEnum.FANTASMA:
-                    return new Color(0x6F35FC);
-                case PokemonTypeEnum.FUEGO:
-                    return new Color(0xEE8130);
-                case PokemonTypeEnum.HADA:
-                    return new Color(0xD685AD);
-                case PokemonTypeEnum.HIELO:
-                    return new Color(0x96D9D6);
-                case PokemonTypeEnum.HIERBA:
-                    return new Color(0x7AC74C);
-                case PokemonTypeEnum.LUCHA:
-                    return new Color(0xC22E28);
-                case PokemonTypeEnum.NORMAL:
-                    return new Color(0xA8A77A);
-                case PokemonTypeEnum.PSIQUICO:
-                    return new Color(0xF95587);
-                case PokemonTypeEnum.ROCA:
-                    return new Color(0xB6A136);
-                case PokemonTypeEnum.SINIESTRO:
-                    return new Color(0x705746);
-                case PokemonTypeEnum.TIERRA:
-                    return new Color(0xE2BF65);
-                case PokemonTypeEnum.VENENO:
-                    return new Color(0xA33EA1);
-                case PokemonTypeEnum.VOLADOR:
-                    return new Color(0xA98FF3);
-                default:
-                    return new Color(0xFFFFFF);
-            }
+                PokemonTypeEnum.ACERO => new Color(0xB7B7CE),
+                PokemonTypeEnum.AGUA => new Color(0x6390F0),
+                PokemonTypeEnum.BICHO => new Color(0xA6B91A),
+                PokemonTypeEnum.DRAGON => new Color(0x6F35FC),
+                PokemonTypeEnum.ELECTRICO => new Color(0xF7D02C),
+                PokemonTypeEnum.FANTASMA => new Color(0x6F35FC),
+                PokemonTypeEnum.FUEGO => new Color(0xEE8130),
+                PokemonTypeEnum.HADA => new Color(0xD685AD),
+                PokemonTypeEnum.HIELO => new Color(0x96D9D6),
+                PokemonTypeEnum.HIERBA => new Color(0x7AC74C),
+                PokemonTypeEnum.LUCHA => new Color(0xC22E28),
+                PokemonTypeEnum.NORMAL => new Color(0xA8A77A),
+                PokemonTypeEnum.PSIQUICO => new Color(0xF95587),
+                PokemonTypeEnum.ROCA => new Color(0xB6A136),
+                PokemonTypeEnum.SINIESTRO => new Color(0x705746),
+                PokemonTypeEnum.TIERRA => new Color(0xE2BF65),
+                PokemonTypeEnum.VENENO => new Color(0xA33EA1),
+                PokemonTypeEnum.VOLADOR => new Color(0xA98FF3),
+                _ => new Color(0xFFFFFF),
+            };
         }
     }
 }

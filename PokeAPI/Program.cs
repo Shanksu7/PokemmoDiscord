@@ -105,20 +105,9 @@ namespace PokeAPI
         static void Main(string[] args)
         {
             int opc = 1;
-                    Pokemon p = DataFetcher.GetApiObject<Pokemon>(opc++).GetAwaiter().GetResult();
-                   
-            
+            var p = DataFetcher.GetApiObject<Pokemon>(opc++).GetAwaiter().GetResult();
         }
-        static void Lel(int ind)
-        {
-            var p = DataFetcher.GetApiObject<Pokemon>(ind).GetAwaiter().GetResult();
-            Console.WriteLine(p.Name + '\n'
-                + $"EXP: {p.BaseExperience}"
-                );
-            foreach(var s in p.Stats)            
-                Console.WriteLine(s.Stat.Name + ": "+ s.BaseValue + "[Ev:"+s.Effort+"]");
-            
-        }
+
 
         class MyPokemon2
         {
